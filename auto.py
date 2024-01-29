@@ -2,13 +2,8 @@ import os
 import subprocess
 import sys
 
-# Step 1. File conversion from .md to .html in the current folder
-current_folder_files = [f for f in os.listdir() if f.endswith('.md')]
-for f in current_folder_files:
-    input_file = f
-    output_file = f"{os.path.splitext(f)[0]}.html"
-    print(f"Converting {input_file} to {output_file}")
-    subprocess.run(['pandoc', '-s', '-c', 'documentation/base.css', input_file, '-t', 'html', '-o', output_file, '--lua-filter=links-to-html.lua'], stderr=subprocess.DEVNULL)
+# Step 1. File conversion from README.md to index.html in the current folder
+subprocess.run(['pandoc', '-s', '-c', 'documentation/base.css', 'README.md', '-t', 'html', '-o', 'index.html', '--lua-filter=links-to-html.lua'], stderr=subprocess.DEVNULL)
 
 # Step 2. File conversion from .md to .html in the documentation folder
 documentation_folder = 'documentation'
