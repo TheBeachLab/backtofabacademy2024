@@ -8,7 +8,7 @@ My name is Fran Sanchez, I am the founder of [The (fabulous) Beach Lab](http://b
 Don't hesitate to connect with me on [LinkedIn](https://www.linkedin.com/in/fsancheza/).
 
 ## Assignments
-[Week 1: Principles and Practices, Project Management - January 24](w01.md)  
+[Week 1: Principles and Practices, Project Management - January 24](w01-en.md)  
 Week 2: Computer-Aided Design - January 31    
 Week 3: Computer-Controlled Cutting - February 07    
 Week 4: Electronics Production - February 14    
