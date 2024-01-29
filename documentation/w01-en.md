@@ -45,5 +45,5 @@ I never knew how to type, but I always wanted to learn. At Fab15 in Egypt, I not
 
 All this is making writing the documentation a bit slow at the moment, and a bit tedious. But I believe that with this system, speed will drastically increase week by week and in the end, I will be able to document with great speed and level of detail.
 
-[<< back to home](index.md)  
+[<< back to home](index-en.md)  
 [Next week >>](w02-en.md)

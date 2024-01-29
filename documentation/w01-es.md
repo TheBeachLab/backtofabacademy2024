@@ -45,5 +45,5 @@ Nunca supe escribir a máquina, pero siempre quise aprender. En Fab15 en Egipto,
 
 Todo esto está haciendo que escribir la documentación sea un poco lento en este momento, y un poco tedioso. Pero creo que con éste sistema, la velocidad va a aumentar drásticamente semana a semana y al final seré capaz de documentar con gran velocidad y nivel de detalle.
 
-[<< Volver al inicio](index.md)  
+[<< Volver al inicio](index-es.md)  
 [Semana siguiente >>](w02-es.md)
