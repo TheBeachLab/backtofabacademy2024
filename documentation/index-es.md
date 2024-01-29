@@ -1,18 +1,18 @@
 ## Retransmitiendo las crónicas de Fab Academy 2024 de Fran desde el `Pirate Node`
 
 # Acerca de mí
-Me llamo Fran Sánchez, soy el fundador de [The (fabulous) Beach Lab](http://beachlab.org), un Fab Lab personal y móvil con sede en Sitges, España. Soy Ingeniero de Caminos, Canales y Puertos con múltiples pasiones: me encantan las aventuras y la exploración, por eso disfruto del overlanding lejos de la civilización. Para ganar algo más de rango de movimiento, me convertí en capitán de barco, después en buceador y finalmente piloto. También soy Operador de Radioaficionado (EA3IRP) para conocer gente que no está todo el dia pegada a sus "smartphones". Estoy dudando entre submarinos y helicópteros para mi próxima aventura. También me encantan los ordenadores tipo Unix (cualquier cosa que corra en un terminal), el Arte y la Ciencia. Sí, todo esto es muy bonito, pero no estaba ganando dinero, así que me hice también Desarrollador de Apple y ahora también desarrollo aplicaciones asombrosas para dispositivos iOS. Pero tampoco estoy ganando dinero. ¡Echa un vistazo a mi utilidad para viajes, [Hariburi](https://apps.apple.com/us/app/hariburi/id1599749190)!
+Me llamo Fran Sanchez, soy el fundador de [The (fabulous) Beach Lab](http://beachlab.org), un Fab Lab personal y móvil con sede en Sitges, España. Soy Ingeniero de Caminos, Canales y Puertos con múltiples pasiones: me encantan las aventuras y la exploración, por eso disfruto del overlanding lejos de la civilización. Para ganar algo más de rango de movimiento, me convertí en capitán de barco, después en buceador y finalmente piloto. También soy Operador de Radioaficionado (EA3IRP) para conocer gente que no está todo el dia pegada a sus "smartphones". Estoy dudando entre submarinos y helicópteros para mi próxima aventura. También me encantan los ordenadores tipo Unix (cualquier cosa que corra en un terminal), el Arte y la Ciencia. Sí, todo esto es muy bonito, pero no estaba ganando dinero, así que me hice también Desarrollador de Apple y ahora también desarrollo aplicaciones para dispositivos iOS. Pero tampoco estoy ganando dinero. ¡Echa un vistazo a mi utilidad para viajes, [Hariburi](https://apps.apple.com/us/app/hariburi/id1599749190)!
 
 No dudes en contactar conmigo en [LinkedIn](https://www.linkedin.com/in/fsancheza/).
 
-## Tareas
+## Semana a semana
 [Semana 1: Principios y Prácticas, Gestión de Proyectos - 24 de enero](w01-es.md)  
-Semana 2: Diseño Asistido por Computadora - 31 de enero    
-Semana 3: Corte Controlado por Computadora - 07 de febrero    
+Semana 2: Diseño Asistido por Ordenador - 31 de enero    
+Semana 3: Corte Controlado por Ordenador - 07 de febrero    
 Semana 4: Producción Electrónica - 14 de febrero    
 Semana 5: Escaneo e Impresión 3D - 21 de febrero    
 Semana 6: Programación Integrada - 28 de febrero    
-Semana 7: Mecanizado Controlado por Computadora - 06 de marzo    
+Semana 7: Mecanizado Controlado por Ordenador - 06 de marzo    
 Semana 8: Diseño Electrónico - 13 de marzo    
 Semana 9: Dispositivos de Salida - 20 de marzo    
 Semana 10: Diseño Mecánico, Diseño de Máquinas - 27 de marzo    

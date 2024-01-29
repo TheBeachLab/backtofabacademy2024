@@ -6,7 +6,7 @@ In 2013 I took Fab Academy Class in Fab Lab Barcelona, a life changing experienc
 [English Documentation (AI generated)](documentation/index-en.md)
 
 
-![cover image](documentation/img/backtofab.jpeg)
+![](documentation/img/backtofab.jpeg)
 
 I will vlogging my experience in [Youtube](https://www.youtube.com/playlist?list=PLKDpiLmgp6Evt30dhHgRlcB80OhMfcs2W). Some content will also be shared in [Instagram](https://www.instagram.com/thebeachlab) 
 
@@ -14,4 +14,4 @@ Follow Fab Academy 2024 Official Site where you will find the official participa
 https://fabacademy.org/2024/
 
 My Fab Academy 2013 Documentation Page:
-https://fabacademy.org/archives/2013/students/sanchez.francisco/index.html
+[https://fabacademy.org/archives/2013/students/sanchez.francisco/index.html](https://fabacademy.org/archives/2013/students/sanchez.francisco/index.html)
