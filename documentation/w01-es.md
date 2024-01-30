@@ -47,7 +47,7 @@ He preguntado a César Garcia, de [La Hora Maker](https://www.youtube.com/lahora
 
 > Translate the text from Spanish to English, Read the entire document to grasp context before translating it, take into account nuances and idioms of the Spanish language and translate them to the equivalents in English. The translation should not be literal, focus on maintaining the original meaning and provide a translation that makes sense in english. Ignore external URLs and code snippets in the translation; if encountering a markdown link, translate the text inside square brackets. Modify internal markdown link URLs to point to the appropriate english file, e.g., change w01-es.md to w01-en.md. Recognize and retain brands and names without translation. Use correct grammar and syntax in the final text. The style of the translation should be informal.
 
-Tengo otro modelo en alemám con instrucciones análogas. Voy cambiando las instrucciones de vez en cuando para intentar mejorar la traducción. 
+Tengo otro modelo en alemán con instrucciones análogas. Voy cambiando las instrucciones de vez en cuando para intentar mejorar la traducción. 
 
 Esta página que estas leyendo tiene unos 2800 tokens. Puedes saber cuantos tokens tiene un texto usando el [OpenAI Tokenizer](https://platform.openai.com/tokenizer). El coste de la traducción a los dos idiomas de esta página es aproximadamente 0.23 USD, teniendo en cuenta que cada 1000 tokens cuestan 0.01 USD el input y 0.03 USD el output. Me parece bastante caro, y además el coste va a subir a medida que avanza Fab Academy. Por ese motivo solo traduciré los contenidos cuando considere avanzado el trabajo.
 
