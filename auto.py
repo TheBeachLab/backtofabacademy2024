@@ -23,10 +23,10 @@ for f in documentation_folder_files:
 # Step 3. Uploading everything to GitHub
 # If there is a commit message (excluding -translate), then upload
 if len([arg for arg in sys.argv[1:] if arg != '--translate']) > 0:
-    subprocess.run(['git', 'pull'])
     subprocess.run(['git', 'add', '--all']) 
     commit_message = ' '.join(arg for arg in sys.argv[1:] if arg != '--translate')
     subprocess.run(['git', 'commit', '-m', commit_message])
+    subprocess.run(['git', 'pull'])
     subprocess.run(['git', 'push'])
 else:
     print("Not uploading (Empty commit message)")
