@@ -1,4 +1,16 @@
-Hier gibt es nicht viel zu sehen...
+# Abschlussprojekt
+
+![](img/memes/thinking.jpg)
+
+## Ursprung der Idee
+
+## Skizze und Erklärung
+
+## Planung
+
+## Budget
+
+Hier gibt's nicht viel zu sehen...
 
 `¯\_( ͡❛ ͜ʖ ͡❛)_/¯ `
 

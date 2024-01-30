@@ -1,5 +1,17 @@
-There's not much to see around here...
+# Final Project
 
-`¯\_( ͡❛ ͜ʖ ͡❛)_/¯ `
+![](img/memes/thinking.jpg)
 
-[<< Return to the beginning](index-en.md)  
+## Origin of the Idea
+
+## Sketch and Explanation
+
+## Planning
+
+## Budget
+
+Not much to see here...
+
+`¯\_( ͡❛ ͜ʖ ͡❛)_/¯`
+
+[<< Back to the beginning](index-en.md)

@@ -2,7 +2,7 @@ import os
 import subprocess
 import sys
 
-# Step 0. Translation if first parameter is '-translate'
+# Step 0. Translation if first parameter is '--translate'
 if len(sys.argv) > 0 and sys.argv[1] == '--translate':
     subprocess.run(['git', 'add', '--all']) # modified files need to be added, otherwise are not translated
     subprocess.run(['python3', 'translate-en.py'])
