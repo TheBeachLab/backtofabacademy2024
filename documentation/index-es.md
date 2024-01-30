@@ -30,7 +30,7 @@ Proyecto Final
 
 ## Expectativas vs Realidad
 
-Estos son mis objetivos y expectativas para este curso.
+Estos son mis objetivos y expectativas para este ciclo.
 
 ### Expectativas (escrito el 19 de enero)
 - Tengo muchas ganas de explorar los límites cada semana.
