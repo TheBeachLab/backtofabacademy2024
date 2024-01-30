@@ -87,7 +87,7 @@ Lo único que falta ahora es un servidor web. Y eso lo puedes hacer desde Github
 
 ![](img/w01/cicd.webp)
 
-Esto creará un archivo en `.github/workflows/static.yml` en el cual solo tuve que modificar el runner, porque `runs-on: ubuntu-latest` no funcionaba. Lo cambié por `runs-on: ubuntu-22.04` y al hacer commit, las páginas se sirvieron de forma automática.
+Esto creará un archivo en `.github/workflows/static.yml`, del cual solo tuve que modificar el `runner`, porque `runs-on: ubuntu-latest` no funcionaba. Lo cambié por `runs-on: ubuntu-22.04` y al hacer `commit`, las páginas se sirvieron de forma automática.
 
 ### Resultado final
 

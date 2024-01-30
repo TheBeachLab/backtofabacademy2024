@@ -4,6 +4,7 @@ import sys
 
 # Step 0. Translation if first parameter is '-translate'
 if len(sys.argv) > 0 and sys.argv[1] == '--translate':
+    subprocess.run(['git', 'add', '--all']) # modified files need to be added, otherwise are not translated
     subprocess.run(['python3', 'translate-en.py'])
     subprocess.run(['python3', 'translate-de.py'])
 
@@ -23,7 +24,7 @@ for f in documentation_folder_files:
 # If there is a commit message (excluding -translate), then upload
 if len([arg for arg in sys.argv[1:] if arg != '--translate']) > 0:
     subprocess.run(['git', 'pull'])
-    subprocess.run(['git', 'add', '--all'])
+    subprocess.run(['git', 'add', '--all']) 
     commit_message = ' '.join(arg for arg in sys.argv[1:] if arg != '--translate')
     subprocess.run(['git', 'commit', '-m', commit_message])
     subprocess.run(['git', 'push'])
