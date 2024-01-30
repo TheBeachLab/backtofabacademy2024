@@ -10,10 +10,10 @@
  > Construye un sitio personal en el repositorio de la clase describiéndote a ti y tu proyecto final.
 
 
-## Reinventando la manera de documentar 
+## Reinventando mi proceso de documentar
 
 ### ¿macOS otra vez? ¿Cómo pudiste caer tan bajo?
-A ver como explico esto... Otro dia lo explico.
+A ver como explico ésto... Otro dia lo explico.
 
 ### Colemak?
 Nunca supe escribir a máquina, aunque siempre quise aprender. Mientras trabajaba en la organización de Fab15 en Egipto, me fijé en que Sherry Lassiter tiene una gran habilidad para escribir a máquina. En ese momento, me decidí a aprender. Hay una ventaja cuando aprendes a hacer una cosa desde cero, y es que no tienes ningún vicio. Así que yo no aprendí el sistema QWERTY, que está originalmente diseñado para que las antiguas máquinas de escribir no se atascaran. Yo aprendí con el sistema [Colemak](https://colemak.com). Colemak está diseñado para que las letras de mayor uso en idioma ingles esten en la fila central. Tengo un [teclado orto lineal](https://drop.com/buy/preonic-mechanical-keyboard) al que he puesto el layout colemak, y practico unos cinco minutos al día. Lo que más me gusta de la distribución Colemak es que la tecla de borrar está al lado izquierdo de la tecla `A`.
@@ -45,13 +45,13 @@ De esta manera, estoy generando archivos en markdown con la documentación en es
 
 He preguntado a César Garcia, de [La Hora Maker](https://www.youtube.com/lahoramaker), que me ayude a encontrar un modelo para la traducción. César me ha recomendado usar la API Whisper de OpenAI, que es capaz de traducir directamente desde el audio en español. De momento solo estoy interesado en la traducción, por lo que he creado un asistente en la API de OpenAI con estas instrucciones:
 
-> Translate the text from Spanish to English, Read the entire document to grasp context before translating it, take into account nuances and idioms of the Spanish language and translate them to the equivalents in English. The translation should not be literal, focus on maintaining the original meaning and provide a translation that makes sense in english. Ignore external URLs and code snippets in the translation; if encountering a markdown link, translate the text inside square brackets. Modify internal markdown link URLs to point to the appropriate english file, e.g., change w01-es.md to w01-en.md. Recognize and retain brands and names without translation. Use correct grammar and syntax in the final text. The style of the translation should be informal.
+> Translate the text from Spanish to English and German. If some pieces of text are in languages other than spanish, do not translate them. Translation Cues: Enclose each translation between these lines: “=== BEGIN ENGLISH TRANSLATION ===” and “=== END ENGLISH TRANSLATION ===” for English, and “=== BEGIN GERMAN TRANSLATION ===” and “=== END GERMAN TRANSLATION ===” for German. This will allow a script to easily identify and extract the translations. Before starting the translation, thoroughly analyze the entire document to understand the overall context. Identify and translate idioms and language nuances from Spanish to their English and German equivalents. Ensure the original meaning is maintained. Focus on conveying the original meaning rather than providing a word-for-word translation. Links: Translate the text inside square brackets of markdown links. If the URL of a link is another markdown file, modify the link URL to point to the appropriate language in English or German file. e.g., change w01-es.md to w01-en.md for the english translation or w01-de.md for the german translation. Ignore code snippets in the translation; Recognize and retain brands and names in their original form, do not translate these elements. Use the correct grammar and syntax for each respective translation in the final text. Adopt an informal style for the translation. Remember, each of these rules is essential and must be adhered to without exception. Failure to comply with any of these rules will result in an unacceptable translation.
 
-Hay otro modelo para el alemán con instrucciones análogas. Voy cambiando las instrucciones de vez en cuando para intentar mejorar la traducción. 
+Voy cambiando las instrucciones de vez en cuando para intentar mejorar la traducción. 
 
-Esta página que estas leyendo tiene unos 2000 tokens. Puedes saber cuantos tokens tiene un texto usando el [OpenAI Tokenizer](https://platform.openai.com/tokenizer). El coste de la traducción es aproximadamente 8 céntimos de dolar, teniendo en cuenta que cada 1000 tokens cuestan 0.01 USD el input y 0.03 USD el output. Puede parecer poco, pero el coste va a subir a medida que avanza Fab Academy.
+Esta página que estas leyendo tiene unos 2800 tokens. Puedes saber cuantos tokens tiene un texto usando el [OpenAI Tokenizer](https://platform.openai.com/tokenizer). El coste de la traducción a los dos idiomas de esta página es aproximadamente 20 céntimos de dolar, teniendo en cuenta que cada 1000 tokens cuestan 0.01 USD el input y 0.03 USD el output. Me parece bastante dinero, y además el coste va a subir a medida que avanza Fab Academy. Por ese motivo solo traduciré los contenidos cuando considere avanzado el trabajo.
 
-En mi lista de deseos voy a seguir buscando un modelo que sea local.
+En mi lista de deseos voy a seguir buscando un modelo que sea local. De ese modo podré traducir los contenidos más frecuentemente.
 
 ### Automatizando el proceso de traducción
 Al principio estuve usando la ventana de API de OpenAI. Ahora he automatizado este proceso usando python en la linea de comandos. Usando una mezcla de Bing Copilot y la versión  gratuita de ChatGPT pedí que use la libreria de OpenAI para hacer la traducción. Después de bastante tira y afloja (la IA no suele generar código correcto a la primera), acabé desquiciado e insultando a Bing.

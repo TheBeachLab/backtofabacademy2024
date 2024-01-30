@@ -35,11 +35,11 @@ Principios y prácticas, Gestión de Proyectos</h1>
 Construye un sitio personal en el repositorio de la clase describiéndote
 a ti y tu proyecto final.</p>
 </blockquote>
-<h2 id="reinventando-la-manera-de-documentar">Reinventando la manera de
-documentar</h2>
+<h2 id="reinventando-mi-proceso-de-documentar">Reinventando mi proceso
+de documentar</h2>
 <h3 id="macos-otra-vez-cómo-pudiste-caer-tan-bajo">¿macOS otra vez?
 ¿Cómo pudiste caer tan bajo?</h3>
-<p>A ver como explico esto… Otro dia lo explico.</p>
+<p>A ver como explico ésto… Otro dia lo explico.</p>
 <h3 id="colemak">Colemak?</h3>
 <p>Nunca supe escribir a máquina, aunque siempre quise aprender.
 Mientras trabajaba en la organización de Fab15 en Egipto, me fijé en que
@@ -123,30 +123,43 @@ desde el audio en español. De momento solo estoy interesado en la
 traducción, por lo que he creado un asistente en la API de OpenAI con
 estas instrucciones:</p>
 <blockquote>
-<p>Translate the text from Spanish to English, Read the entire document
-to grasp context before translating it, take into account nuances and
-idioms of the Spanish language and translate them to the equivalents in
-English. The translation should not be literal, focus on maintaining the
-original meaning and provide a translation that makes sense in english.
-Ignore external URLs and code snippets in the translation; if
-encountering a markdown link, translate the text inside square brackets.
-Modify internal markdown link URLs to point to the appropriate english
-file, e.g., change w01-es.md to w01-en.md. Recognize and retain brands
-and names without translation. Use correct grammar and syntax in the
-final text. The style of the translation should be informal.</p>
+<p>Translate the text from Spanish to English and German. If some pieces
+of text are in languages other than spanish, do not translate them.
+Translation Cues: Enclose each translation between these lines: “===
+BEGIN ENGLISH TRANSLATION ===” and “=== END ENGLISH TRANSLATION ===” for
+English, and “=== BEGIN GERMAN TRANSLATION ===” and “=== END GERMAN
+TRANSLATION ===” for German. This will allow a script to easily identify
+and extract the translations. Before starting the translation,
+thoroughly analyze the entire document to understand the overall
+context. Identify and translate idioms and language nuances from Spanish
+to their English and German equivalents. Ensure the original meaning is
+maintained. Focus on conveying the original meaning rather than
+providing a word-for-word translation. Links: Translate the text inside
+square brackets of markdown links. If the URL of a link is another
+markdown file, modify the link URL to point to the appropriate language
+in English or German file. e.g., change w01-es.md to w01-en.md for the
+english translation or w01-de.md for the german translation. Ignore code
+snippets in the translation; Recognize and retain brands and names in
+their original form, do not translate these elements. Use the correct
+grammar and syntax for each respective translation in the final text.
+Adopt an informal style for the translation. Remember, each of these
+rules is essential and must be adhered to without exception. Failure to
+comply with any of these rules will result in an unacceptable
+translation.</p>
 </blockquote>
-<p>Hay otro modelo para el alemán con instrucciones análogas. Voy
-cambiando las instrucciones de vez en cuando para intentar mejorar la
-traducción.</p>
-<p>Esta página que estas leyendo tiene unos 2000 tokens. Puedes saber
+<p>Voy cambiando las instrucciones de vez en cuando para intentar
+mejorar la traducción.</p>
+<p>Esta página que estas leyendo tiene unos 2800 tokens. Puedes saber
 cuantos tokens tiene un texto usando el <a
 href="https://platform.openai.com/tokenizer">OpenAI Tokenizer</a>. El
-coste de la traducción es aproximadamente 8 céntimos de dolar, teniendo
-en cuenta que cada 1000 tokens cuestan 0.01 USD el input y 0.03 USD el
-output. Puede parecer poco, pero el coste va a subir a medida que avanza
-Fab Academy.</p>
-<p>En mi lista de deseos voy a seguir buscando un modelo que sea
-local.</p>
+coste de la traducción a los dos idiomas de esta página es
+aproximadamente 20 céntimos de dolar, teniendo en cuenta que cada 1000
+tokens cuestan 0.01 USD el input y 0.03 USD el output. Me parece
+bastante dinero, y además el coste va a subir a medida que avanza Fab
+Academy. Por ese motivo solo traduciré los contenidos cuando considere
+avanzado el trabajo.</p>
+<p>En mi lista de deseos voy a seguir buscando un modelo que sea local.
+De ese modo podré traducir los contenidos más frecuentemente.</p>
 <h3 id="automatizando-el-proceso-de-traducción">Automatizando el proceso
 de traducción</h3>
 <p>Al principio estuve usando la ventana de API de OpenAI. Ahora he

@@ -1,5 +1,5 @@
-Hier gibt es nicht viel zu sehen...
+Nicht viel zu sehen hier...
 
 `¯\_( ͡❛ ͜ʖ ͡❛)_/¯ `
 
-[<< Zurück zum Anfang](index-de.md)  
+[<< Zurück zum Anfang](index-de.md)   

@@ -1,5 +1,5 @@
 Not much to see around here...
 
-`¯\_( ͡❛ ͜ʖ ͡❛)_/¯ `
+`¯\_( ͡❛ ͜ʖ ͡❛)_/¯`
 
-[<< Back to the beginning](index-en.md)  
+[<< Back to the beginning](index-en.md)
