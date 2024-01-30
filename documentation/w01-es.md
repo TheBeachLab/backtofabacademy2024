@@ -54,24 +54,24 @@ Esta página que estas leyendo tiene unos 2800 tokens. Puedes saber cuantos toke
 En mi lista de deseos voy a seguir buscando un modelo que sea local. De ese modo podré traducir los contenidos más frecuentemente. Por ahora he estado probando los modelos `Phi 2` y `Yarn Mistral` con resultados nefastos.
 
 ### Automatizando el proceso de traducción
-Al principio estuve usando la ventana de API de OpenAI. Ahora he automatizado este proceso usando python en la linea de comandos. Usando una mezcla de Bing Copilot y la versión  gratuita de ChatGPT pedí que use la libreria de OpenAI para hacer la traducción. Después de bastante tira y afloja (la IA no suele generar código correcto a la primera), acabé desquiciado e insultando a Bing.
+Al principio estuve usando la ventana de API de OpenAI. Ahora he automatizado este proceso usando python en la linea de comandos. Usando una mezcla de Bing Copilot y la versión  gratuita de ChatGPT, pedí que usara la libreria de OpenAI para hacer un programa que automatizase la traducción. Después de bastante tira y afloja (la IA no suele generar código correcto a la primera), acabé desquiciado e insultando a Bing.
 
 ![](img/w01/bing.webp)
 
 Al final tuve que leer la documentación de la API para hacer que el programa funcionase.
 
-Antes de traducir las páginas que he modificado debo añadirlas usando `git add`. Gracias a eso puedo limitar y controlar el coste. Una vez hecho esto simplemente ejecuto `python translate-en.py` y el script genera las páginas Markdown traducidas al ingles. Hago lo mismo para el alemán.
+Para evitar sobrecostes innecesarios, el script solo traduce los archivos markdown en español que he añadido usando `git add`. Gracias a eso puedo controlar el coste. Una vez hecho esto, simplemente ejecuto `python translate-en.py` y el script genera las páginas Markdown traducidas al ingles. Hago lo mismo para el alemán.
 
-Normalmente no hago este paso de forma aislada porque lo he incluido en el siguiente paso.
+En realidad, normalmente no hago la traducción de forma aislada porque lo he incluido en el siguiente paso.
 
 ### Automatizando la generación de HTML y subida de archivos
-La documentación de Fab Academy se tiene que presentar en forma de página web. Para generar las páginas HTML a partir de los archivos markdown he traducido a Python un script en lenguaje Bash que hice para el programa [FabZero](https://github.com/Academany/fabzero). El código convierte todos los archivos `.md` en `.html` usando [Pandoc](https://pandoc.org/index.html) con una [plantilla de estilo CSS](base.css). Durante la conversión, si encuentra un enlace a un documento de markdown, lo convierte en un enlace a su correspondiente documento HTML usando [este filtro LUA](../links-to-html.lua).
+La documentación de Fab Academy se tiene que presentar en forma de página web. Para generar las páginas HTML a partir de los archivos markdown he convertido a Python un script en lenguaje Bash que hice para el programa educativo [FabZero](https://github.com/Academany/fabzero). El código convierte todos los archivos `.md` en `.html` usando [Pandoc](https://pandoc.org/index.html) con una [plantilla de estilo CSS](base.css). Durante la conversión, si encuentra un enlace a un documento de markdown, lo convierte en un enlace a su correspondiente documento HTML usando [este filtro LUA](../links-to-html.lua).
 
-El script también automatiza opcionalmente la traducción del apartado anterior y la subida de archivos a Github. Así que cuando quiero subir mi progreso escribo:
+Opcionalmente, el script también automatiza la traducciones a ingles y alemán y la subida de archivos a Github. Así que cuando quiero subir mi progreso escribo:
 
 `python auto.py --translate updating week 1`
 
-Y de ese modo el script traduce las páginas si encuentra `--translate` entre los argumentos. También convierte todas las páginas a HTML y después lo sube todo a Github siempre que exista un mensaje, en este caso es `updating week 1`. Si no hay mensaje no realiza ninguno de los procesos relacionados con git. 
+Y de ese modo el script traduce las páginas si encuentra `--translate` entre los argumentos. También convierte todas las páginas a HTML y después lo sube todo a Github siempre que exista un mensaje, que en este caso es `updating week 1`. Si no hay mensaje, no realiza ninguno de los procesos relacionados con git. 
 
 Puedes ver el script aquí: [auto.py](../auto.py)
 
