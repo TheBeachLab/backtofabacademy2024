@@ -25,138 +25,168 @@
   <link rel="stylesheet" href="base.css" />
 </head>
 <body>
-<h1 id="week-1.-principles-and-practices-project-management">Week 1.
+<h1 id="week-1-principles-and-practices-project-management">Week 1:
 Principles and Practices, Project Management</h1>
 <blockquote>
 <p><em>Task A:</em></p>
 <p>Plan and sketch a potential final project.</p>
 <p><em>Task B:</em></p>
-<p>Complete a step-by-step Git tutorial.<br />
-Build a personal site in the class repository describing yourself and
-your final project.</p>
+<p>Work through a Git tutorial step by step. Build a personal site in
+the class repository describing you and your final project.</p>
 </blockquote>
 <h2 id="reinventing-the-way-of-documenting">Reinventing the Way of
 Documenting</h2>
-<h3 id="transcribing-multi-language-documentation-with-ai.">Transcribing
-Multi-Language Documentation with AI.</h3>
-<p>Let’s face it. I don’t have much free time and soon, I will have even
-less. Thus, I need a system to write documentation efficiently. I am
-going to try a new technique for documenting that will allow me to have
-the documentation in two (or more) languages. Currently, most of the
-text you are reading is being dictated in Spanish to my Mac
-computer.</p>
-<p><img src="img/w01/dictation.webp" /></p>
-<p>This saves me some time when writing. Some parts, like code, I have
-to type manually. I also have to manually make corrections, for example,
-when I include links.</p>
-<p>This way, I am generating markdown files with the documentation in
-Spanish. The filename includes coded the week I am in and the language
-of the documentation. In this case: <code>w01-es.md</code>. I am going
-to use artificial intelligence to translate the text from that file into
-English and save it as <code>w01-en.md</code>. The reason why I do not
-dictate directly in English is that my accent is so bad that the
-computer does not understand me. The AI model has to be capable of
-recognizing the Markdown syntax and be able to respect it. It will also
-have to manipulate the internal links, because links going to
-<code>w02-es.md</code> in the Spanish documentation have to be changed
-to <code>w02-en.md</code> in the English version of the documentation.
-As it is possible that the model will improve (or even change)
-throughout Fab Academy, I will keep the text in Spanish and re-run the
-translation of all files every week. I will only edit the original file
-in Spanish. I will not manually manipulate the generated translation.
-So, if what you read in English does not make sense, blame OpenAI or the
-model I am using.</p>
-<p>I asked César Garcia, from <a
-href="https://www.youtube.com/lahoramaker">La Hora Maker</a>, to help me
-find a model for the translation. César recommended using the OpenAI
-Whisper API, which is capable of translating directly from audio in
-Spanish. For now, I am only interested in the translation, so I’ve
-created an assistant in the OpenAI API with these instructions:</p>
-<blockquote>
-<p>You are an expert translator from Spanish to English. You know the
-nuances, and idioms of the Spanish language and translate them into the
-appropriate idioms of the English language. You ignore URLs in the
-translations. If you find a markdown link, you translate the text inside
-the square brackets if necessary. You will modify the internal URL of
-the markdown link so that it points to the appropriate markdown file in
-English. For example, you will change a markdown link that points to
-w01-es.md to make it point to w01-en.md. But remember, you will only do
-that for the markdown links. You can recognize brands and names so that
-you avoid translating them. You will also fix the original text by
-capitalizing titles and fixing any other syntax or grammar error before
-translating it. You deliver the answers in code rather than rendering
-the markdown in HTML, so that I can copy the markdown syntax.</p>
-</blockquote>
-<p>Translating this page you are reading has cost me about 2000 tokens.
-You can find out how many tokens the translation will cost you using the
-<a href="https://platform.openai.com/tokenizer">OpenAI
-Tokenizer</a>.</p>
-<p>At first, I was using the OpenAI API window. Now, I have automated
-this process using the command line. Using <a href="">Bing Copilot</a>,
-I have transformed a Bash script that I made for the <a
-href="">FabZero</a> program into Python and asked it to use the OpenAI
-library to perform the translation. After a bit of back and forth (AI
-does not usually generate correct code on the first attempt), Bing has
-generated a script that works. You can see the script here: <a
-href="auto.py">auto.py</a></p>
-<p>On my wish list, I will continue searching for a model that is local.
-I do not want to use a web service.</p>
-<h3 id="text-editor">Text Editor</h3>
-<p>My intention is to use only a text editor in the command line. I have
-some knowledge of vim and I want to deepen my learning. I like the idea
-of using only the keyboard to edit text. To avoid the temptation of
-using Visual Studio Code, I have uninstalled it. The vim text editor is
-quite spare by origin. Therefore, I am going to install some plugins.
-This is a list that I will expand over time:</p>
+<h3 id="macos-again-how-could-you-sink-so-low">macOS Again? How Could
+You Sink So Low?</h3>
+<p>Let me see how I can explain this… I’ll explain another day.</p>
+<h3 id="colemak">Colemak?</h3>
+<p>I never knew how to touch type, even though I always wanted to learn.
+While working on the organization of Fab15 in Egypt, I noticed that
+Sherry Lassiter has a great skill for typing. At that moment, I decided
+to learn. When you learn something from scratch, there’s an advantage -
+you have no bad habits. So, I didn’t learn the QWERTY system, which was
+originally designed to prevent old typewriters from jamming. I learned
+using the <a href="https://colemak.com">Colemak</a> system. Colemak is
+designed so that the most frequently used letters in the English
+language are on the home row. I have an <a
+href="https://drop.com/buy/preonic-mechanical-keyboard">ortho-linear
+keyboard</a> to which I’ve applied the Colemak layout, and I practice
+about five minutes a day. What I like most about the Colemak layout is
+that the backspace key is right next to the <code>A</code> key.</p>
+<p><img src="img/w01/preonic.webp" /></p>
+<p>I also have <a href="https://karabiner-elements.pqrs.org">software on
+macOS</a> that changes my keyboard layout to Colemak and also changes
+the function of the caps lock key to backspace.</p>
+<h3 id="my-text-editor">My Text Editor</h3>
+<p>My intention is to use only a command-line text editor. I have some
+knowledge of <code>vim</code> and I want to delve deeper. I like the
+idea of using only the keyboard to edit text. To avoid the temptation of
+using Visual Studio Code, I’ve uninstalled it. The vim text editor is
+quite basic by default. Therefore, I’m going to install some plugins.
+Here is a list that I will expand over time:</p>
 <ul>
 <li><a href="https://github.com/preservim/nerdtree">NERDTree</a> to have
-a sidebar with a list of files, so that I can quickly navigate between
+a sidebar with a file listing, so you can quickly navigate between
 files.</li>
 <li><a href="https://github.com/ryanoasis/vim-devicons">vim-devicons</a>
 to visualize files and folders with small graphic icons.</li>
-<li></li>
 </ul>
 <p>Other useful links:</p>
 <ul>
-<li><a href="https://vimawesome.com">VimAwesome</a></li>
+<li><a href="https://vimawesome.com">VimAwesome</a> is a page with
+hundreds of vim plugins.</li>
 <li><a href="https://github.com/TheBeachLab/myComputing">Fran’s My
 Computing repo</a> with some tricks, if you like using the command
 line.</li>
 </ul>
-<h3 id="keyboard-layout">Keyboard Layout</h3>
-<p>I never knew how to type, but I always wanted to learn. At Fab15 in
-Egypt, I noticed Sherry Lassiter, who has great typing skills. At that
-moment, I decided to learn. There is an advantage when you learn
-something late, and that is you have no bad habits. So, I did not learn
-the QWERTY system. I learned directly the <a
-href="https://colemak.com">Colemak</a> system. I have an <a
-href="https://drop.com/buy/preonic-mechanical-keyboard">ortholinear
-keyboard</a>, and I practice about five minutes a day. I also have a <a
-href="https://karabiner-elements.pqrs.org">software on macOS</a> that
-changes my keyboard layout and also changes the function of the caps
-lock key to backspace.</p>
+<h3
+id="multi-language-documentation-transcription-with-ai">Multi-language
+Documentation Transcription with AI</h3>
+<p>Let’s face it. I don’t have much free time and soon I’ll have even
+less. So, I need a system to write documentation quickly. I’m going to
+try a new technique for documenting that will allow me to have
+documentation in two (or more) languages. Right now, most of the text
+you’re reading is being dictated in Spanish to my Mac computer.</p>
+<p><img src="img/w01/dictation.webp" /></p>
+<p>This saves me some time when writing. Some parts, like the code, I
+have to write manually. I also have to make corrections manually, for
+example, when including links.</p>
+<p>This way, I’m generating markdown files with the documentation in
+Spanish. The file name contains the week I’m in and the documentation
+language. In this case: <code>w01-es.md</code>. I’m going to use an
+artificial intelligence to translate the text from that file into
+English and save it as <code>w01-en.md</code>. The reason why I’m not
+dictating directly in English is that my accent is so bad that the
+computer doesn’t understand me. The artificial intelligence model must
+be able to recognize Markdown syntax and respect it. It must also
+manipulate internal links because links that go <code>w02-es.md</code>
+in the Spanish documentation have to be changed to
+<code>w02-en.md</code> in the English version of the documentation. As
+the model may improve (or even change) throughout the Fab Academy, I’ll
+keep the text in Spanish and re-run the translation of all files every
+week. I will only edit the original file in Spanish. I will not manually
+manipulate the generated translation. So, if what you read in English
+doesn’t make sense, blame it on OpenAI or the model I’m using.</p>
+<p>I asked César Garcia, from <a
+href="https://www.youtube.com/lahoramaker">La Hora Maker</a>, to help me
+find a model for the translation. César recommended using the OpenAI
+Whisper API, which is capable of translating directly from Spanish
+audio. For now, I’m only interested in translation, so I created an
+assistant in the OpenAI API with these instructions:</p>
+<blockquote>
+<p>Translate the text from Spanish to English, considering nuances and
+idioms. Read the entire document to grasp context before translating,
+maintaining the original meaning even if not literal. Ignore URLs and
+code snippets in the translation; if encountering a markdown link,
+translate the text inside square brackets. Modify internal markdown link
+URLs to point to the appropriate English file, e.g., change w01-es.md to
+w01-en.md. Recognize and retain brands and names without translation.
+Capitalize titles in the final text. The style of the translation should
+be informal.</p>
+</blockquote>
+<p>I’m changing the instructions from time to time to try to improve the
+translation. This page you’re reading has about 1900 tokens. You can
+find out how many tokens a text has using the <a
+href="https://platform.openai.com/tokenizer">OpenAI Tokenizer</a>. The
+cost of the translation is approximately 8 cents, taking into account
+that each 1000 tokens cost 0.01 USD for the input and 0.03 USD for the
+output. It may seem little, but the cost will increase as Fab Academy
+progresses.</p>
+<p>On my wish list, I’m still looking for a local model.</p>
+<h3 id="automating-the-translation-process">Automating the Translation
+Process</h3>
+<p>At first, I was using the OpenAI API window. Now I’ve automated this
+process using python on the command line. Using a mix of Bing Copilot
+and the free version of ChatGPT I asked it to use the OpenAI library to
+do the translation. After quite a tug of war (AI doesn’t usually
+generate correct code on the first try), I ended up frustrated and
+insulting Bing.</p>
+<p><img src="img/w01/bing.webp" /></p>
+<p>In the end, I had to read the API documentation to make the program
+work.</p>
+<p>Before translating the pages I have modified I must add them using
+<code>git add</code>. Thanks to this, I can limit and control the cost.
+Once done, I simply run <code>python translate.py</code> and the script
+generates the translated Markdown pages.</p>
+<h3
+id="automating-the-generation-of-html-and-upload-of-files">Automating
+the Generation of HTML and Upload of Files</h3>
+<p>I translated a Bash script that I made for the <a
+href="https://github.com/Academany/fabzero">FabZero</a> program into
+Python. The code converts all <code>.md</code> files into
+<code>.html</code> using <a
+href="https://pandoc.org/index.html">Pandoc</a>. During conversion, if
+it finds a link to a markdown document, it converts it into a link to
+its corresponding HTML document using <a
+href="../links-to-html.lua">this LUA filter</a>. You can see the script
+here: <a href="../auto.py">auto.py</a></p>
+<p>The script also automates the git process. So, when I want to upload
+my progress I write:</p>
+<p><code>python auto.py updating week 1</code></p>
+<p>And it converts all the pages to HTML and then uploads everything to
+GitHub with the message <code>updating week 1</code>.</p>
 <h3 id="conclusion">Conclusion</h3>
-<p>All of this is making writing the documentation a bit slow at this
-moment, and a bit tedious. But I believe that with this system, the
-speed will drastically increase week by week and in the end, I will be
-able to document with great speed and level of detail.</p>
+<p>All this is making writing documentation a bit slow at the moment,
+and a bit tedious. But I believe that with this system, the speed is
+going to increase drastically week by week, and in the end, I’ll be able
+to document with great speed and level of detail.</p>
 <h2 id="git-that-bottomless-pit">Git: That Bottomless Pit</h2>
-<p>Someone might think that because I have been using git for 10 years I
-know everything there is to know about the version control system. Not
-at all. These are the things I want to improve during this Fab Academy
-cycle:</p>
+<p>Someone might think that because I’ve used git for 10 years, I know
+everything there is to know about the version control system. Not at
+all. Here are the things I want to improve during this cycle of Fab
+Academy:</p>
 <ul>
-<li>Curb my tendency to push changes to the main branch. Normally
-nothing happens but I have to get used to creating a new branch for each
-change.</li>
+<li>Suppress my tendency to upload changes to the main branch. Normally
+it’s not a problem, but I have to get used to creating a new branch for
+each change.</li>
 </ul>
 <p>(to be continued…)</p>
 <h2 id="project-management">Project Management</h2>
 <p>(to be continued…)</p>
 <h2 id="sketch-of-the-final-project">Sketch of the Final Project</h2>
 <p>Everything related to the final project has been moved to the file <a
-href="final-en.html">final-en</a>.</p>
-<p><a href="index-en.html">&lt;&lt; Back to the beginning</a><br />
-<a href="w02-en.html">Next Week &gt;&gt;</a></p>
+href="final-es.html">final-es</a>.</p>
+<p><a href="index-en.html">&lt;&lt; Back to beginning</a><br />
+<a href="w02-en.html">Next week &gt;&gt;</a></p>
 </body>
 </html>

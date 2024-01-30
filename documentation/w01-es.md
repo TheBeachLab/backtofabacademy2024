@@ -12,8 +12,29 @@
 
 ## Reinventando la manera de documentar 
 
-### Transcribiendo documentación multi-idioma con IA.
+### ¿macOS otra vez? ¿Cómo pudiste caer tan bajo?
+A ver como explico esto... Otro dia lo explico.
 
+### Colemak?
+Nunca supe escribir a máquina, aunque siempre quise aprender. Mientras trabajaba en la organización de Fab15 en Egipto, me fijé en que Sherry Lassiter tiene una gran habilidad para escribir a máquina. En ese momento, me decidí a aprender. Hay una ventaja cuando aprendes a hacer una cosa desde cero, y es que no tienes ningún vicio. Así que yo no aprendí el sistema QWERTY, que está originalmente diseñado para que las antiguas máquinas de escribir no se atascaran. Yo aprendí con el sistema [Colemak](https://colemak.com). Colemak está diseñado para que las letras de mayor uso en idioma ingles esten en la fila central. Tengo un [teclado orto lineal](https://drop.com/buy/preonic-mechanical-keyboard) al que he puesto el layout colemak, y practico unos cinco minutos al día. Lo que más me gusta de la distribución Colemak es que la tecla de borrar está al lado izquierdo de la tecla `A`.
+
+![](img/w01/preonic.webp)
+
+También tengo un [software en macOS](https://karabiner-elements.pqrs.org) que cambia mi distribución del teclado a Colemak y también cambia la función de la tecla bloqueo de mayúsculas por el borrado hacia atrás.
+
+### Mi editor de texto
+Mi intención es usar únicamente un editor de texto en la línea de comandos. Tengo algunas nociones de `vim` y quiero profundizar en el aprendizaje. Me gusta la idea de usar únicamente el teclado para editar texto. Para evitar la tentación de usar Visual Studio Code, lo he desinstalado. El editor de texto vim es bastante parco de origen. Por ello, voy a instalar algunos plugins. Esta es una lista que iré ampliando con el tiempo:
+
+- [NERDTree](https://github.com/preservim/nerdtree) para tener una barra lateral con el listado de ficheros, y así poder navegar rápidamente entre archivos.
+- [vim-devicons](https://github.com/ryanoasis/vim-devicons) para visualizar con un pequeño icono gráfico los archivos y las carpetas. 
+
+ Otros enlaces utiles:
+
+- [VimAwesome](https://vimawesome.com) es una página con cientos de plugins de vim
+- [Fran's My Computing repo](https://github.com/TheBeachLab/myComputing) con algunos trucos, si te gusta usar la línea de comandos.
+
+
+### Transcribiendo documentación multi-idioma con IA.
 Seamos realistas. No tengo mucho tiempo libre y, dentro de poco, tendré aún menos tiempo. Así que necesito un sistema para escribir la documentación de forma ágil. Voy a probar una nueva técnica para documentar que me va a permitir tener la documentación en dos (o más) idiomas. Ahora mismo, la mayor parte del texto que estas leyendo, esta siendo dictado en español a mi ordenador Mac.
 
 ![](img/w01/dictation.webp)
@@ -24,29 +45,29 @@ De esta manera, estoy generando archivos en markdown con la documentación en es
 
 He preguntado a César Garcia, de [La Hora Maker](https://www.youtube.com/lahoramaker), que me ayude a encontrar un modelo para la traducción. César me ha recomendado usar la API Whisper de OpenAI, que es capaz de traducir directamente desde el audio en español. De momento solo estoy interesado en la traducción, por lo que he creado un asistente en la API de OpenAI con estas instrucciones:
 
-> You are an expert translator from Spanish to English. You know the nuances, and idioms of the spanish language and translate them into the appropiate idioms of the english language. You ignore URLs in the translations. If you find markdown link, you translate the text inside the square brackets if necessary. You will modify the internal URL of the markdown link so that it points to the appropiate markdown file in english. For example you will change a markdown link that points to w01-es.md to make it point to w01-en.md. But remember, you will only do that for the markdown links. You can recognize brands and names so that you avoid translating them. You will also fix the original text by capitalizing titles and fixing any other syntax or grammar error before translating it. You deliver the answers in code rather than rendering the markdown in html,  so that I can copy the markdown syntax.
+> Translate the text from Spanish to English, considering nuances and idioms. Read the entire document to grasp context before translating, maintaining the original meaning even if not literal. Ignore URLs and code snippets in the translation; if encountering a markdown link, translate the text inside square brackets. Modify internal markdown link URLs to point to the appropriate English file, e.g., change w01-es.md to w01-en.md. Recognize and retain brands and names without translation. Capitalize titles in the final text. The style of the translation should be informal.
 
-Traducir esta página que estas leyendo me ha costado unos 2000 tokens. Puedes saber cuantos tokens te va a costar la traducción usando el [OpenAI Tokenizer](https://platform.openai.com/tokenizer)
+Voy cambiando las instrucciones de vez en cuando para intentar mejorar la traducción. Esta página que estas leyendo tiene unos 1900 tokens. Puedes saber cuantos tokens tiene un texto usando el [OpenAI Tokenizer](https://platform.openai.com/tokenizer). El coste de la traducción es aproximadamente 8 céntimos de dolar, teniendo en cuenta que cada 1000 tokens cuestan 0.01 USD el input y 0.03 USD el output. Puede parecer poco, pero el coste va a subir a medida que avanza Fab Academy.
 
-Al principio estuve usando la ventana de API de OpenAI. Ahora he automatizado este proceso usando la linea de comandos. Usando [Bing Copilot]() he transformado un script en lenguaje Bash que hice para el programa [FabZero]() en python y le he pedido que use la libreria de OpenAI para hacer la traducción. Después de un poco de tira y afloja (la IA no suele generar código correcto a la primera), Bing ha generado un script que funciona. Puedes ver el script aquí: [auto.py](auto.py)
+En mi lista de deseos voy a seguir buscando un modelo que sea local.
 
-En mi lista de deseos voy a seguir buscando un modelo que sea local. No quiero usar un servicio web.
+### Automatizando el proceso de traducción
+Al principio estuve usando la ventana de API de OpenAI. Ahora he automatizado este proceso usando python en la linea de comandos. Usando una mezcla de Bing Copilot y la versión  gratuita de ChatGPT pedí que use la libreria de OpenAI para hacer la traducción. Después de bastante tira y afloja (la IA no suele generar código correcto a la primera), acabé desquiciado e insultando a Bing.
 
-### Editor de Texto
-Mi intención es usar únicamente un editor de texto en la línea de comandos. Tengo algunas nociones de vim y quiero profundizar en el aprendizaje. Me gusta la idea de usar únicamente el teclado para editar texto. Para evitar la tentación de usar Visual Studio Code, lo he desinstalado. El editor de texto vim es bastante parco de origen. Por ello, voy a instalar algunos plugins. Esta es una lista que iré ampliando con el tiempo:
+![](img/w01/bing.webp)
 
-- [NERDTree](https://github.com/preservim/nerdtree) para tener una barra lateral con el listado de ficheros, y así poder navegar rápidamente entre archivos.
-- [vim-devicons](https://github.com/ryanoasis/vim-devicons) para visualizar con un pequeño icono gráfico los archivos y las carpetas.
-- 
+Al final tuve que leer la documentación de la API para hacer que el programa funcionase.
 
- Otros enlaces utiles:
+Antes de traducir las páginas que he modificado debo añadirlas usando `git add`. Gracias a eso puedo limitar y controlar el coste. Una vez hecho esto simplemente ejecuto `python translate.py` y el script genera las páginas Markdown traducidas.
 
-- [VimAwesome](https://vimawesome.com)
-- [Fran's My Computing repo](https://github.com/TheBeachLab/myComputing) con algunos trucos, si te gusta usar la línea de comandos.
+### Automatitando la generación de HTML y subida de archivos
+He traducido a Python un script en lenguaje Bash que hice para el programa [FabZero](https://github.com/Academany/fabzero). El código convierte todos los archivos `.md` en `.html` usando [Pandoc](https://pandoc.org/index.html). Durante la conversión, si encuentra un enlace a un documento de markdown, lo convierte en un enlace a su correspondiente documento HTML usando [este filtro LUA](../links-to-html.lua). Puedes ver el script aquí: [auto.py](../auto.py)
 
-### Distribución del Teclado
+El script también automatiza el proceso de git. Así que cuando quiero subir mi progreso escribo:
 
-Nunca supe escribir a máquina, pero siempre quise aprender. En Fab15 en Egipto, me fijé en Sherry Lassiter, tiene una gran habilidad para escribir a máquina. En ese momento, me decidí a aprender. Hay una ventaja cuando aprendes a hacer una cosa tarde, y es que no tienes ningún vicio. Así que yo no aprendí el sistema QWERTY. Yo aprendí directamente el sistema [Colemak](https://colemak.com). Tengo un [teclado orto lineal](https://drop.com/buy/preonic-mechanical-keyboard), y practico unos cinco minutos al día. También tengo un [software en macOS](https://karabiner-elements.pqrs.org) que cambia mi distribución del teclado y también cambia la función de la tecla bloqueo de mayúsculas por el borrado hacia atrás.
+`python auto.py updating week 1`
+
+Y eso convierte todas las páginas a HTML y después lo sube todo a Github con el mensaje `updating week 1`.
 
 ### Conclusión
 
