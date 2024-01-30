@@ -45,7 +45,7 @@ De esta manera, estoy generando archivos en markdown con la documentación en es
 
 He preguntado a César Garcia, de [La Hora Maker](https://www.youtube.com/lahoramaker), que me ayude a encontrar un modelo para la traducción. César me ha recomendado usar la API Whisper de OpenAI, que es capaz de traducir directamente desde el audio en español. De momento solo estoy interesado en la traducción, por lo que he creado un asistente en la API de OpenAI con estas instrucciones:
 
-> Translate the text from Spanish to English, considering nuances and idioms. Read the entire document to grasp context before translating, maintaining the original meaning even if not literal. Ignore URLs and code snippets in the translation; if encountering a markdown link, translate the text inside square brackets. Modify internal markdown link URLs to point to the appropriate English file, e.g., change w01-es.md to w01-en.md. Recognize and retain brands and names without translation. Capitalize titles in the final text. The style of the translation should be informal.
+> Translate the text from Spanish to English, Read the entire document to grasp context before translating it, take into account nuances and idioms of the Spanish language and translate them to the equivalents in English. The translation should not be literal, focus on maintaining the original meaning and provide a translation that makes sense in english. Ignore external URLs and code snippets in the translation; if encountering a markdown link, translate the text inside square brackets. Modify internal markdown link URLs to point to the appropriate english file, e.g., change w01-es.md to w01-en.md. Recognize and retain brands and names without translation. Use correct grammar and syntax in the final text. The style of the translation should be informal.
 
 Hay otro modelo para el alemán con instrucciones análogas. Voy cambiando las instrucciones de vez en cuando para intentar mejorar la traducción. 
 
@@ -62,22 +62,46 @@ Al final tuve que leer la documentación de la API para hacer que el programa fu
 
 Antes de traducir las páginas que he modificado debo añadirlas usando `git add`. Gracias a eso puedo limitar y controlar el coste. Una vez hecho esto simplemente ejecuto `python translate-en.py` y el script genera las páginas Markdown traducidas al ingles. Hago lo mismo para el alemán.
 
+Normalmente no hago este paso de forma aislada porque lo he incluido en el siguiente paso.
+
 ### Automatizando la generación de HTML y subida de archivos
-He traducido a Python un script en lenguaje Bash que hice para el programa [FabZero](https://github.com/Academany/fabzero). El código convierte todos los archivos `.md` en `.html` usando [Pandoc](https://pandoc.org/index.html). Durante la conversión, si encuentra un enlace a un documento de markdown, lo convierte en un enlace a su correspondiente documento HTML usando [este filtro LUA](../links-to-html.lua). Puedes ver el script aquí: [auto.py](../auto.py)
+La documentación de Fab Academy se tiene que presentar en forma de página web. Para generar las páginas HTML a partir de los archivos markdown he traducido a Python un script en lenguaje Bash que hice para el programa [FabZero](https://github.com/Academany/fabzero). El código convierte todos los archivos `.md` en `.html` usando [Pandoc](https://pandoc.org/index.html) con una [plantilla de estilo CSS](base.css). Durante la conversión, si encuentra un enlace a un documento de markdown, lo convierte en un enlace a su correspondiente documento HTML usando [este filtro LUA](../links-to-html.lua).
 
-El script también automatiza el proceso de git. Así que cuando quiero subir mi progreso escribo:
+El script también automatiza opcionalmente la traducción del apartado anterior y la subida de archivos a Github. Así que cuando quiero subir mi progreso escribo:
 
-`python auto.py updating week 1`
+`python auto.py --translate updating week 1`
 
-Y eso convierte todas las páginas a HTML y después lo sube todo a Github con el mensaje `updating week 1`.
+Y de ese modo el script traduce las páginas si encuentra `--translate` entre los argumentos. También convierte todas las páginas a HTML y después lo sube todo a Github siempre que exista un mensaje, en este caso es `updating week 1`. Si no hay mensaje no realiza ninguno de los procesos relacionados con git. 
+
+Puedes ver el script aquí: [auto.py](../auto.py)
+
+### Usando CD/CI en Github para servir las páginas web
+
+Veámos lo que tengo hasta ahora en Github:
+
+- Mis archivos `.md` originales en español
+- Los archivos `.md` traducidos por IA al inglés y alemán
+- Las páginas `.html` de todos los archivos `.md` generadas por Pandoc.
+
+Lo único que falta ahora es un servidor web. Y eso lo puedes hacer desde Github accediendo a los ajustes del repositorio.
+
+![](img/w01/cicd.webp)
+
+Esto creará un archivo en `.github/workflows/static.yml` en el cual solo tuve que modificar el runner, porque `runs-on: ubuntu-latest` no funcionaba. Lo cambié por `runs-on: ubuntu-22.04` y al hacer commit, las páginas se sirvieron de forma automática.
+
+### Resultado final
+
+[https://thebeachlab.github.io/backtofabacademy2024/](https://thebeachlab.github.io/backtofabacademy2024/)
 
 ### Conclusión
 Todo esto está haciendo que escribir la documentación sea un poco lento en este momento, y un poco tedioso. Pero creo que con éste sistema, la velocidad va a aumentar drásticamente semana a semana y al final seré capaz de documentar con gran velocidad y nivel de detalle.
 
-## Git: ese pozo sin fondo
+Además creo que este método va a ayudar a muchas personas que no pueden expresar su talento porque no dominan otro idioma. Es injusto que eso ocurra y espero que la AI ayude a la gente a demostrar lo valiosas que son.
+
+## Git: Ese pozo sin fondo
 Alguien podría pensar que como uso git desde hace 10 años ya se todo lo que hay que saber acerca del sistema de control de versiones. Para nada. Estas son las cosas que quiero mejorar durante este ciclo de Fab Academy:
 
-- Reprimir mi tendencia a subir los cambios a la rama principal. Normalmente no pasa nada pero tengo que acostumbrarme a crear una nueva rama para cada cambio.
+- Reprimir mi tendencia a subir los cambios a la rama principal. Normalmente no pasa nada, pero tengo que acostumbrarme a crear una nueva rama para cada cambio.
 
 (continuará...)
 

@@ -2,6 +2,11 @@ import os
 import subprocess
 import sys
 
+# Step 0. Translation if first parameter is '-translate'
+if len(sys.argv) > 0 and sys.argv[1] == '--translate':
+    subprocess.run(['python3', 'translate-en.py'])
+    subprocess.run(['python3', 'translate-de.py'])
+
 # Step 1. File conversion from README.md to index.html in the current folder
 subprocess.run(['pandoc', '-s', '-c', 'documentation/base.css', 'README.md', '-t', 'html', '-o', 'index.html', '--lua-filter=links-to-html.lua'], stderr=subprocess.DEVNULL)
 
@@ -15,11 +20,11 @@ for f in documentation_folder_files:
     subprocess.run(['pandoc', '-s', '-c', 'base.css', input_file, '-t', 'html', '-o', output_file, '--lua-filter=links-to-html.lua'], stderr=subprocess.DEVNULL)
 
 # Step 3. Uploading everything to GitHub
-# If there is a commit message, then upload
-if len(sys.argv) > 1:
+# If there is a commit message (excluding -translate), then upload
+if len([arg for arg in sys.argv[1:] if arg != '--translate']) > 0:
     subprocess.run(['git', 'pull'])
     subprocess.run(['git', 'add', '--all'])
-    commit_message = ' '.join(sys.argv[1:])
+    commit_message = ' '.join(arg for arg in sys.argv[1:] if arg != '--translate')
     subprocess.run(['git', 'commit', '-m', commit_message])
     subprocess.run(['git', 'push'])
 else:
