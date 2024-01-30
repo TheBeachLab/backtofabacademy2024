@@ -84,9 +84,8 @@ cientos de plugins de vim</li>
 Computing repo</a> con algunos trucos, si te gusta usar la línea de
 comandos.</li>
 </ul>
-<h3
-id="transcribiendo-documentación-multi-idioma-con-ia.">Transcribiendo
-documentación multi-idioma con IA.</h3>
+<h3 id="documentación-multi-idioma-con-ia.">Documentación multi-idioma
+con IA.</h3>
 <p>Seamos realistas. No tengo mucho tiempo libre y, dentro de poco,
 tendré aún menos tiempo. Así que necesito un sistema para escribir la
 documentación de forma ágil. Voy a probar una nueva técnica para
@@ -98,23 +97,24 @@ siendo dictado en español a mi ordenador Mac.</p>
 como el código, lo tengo que escribir manualmente. También tengo que
 hacer correcciones manualmente, por ejemplo, cuando incluyo enlaces.</p>
 <p>De esta manera, estoy generando archivos en markdown con la
-documentación en español. El nombre de archivo contiene codificado la
+documentación en español. El motivo por el cual no lo dicto directamente
+en inglés, es que mi acento es tan malo que el ordenador no me
+entiende.El nombre del archivo de cada semana contiene codificado la
 semana en la que me encuentro y el idioma de la documentación. En este
 caso: <code>w01-es.md</code>. Voy a usar una inteligencia artificial
-para traducir el texto de ese archivo al idioma inglés y que lo guarde
-como <code>w01-en.md</code>. El motivo por el cual no lo dicto
-directamente en inglés, es que mi acento es tan malo que el ordenador no
-me entiende. El modelo de inteligencia artificial tiene que ser capaz de
-reconocer la sintaxis de Markdown y ser capaz de respetarla. También
-tendrá que manipular los enlaces internos, porque los enlaces que vayan
-<code>w02-es.md</code> de la documentación en español tienen que
-cambiarse a <code>w02-en.md</code> en la versión inglesa de la
+para traducir el texto de ese archivo al idioma inglés y alemán y que lo
+guarde como <code>w01-en.md</code> y <code>w01-de.md</code>
+respectivamente. El modelo de inteligencia artificial tiene que ser
+capaz de reconocer la sintaxis de Markdown y ser capaz de respetarla.
+También tendrá que manipular los enlaces internos, porque los enlaces
+que vayan <code>w02-es.md</code> de la documentación en español tienen
+que cambiarse a <code>w02-en.md</code> en la versión inglesa de la
 documentación. Como es posible que el modelo vaya mejorando (o incluso
 cambie) a lo largo de fab academy, mantendré el texto en español y
 volveré a ejecutar la traducción de todos los archivos cada semana. Solo
 voy a editar el archivo original en español. No manipularé manualmente
-la traducción generada. Así que si lo que lees en ingles no tiene
-sentido, echale la culpa a OpenAI o al modelo que esté usando.</p>
+la traducción generada. Así que si lo que lees en ingles o aleman no
+tiene sentido, echale la culpa a OpenAI o al modelo que esté usando.</p>
 <p>He preguntado a César Garcia, de <a
 href="https://www.youtube.com/lahoramaker">La Hora Maker</a>, que me
 ayude a encontrar un modelo para la traducción. César me ha recomendado
@@ -133,9 +133,11 @@ w01-en.md. Recognize and retain brands and names without translation.
 Capitalize titles in the final text. The style of the translation should
 be informal.</p>
 </blockquote>
-<p>Voy cambiando las instrucciones de vez en cuando para intentar
-mejorar la traducción. Esta página que estas leyendo tiene unos 1900
-tokens. Puedes saber cuantos tokens tiene un texto usando el <a
+<p>Hay otro modelo para el alemán con instrucciones análogas. Voy
+cambiando las instrucciones de vez en cuando para intentar mejorar la
+traducción.</p>
+<p>Esta página que estas leyendo tiene unos 2000 tokens. Puedes saber
+cuantos tokens tiene un texto usando el <a
 href="https://platform.openai.com/tokenizer">OpenAI Tokenizer</a>. El
 coste de la traducción es aproximadamente 8 céntimos de dolar, teniendo
 en cuenta que cada 1000 tokens cuestan 0.01 USD el input y 0.03 USD el
@@ -156,10 +158,11 @@ desquiciado e insultando a Bing.</p>
 programa funcionase.</p>
 <p>Antes de traducir las páginas que he modificado debo añadirlas usando
 <code>git add</code>. Gracias a eso puedo limitar y controlar el coste.
-Una vez hecho esto simplemente ejecuto <code>python translate.py</code>
-y el script genera las páginas Markdown traducidas.</p>
+Una vez hecho esto simplemente ejecuto
+<code>python translate-en.py</code> y el script genera las páginas
+Markdown traducidas al ingles. Hago lo mismo para el alemán.</p>
 <h3
-id="automatitando-la-generación-de-html-y-subida-de-archivos">Automatitando
+id="automatizando-la-generación-de-html-y-subida-de-archivos">Automatizando
 la generación de HTML y subida de archivos</h3>
 <p>He traducido a Python un script en lenguaje Bash que hice para el
 programa <a href="https://github.com/Academany/fabzero">FabZero</a>. El
@@ -195,8 +198,8 @@ rama para cada cambio.</li>
 <h2 id="gestión-de-proyectos">Gestión de proyectos</h2>
 <p>(continuará…)</p>
 <h2 id="boceto-del-proyecto-final">Boceto del proyecto final</h2>
-<p>Todo lo relacionado con el proyecto final lo he movido al archivo <a
-href="final-es.html">final-es</a>.</p>
+<p>Todo lo relacionado con el proyecto final lo he movido a su <a
+href="final-es.html">correspondiente sección</a>.</p>
 <p><a href="index-es.html">&lt;&lt; Volver al inicio</a><br />
 <a href="w02-es.html">Semana siguiente &gt;&gt;</a></p>
 </body>
