@@ -65,7 +65,7 @@ def wait_on_run(run, thread):
 changed_files = subprocess.check_output(['git', 'diff', '--name-only', '--cached']).decode().splitlines()
 for f in changed_files:
     if f.endswith('-es.md') and os.path.exists(f):
-        filename = f.replace('-es.md', '-en.md')
+        filename = os.path.join('..', '..', 'en', 'md', f.replace('-es.md', '-en.md'))
         print(f"Translating {f} to {filename}")
         with open(f, 'r') as file:
             text = file.read()
