@@ -1,6 +1,6 @@
 # Abschlussprojekt
 
-![](img/memes/thinking.jpg)
+![](../../img/memes/thinking.jpg)
 
 ## Ursprung der Idee
 

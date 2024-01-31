@@ -1,5 +1,7 @@
--- links-to-html.lua
 function Link(el)
-    el.target = string.gsub(el.target, "%.md", ".html")
-    return el
-  end
+  --print("Original target:", el.target)
+  el.target = string.gsub(el.target, '/md/', '/html/')
+  el.target = string.gsub(el.target, "%.md", ".html")
+  --print("Modified target:", el.target)
+  return el
+end

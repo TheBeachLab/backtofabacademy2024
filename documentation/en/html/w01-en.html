@@ -22,7 +22,7 @@
     }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
-  <link rel="stylesheet" href="base.css" />
+  <link rel="stylesheet" href="../../../base.css" />
 </head>
 <body>
 <h1 id="week-1.-principles-and-practices-project-management">Week 1.
@@ -53,7 +53,7 @@ href="https://drop.com/buy/preonic-mechanical-keyboard">ortholinear
 keyboard</a> on which I’ve applied the Colemak layout, and I practice
 about five minutes a day. What I like most about Colemak is that the
 backspace key is to the left of the ‘A’ key.</p>
-<p><img src="img/w01/preonic.webp" /></p>
+<p><img src="../../img/w01/preonic.webp" /></p>
 <p>I also have <a href="https://karabiner-elements.pqrs.org">macOS
 software</a> that changes my keyboard layout to Colemak and also swaps
 the function of the caps lock key for backspace.</p>
@@ -86,7 +86,7 @@ have even less. So, I need a system to write documentation efficiently.
 I’m going to try a new technique for documenting that will allow me to
 have documentation in two (or more) languages. Right now, most of the
 text you’re reading is being dictated in Spanish to my Mac.</p>
-<p><img src="img/w01/dictation.webp" /></p>
+<p><img src="../../img/w01/dictation.webp" /></p>
 <p>This saves me some time when it comes to writing. Some parts, like
 the code, I have to type manually. I also have to make manual
 corrections, for example, when including links.</p>
@@ -151,7 +151,7 @@ and the free version of ChatGPT, I requested a program that automates
 translation using the OpenAI library. But it didn’t go well. After quite
 a bit of back and forth (AI doesn’t usually generate correct code on the
 first try), I ended up frustrated and insulting Bing.</p>
-<p><img src="img/w01/bing.webp" /></p>
+<p><img src="../../img/w01/bing.webp" /></p>
 <p>In the end, I had to read the API documentation to make the program
 work.</p>
 <p>To avoid unnecessary costs, the script only translates Spanish
@@ -170,10 +170,10 @@ Bash script that I made for the educational program <a
 href="https://github.com/Academany/fabzero">FabZero</a> to Python. The
 code converts all <code>.md</code> files into <code>.html</code> using
 <a href="https://pandoc.org/index.html">Pandoc</a> with a <a
-href="base.css">CSS style template</a>. During conversion, if it finds a
-link to a markdown document, it converts it into a link to its
-corresponding HTML document using <a href="../links-to-html.lua">this
-LUA filter</a>.</p>
+href="../../../base.css">CSS style template</a>. During conversion, if
+it finds a link to a markdown document, it converts it into a link to
+its corresponding HTML document using <a
+href="../../../links-to-html.lua">this LUA filter</a>.</p>
 <p>Optionally, the script also automates the translations to English and
 German and the uploading of files to Github. So, when I want to upload
 my progress I write:</p>
@@ -183,7 +183,8 @@ my progress I write:</p>
 to HTML and then uploads everything to Github as long as there’s a
 message, which in this case is <code>updating week 1</code>. If there’s
 no message, none of the processes related to git are performed.</p>
-<p>You can check the script here: <a href="../auto.py">auto.py</a></p>
+<p>You can check the script here: <a
+href="../../../auto.py">auto.py</a></p>
 <h3 id="using-cicd-in-github-to-serve-web-pages">Using CI/CD in Github
 to Serve Web Pages</h3>
 <p>Let’s see what I have so far on Github:</p>
@@ -195,7 +196,7 @@ by Pandoc.</li>
 </ul>
 <p>The only thing left now is a web server. And you can do that from
 Github by accessing the repository settings.</p>
-<p><img src="img/w01/cicd.webp" /></p>
+<p><img src="../../img/w01/cicd.webp" /></p>
 <p>This will create a file in <code>.github/workflows/static.yml</code>,
 which I only had to modify the <code>runner</code>, because
 <code>runs-on: ubuntu-latest</code> didn’t work. I changed it to
@@ -275,7 +276,7 @@ For example, I’ve created the <code>DOING NOW</code> box where only one
 note fits. For me, this is important because I can only do one thing at
 a time. I can also draw by hand and I like that. I will probably make a
 video explaining everything in more detail.</p>
-<p><img src="img/w01/freeform.webp" /></p>
+<p><img src="../../img/w01/freeform.webp" /></p>
 <h2 id="sketch-of-the-final-project">Sketch of the Final Project</h2>
 <p>Everything related to the final project has been moved to its <a
 href="final-en.html">corresponding section</a>.</p>

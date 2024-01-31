@@ -22,7 +22,7 @@
     }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
-  <link rel="stylesheet" href="base.css" />
+  <link rel="stylesheet" href="../../../base.css" />
 </head>
 <body>
 <h1 id="semana-1.-principios-y-prácticas-gestión-de-proyectos">Semana 1.
@@ -55,7 +55,7 @@ href="https://drop.com/buy/preonic-mechanical-keyboard">teclado orto
 lineal</a> al que he puesto el layout colemak, y practico unos cinco
 minutos al día. Lo que más me gusta de la distribución Colemak es que la
 tecla de borrar está al lado izquierdo de la tecla <code>A</code>.</p>
-<p><img src="img/w01/preonic.webp" /></p>
+<p><img src="../../img/w01/preonic.webp" /></p>
 <p>También tengo un <a
 href="https://karabiner-elements.pqrs.org">software en macOS</a> que
 cambia mi distribución del teclado a Colemak y también cambia la función
@@ -93,7 +93,7 @@ de forma ágil. Voy a probar una nueva técnica para documentar que me va
 a permitir tener la documentación en dos (o más) idiomas. Ahora mismo,
 la mayor parte del texto que estas leyendo, esta siendo dictado en
 español a mi ordenador Mac.</p>
-<p><img src="img/w01/dictation.webp" /></p>
+<p><img src="../../img/w01/dictation.webp" /></p>
 <p>Esto me ahorra algo tiempo a la hora de escribir. Algunas partes,
 como el código, lo tengo que escribir manualmente. También tengo que
 hacer correcciones manualmente, por ejemplo, cuando incluyo enlaces.</p>
@@ -164,7 +164,7 @@ programa que automatizase la traducción usando la libreria de OpenAI.
 Pero no salió bien. Después de bastante tira y afloja (la IA no suele
 generar código correcto a la primera), acabé desquiciado e insultando a
 Bing.</p>
-<p><img src="img/w01/bing.webp" /></p>
+<p><img src="../../img/w01/bing.webp" /></p>
 <p>Al final tuve que leer la documentación de la API para hacer que el
 programa funcionase.</p>
 <p>Para evitar sobrecostes innecesarios, el script solo traduce los
@@ -184,10 +184,10 @@ el programa educativo <a
 href="https://github.com/Academany/fabzero">FabZero</a>. El código
 convierte todos los archivos <code>.md</code> en <code>.html</code>
 usando <a href="https://pandoc.org/index.html">Pandoc</a> con una <a
-href="base.css">plantilla de estilo CSS</a>. Durante la conversión, si
-encuentra un enlace a un documento de markdown, lo convierte en un
-enlace a su correspondiente documento HTML usando <a
-href="../links-to-html.lua">este filtro LUA</a>.</p>
+href="../../../base.css">plantilla de estilo CSS</a>. Durante la
+conversión, si encuentra un enlace a un documento de markdown, lo
+convierte en un enlace a su correspondiente documento HTML usando <a
+href="../../../links-to-html.lua">este filtro LUA</a>.</p>
 <p>Opcionalmente, el script también automatiza la traducciones a ingles
 y alemán y la subida de archivos a Github. Así que cuando quiero subir
 mi progreso escribo:</p>
@@ -197,7 +197,8 @@ mi progreso escribo:</p>
 las páginas a HTML y después lo sube todo a Github siempre que exista un
 mensaje, que en este caso es <code>updating week 1</code>. Si no hay
 mensaje, no realiza ninguno de los procesos relacionados con git.</p>
-<p>Puedes analizar el script aquí: <a href="../auto.py">auto.py</a></p>
+<p>Puedes analizar el script aquí: <a
+href="../../../auto.py">auto.py</a></p>
 <h3 id="usando-cdci-en-github-para-servir-las-páginas-web">Usando CD/CI
 en Github para servir las páginas web</h3>
 <p>Veámos lo que tengo hasta ahora en Github:</p>
@@ -210,7 +211,7 @@ alemán</li>
 </ul>
 <p>Lo único que falta ahora es un servidor web. Y eso lo puedes hacer
 desde Github accediendo a los ajustes del repositorio.</p>
-<p><img src="img/w01/cicd.webp" /></p>
+<p><img src="../../img/w01/cicd.webp" /></p>
 <p>Esto creará un archivo en <code>.github/workflows/static.yml</code>,
 del cual solo tuve que modificar el <code>runner</code>, porque
 <code>runs-on: ubuntu-latest</code> no funcionaba. Lo cambié por
@@ -292,7 +293,7 @@ sistema. Por ejemplo he creado la casilla <code>DOING NOW</code> donde
 solo cabe una nota. Para mi eso es importante, porque yo solo puedo
 hacer una cosa a la vez. Tambien puedo dibujar a mano y eso me gusta.
 Probablemente haré un video explicandolo todo con más detalle.</p>
-<p><img src="img/w01/freeform.webp" /></p>
+<p><img src="../../img/w01/freeform.webp" /></p>
 <h2 id="boceto-del-proyecto-final">Boceto del proyecto final</h2>
 <p>Todo lo relacionado con el proyecto final lo he movido a su <a
 href="final-es.html">correspondiente sección</a>.</p>

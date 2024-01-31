@@ -18,7 +18,7 @@ Let's see how I can explain this... I'll explain another day.
 ### My Keyboard is Weird
 I never knew how to type properly, although I always wanted to learn. While working at the Fab15 organization in Egypt, I noticed that Sherry Lassiter types incredibly fast. That was the moment I decided to learn. There's an advantage when you learn something from scratch; you don't have any bad habits. So, I didn't learn the QWERTY system, which was originally designed to prevent typewriters from jamming. Instead, I learned the [Colemak](https://colemak.com) system. Colemak is designed so that the most used letters in the English language are on the home row. I have an [ortholinear keyboard](https://drop.com/buy/preonic-mechanical-keyboard) on which I've applied the Colemak layout, and I practice about five minutes a day. What I like most about Colemak is that the backspace key is to the left of the 'A' key.
 
-![](img/w01/preonic.webp)
+![](../../img/w01/preonic.webp)
 
 I also have [macOS software](https://karabiner-elements.pqrs.org) that changes my keyboard layout to Colemak and also swaps the function of the caps lock key for backspace.
 
@@ -36,7 +36,7 @@ My intention is to use only a command-line text editor. I know a bit about `vim`
 ### Multi-language Documentation with AI.
 I need to be realistic. I don't have much free time, and soon I'll have even less. So, I need a system to write documentation efficiently. I'm going to try a new technique for documenting that will allow me to have documentation in two (or more) languages. Right now, most of the text you're reading is being dictated in Spanish to my Mac.
 
-![](img/w01/dictation.webp)
+![](../../img/w01/dictation.webp)
 
 This saves me some time when it comes to writing. Some parts, like the code, I have to type manually. I also have to make manual corrections, for example, when including links.
 
@@ -55,7 +55,7 @@ In my wishlist, I'll keep looking for a local model. That way, I could translate
 ### Automating the Translation Process
 At first, I was using the OpenAI API window. Now I've automated this process using Python on the command line. Using a mix of Bing Copilot and the free version of ChatGPT, I requested a program that automates translation using the OpenAI library. But it didn't go well. After quite a bit of back and forth (AI doesn't usually generate correct code on the first try), I ended up frustrated and insulting Bing.
 
-![](img/w01/bing.webp)
+![](../../img/w01/bing.webp)
 
 In the end, I had to read the API documentation to make the program work.
 
@@ -64,7 +64,7 @@ To avoid unnecessary costs, the script only translates Spanish Markdown files th
 In reality, I usually don't do the translation separately because I've included it in the next step.
 
 ### Automating the Generation of HTML and Uploading Files
-Fab Academy documentation must be presented in the form of a web page. To generate HTML pages from the markdown files, I've converted a Bash script that I made for the educational program [FabZero](https://github.com/Academany/fabzero) to Python. The code converts all `.md` files into `.html` using [Pandoc](https://pandoc.org/index.html) with a [CSS style template](base.css). During conversion, if it finds a link to a markdown document, it converts it into a link to its corresponding HTML document using [this LUA filter](../links-to-html.lua).
+Fab Academy documentation must be presented in the form of a web page. To generate HTML pages from the markdown files, I've converted a Bash script that I made for the educational program [FabZero](https://github.com/Academany/fabzero) to Python. The code converts all `.md` files into `.html` using [Pandoc](https://pandoc.org/index.html) with a [CSS style template](../../../base.css). During conversion, if it finds a link to a markdown document, it converts it into a link to its corresponding HTML document using [this LUA filter](../../../links-to-html.lua).
 
 Optionally, the script also automates the translations to English and German and the uploading of files to Github. So, when I want to upload my progress I write:
 
@@ -72,7 +72,7 @@ Optionally, the script also automates the translations to English and German and
 
 And that way, the script translates the pages if it finds `--translate` among the arguments. It also converts all pages to HTML and then uploads everything to Github as long as there's a message, which in this case is `updating week 1`. If there's no message, none of the processes related to git are performed.
 
-You can check the script here: [auto.py](../auto.py)
+You can check the script here: [auto.py](../../../auto.py)
 
 ### Using CI/CD in Github to Serve Web Pages
 
@@ -84,7 +84,7 @@ Let's see what I have so far on Github:
 
 The only thing left now is a web server. And you can do that from Github by accessing the repository settings.
 
-![](img/w01/cicd.webp)
+![](../../img/w01/cicd.webp)
 
 This will create a file in `.github/workflows/static.yml`, which I only had to modify the `runner`, because `runs-on: ubuntu-latest` didn't work. I changed it to `runs-on: ubuntu-22.04` and upon committing, the pages were automatically served.
 
@@ -123,7 +123,7 @@ As for tools to help you manage, I've tried a few. So, I'll start with the ones 
 
 Now I'm using a combination of plain text for long-term goals, reminders for medium-term goals, and Apple's Freeform for tasks I'm going to do today. Freeform is an infinite canvas program, similar to [Miro](https://miro.com). It has the advantages of sticky notes without their drawbacks. I can customize it and create my own system. For example, I've created the `DOING NOW` box where only one note fits. For me, this is important because I can only do one thing at a time. I can also draw by hand and I like that. I will probably make a video explaining everything in more detail.
 
-![](img/w01/freeform.webp)
+![](../../img/w01/freeform.webp)
 
 ## Sketch of the Final Project
 Everything related to the final project has been moved to its [corresponding section](final-en.md).

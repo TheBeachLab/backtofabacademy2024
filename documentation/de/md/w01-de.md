@@ -18,7 +18,7 @@ Mal sehen, wie ich das erkläre... Ein andermal.
 ### Meine Tastatur ist komisch
 Ich habe nie gelernt, auf einer Maschine zu schreiben, obwohl ich es immer wollte. Während ich bei der Organisation von Fab15 in Ägypten war, ist mir aufgefallen, dass Sherry Lassiter sehr geschickt im Maschinenschreiben ist. In jenem Moment entschied ich mich, es zu lernen. Wenn man etwas von Grund auf neu lernt, hat man den Vorteil, keine schlechten Angewohnheiten zu haben. Also habe ich nicht das QWERTY-System gelernt, welches ursprünglich entworfen wurde, um das Verklemmen der Tasten bei alten Schreibmaschinen zu verhindern. Ich habe mit dem [Colemak](https://colemak.com)-System gelernt. Colemak ist so entworfen, dass die am häufigsten genutzten Buchstaben im Englischen in der mittleren Reihe liegen. Ich habe eine [ortho-lineare Tastatur](https://drop.com/buy/preonic-mechanical-keyboard), auf der ich das Colemak-Layout habe, und ich übe etwa fünf Minuten pro Tag. Was mir am Colemak-Layout am besten gefällt, ist, dass die Rücktaste neben der Taste `A` liegt.
 
-![](img/w01/preonic.webp)
+![](../../img/w01/preonic.webp)
 
 Außerdem habe ich eine [Software auf macOS](https://karabiner-elements.pqrs.org), die meine Tastaturbelegung auf Colemak umstellt und die Funktion der Caps-Lock-Taste zu einem Backspace macht.
 
@@ -36,7 +36,7 @@ Ich beabsichtige, nur einen Texteditor in der Kommandozeile zu verwenden. Ich ke
 ### Mehrsprachige Dokumentation mit KI.
 Ich muss realistisch sein. Ich habe nicht viel Freizeit und bald werde ich noch weniger haben. Deshalb benötige ich ein System, mit dem ich die Dokumentation flink verfassen kann. Ich werde eine neue Technik für die Dokumentation ausprobieren, die es mir erlaubt, die Dokumentation in zwei (oder mehr) Sprachen zu haben. Im Moment wird der Großteil des Textes, den du liest, auf Spanisch in meinen Mac diktiert.
 
-![](img/w01/dictation.webp)
+![](../../img/w01/dictation.webp)
 
 Das spart mir etwas Zeit beim Schreiben. Einige Teile, wie Code, muss ich manuell eingeben. Auch Korrekturen muss ich manuell machen, zum Beispiel, wenn ich Links einfüge.
 
@@ -55,7 +55,7 @@ Auf meiner Wunschliste steht, ein lokales Modell zu finden. Auf diese Weise kön
 ### Automatisierung des Übersetzungsprozesses
 Anfangs habe ich das API-Fenster von OpenAI benutzt. Jetzt habe ich diesen Prozess automatisiert, indem ich Python in der Kommandozeile nutze. Mit einer Mischung aus Bing Copilot und der kostenlosen Version von ChatGPT bat ich um ein Programm, das die Übersetzung mit der OpenAI-Bibliothek automatisiert. Aber das hat nicht gut geklappt. Nach einigem Hin und Her (die KI generiert selten beim ersten Mal korrekten Code) wurde ich frustriert und beschimpfte Bing.
 
-![](img/w01/bing.webp)
+![](../../img/w01/bing.webp)
 
 Letztendlich musste ich die Dokumentation der API lesen, um das Programm zum Laufen zu bringen.
 
@@ -64,7 +64,7 @@ Um unnötige Kosten zu vermeiden, übersetzt das Skript nur die Markdown-Dateien
 Normalerweise führe ich die Übersetzung nicht isoliert durch, da ich sie in den nächsten Schritt aufgenommen habe.
 
 ### Automatisierung der HTML-Erstellung und des Datei-Uploads
-Die Dokumentation des Fab Academy muss in Form einer Webseite präsentiert werden. Um die HTML-Seiten aus den Markdown-Dateien zu erstellen, habe ich ein Skript in Bash, das ich für das Bildungsprogramm [FabZero](https://github.com/Academany/fabzero) erstellt hatte, in Python umgewandelt. Der Code konvertiert alle `.md`-Dateien in `.html` unter Nutzung von [Pandoc](https://pandoc.org/index.html) mit einer [CSS-Stilvorlage](base.css). Während der Konvertierung wird, wenn ein Link zu einem Markdown-Dokument gefunden wird, dieser in einen Link zu dem entsprechenden HTML-Dokument umgewandelt, indem [dieser LUA-Filter](../links-to-html.lua) verwendet wird.
+Die Dokumentation des Fab Academy muss in Form einer Webseite präsentiert werden. Um die HTML-Seiten aus den Markdown-Dateien zu erstellen, habe ich ein Skript in Bash, das ich für das Bildungsprogramm [FabZero](https://github.com/Academany/fabzero) erstellt hatte, in Python umgewandelt. Der Code konvertiert alle `.md`-Dateien in `.html` unter Nutzung von [Pandoc](https://pandoc.org/index.html) mit einer [CSS-Stilvorlage](../../../base.css). Während der Konvertierung wird, wenn ein Link zu einem Markdown-Dokument gefunden wird, dieser in einen Link zu dem entsprechenden HTML-Dokument umgewandelt, indem [dieser LUA-Filter](../../../links-to-html.lua) verwendet wird.
 
 Optional automatisiert das Skript auch die Übersetzungen ins Englische und Deutsche und das Hochladen der Dateien auf Github. Wenn ich also meinen Fortschritt hochladen möchte, schreibe ich:
 
@@ -72,7 +72,7 @@ Optional automatisiert das Skript auch die Übersetzungen ins Englische und Deut
 
 Auf diese Weise übersetzt das Skript die Seiten ins Englische und Deutsche, falls `--translate` unter den Argumenten gefunden wird. Außerdem konvertiert es alle Seiten nach HTML und lädt alles auf Github hoch, solange eine Nachricht vorhanden ist, in diesem Fall `updating week 1`. Gibt es keine Nachricht, führt es keinen der mit git verbundenen Prozesse durch. 
 
-Das Skript kannst du hier einsehen: [auto.py](../auto.py)
+Das Skript kannst du hier einsehen: [auto.py](../../../auto.py)
 
 ### Nutzung von CD/CI in Github für das Hosting der Webseiten
 
@@ -84,7 +84,7 @@ Schauen wir, was ich bisher auf Github habe:
 
 Das Einzige, was jetzt noch fehlt, ist ein Webserver. Und das kannst du über Github machen, indem du zu den Einstellungen des Repositories gehst.
 
-![](img/w01/cicd.webp)
+![](../../img/w01/cicd.webp)
 
 Dies wird eine Datei unter `.github/workflows/static.yml` erstellen, wo ich nur den `runner` ändern musste, da `runs-on: ubuntu-latest` nicht funktionierte. Ich habe es zu `runs-on: ubuntu-22.04` geändert und beim `commit` wurden die Seiten automatisch gehostet.
 
@@ -123,7 +123,10 @@ Was Werkzeuge zur Unterstützung angeht, habe ich einige ausprobiert. Also fange
 
 Momentan nutze ich eine Kombination aus Klartext für langfristige Ziele, Erinnerungen für mittelfristige Ziele und Freeform von Apple für die Aufgaben, die ich heute erledigen werde. Freeform ist ein Programm mit einem unendlichen Zeichenbrett, ähnlich wie [Miro](https://miro.com). Es hat die Vorteile der Post-it-Notizen ohne deren Nachteile. Ich kann es anpassen und mein eigenes System schaffen. Zum Beispiel habe ich das Feld `DOING NOW` erstellt, in das nur eine Notiz passt. Für mich ist das wichtig, weil ich nur eine Sache gleichzeitig machen kann. Außerdem kann ich mit der Hand zeichnen, und das gefällt mir. Wahrscheinlich werde ich ein Video machen, in dem ich alles detaillierter erkläre.
 
-![](img/w01/freeform.webp)
+![](../../img/w01/freeform.webp)
 
 ## Skizze des Abschlussprojekts
-Alles bezüglich des Abschlussprojekts habe ich in den [entsprechenden Abschnitt
+Alles bezüglich des Abschlussprojekts habe ich in den [entsprechenden Abschnitt](final-de.md) verschoben.
+
+[<< Zurück zum Anfang](index-de.md)   
+[Nächste Woche >>](w02-de.md)

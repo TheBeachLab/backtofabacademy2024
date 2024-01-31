@@ -18,7 +18,7 @@ A ver como explico ésto... Otro dia lo explico.
 ### Mi teclado es raro
 Nunca supe escribir a máquina, aunque siempre quise aprender. Mientras trabajaba en la organización de Fab15 en Egipto, me fijé en que Sherry Lassiter tiene una gran habilidad para escribir a máquina. En ese momento, me decidí a aprender. Hay una ventaja cuando aprendes a hacer una cosa desde cero, y es que no tienes ningún vicio. Así que yo no aprendí el sistema QWERTY, que está originalmente diseñado para que las antiguas máquinas de escribir no se atascaran. Yo aprendí con el sistema [Colemak](https://colemak.com). Colemak está diseñado para que las letras de mayor uso en idioma ingles esten en la fila central. Tengo un [teclado orto lineal](https://drop.com/buy/preonic-mechanical-keyboard) al que he puesto el layout colemak, y practico unos cinco minutos al día. Lo que más me gusta de la distribución Colemak es que la tecla de borrar está al lado izquierdo de la tecla `A`.
 
-![](img/w01/preonic.webp)
+![](../../img/w01/preonic.webp)
 
 También tengo un [software en macOS](https://karabiner-elements.pqrs.org) que cambia mi distribución del teclado a Colemak y también cambia la función de la tecla bloqueo de mayúsculas por el borrado hacia atrás.
 
@@ -36,7 +36,7 @@ Mi intención es usar únicamente un editor de texto en la línea de comandos. T
 ### Documentación multi-idioma con IA.
 Debo ser realista. No tengo mucho tiempo libre y, dentro de poco, aún tendré menos. Así que necesito un sistema para escribir la documentación de forma ágil. Voy a probar una nueva técnica para documentar que me va a permitir tener la documentación en dos (o más) idiomas. Ahora mismo, la mayor parte del texto que estas leyendo, esta siendo dictado en español a mi ordenador Mac.
 
-![](img/w01/dictation.webp)
+![](../../img/w01/dictation.webp)
 
 Esto me ahorra algo tiempo a la hora de escribir. Algunas partes, como el código, lo tengo que escribir manualmente. También tengo que hacer correcciones manualmente, por ejemplo, cuando incluyo enlaces.
 
@@ -55,7 +55,7 @@ En mi lista de deseos voy a seguir buscando un modelo que sea local. De ese modo
 ### Automatizando el proceso de traducción
 Al principio estuve usando la ventana de API de OpenAI. Ahora he automatizado este proceso usando python en la linea de comandos. Usando una mezcla de Bing Copilot y la versión gratuita de ChatGPT, pedí un programa que automatizase la traducción usando la libreria de OpenAI. Pero no salió bien. Después de bastante tira y afloja (la IA no suele generar código correcto a la primera), acabé desquiciado e insultando a Bing.
 
-![](img/w01/bing.webp)
+![](../../img/w01/bing.webp)
 
 Al final tuve que leer la documentación de la API para hacer que el programa funcionase.
 
@@ -64,7 +64,7 @@ Para evitar sobrecostes innecesarios, el script solo traduce los archivos Markdo
 En realidad, normalmente no hago la traducción de forma aislada porque lo he incluido en el siguiente paso.
 
 ### Automatizando la generación de HTML y subida de archivos
-La documentación de Fab Academy se tiene que presentar en forma de página web. Para generar las páginas HTML a partir de los archivos markdown he convertido a Python un script en lenguaje Bash que hice para el programa educativo [FabZero](https://github.com/Academany/fabzero). El código convierte todos los archivos `.md` en `.html` usando [Pandoc](https://pandoc.org/index.html) con una [plantilla de estilo CSS](base.css). Durante la conversión, si encuentra un enlace a un documento de markdown, lo convierte en un enlace a su correspondiente documento HTML usando [este filtro LUA](../links-to-html.lua).
+La documentación de Fab Academy se tiene que presentar en forma de página web. Para generar las páginas HTML a partir de los archivos markdown he convertido a Python un script en lenguaje Bash que hice para el programa educativo [FabZero](https://github.com/Academany/fabzero). El código convierte todos los archivos `.md` en `.html` usando [Pandoc](https://pandoc.org/index.html) con una [plantilla de estilo CSS](../../../base.css). Durante la conversión, si encuentra un enlace a un documento de markdown, lo convierte en un enlace a su correspondiente documento HTML usando [este filtro LUA](../../../links-to-html.lua).
 
 Opcionalmente, el script también automatiza la traducciones a ingles y alemán y la subida de archivos a Github. Así que cuando quiero subir mi progreso escribo:
 
@@ -72,7 +72,7 @@ Opcionalmente, el script también automatiza la traducciones a ingles y alemán 
 
 Y de ese modo el script traduce las páginas si encuentra `--translate` entre los argumentos. También convierte todas las páginas a HTML y después lo sube todo a Github siempre que exista un mensaje, que en este caso es `updating week 1`. Si no hay mensaje, no realiza ninguno de los procesos relacionados con git. 
 
-Puedes analizar el script aquí: [auto.py](../auto.py)
+Puedes analizar el script aquí: [auto.py](../../../auto.py)
 
 ### Usando CD/CI en Github para servir las páginas web
 
@@ -84,7 +84,7 @@ Veámos lo que tengo hasta ahora en Github:
 
 Lo único que falta ahora es un servidor web. Y eso lo puedes hacer desde Github accediendo a los ajustes del repositorio.
 
-![](img/w01/cicd.webp)
+![](../../img/w01/cicd.webp)
 
 Esto creará un archivo en `.github/workflows/static.yml`, del cual solo tuve que modificar el `runner`, porque `runs-on: ubuntu-latest` no funcionaba. Lo cambié por `runs-on: ubuntu-22.04` y al hacer `commit`, las páginas se sirvieron de forma automática.
 
@@ -123,7 +123,7 @@ En cuanto a herramientas para ayudarte a gestionar, he probado unas cuantas. As�
 
 Ahora estoy usando una combinacion de texto plano para objetivos a largo plazo, recordatorios para objetivos a medio plazo y Freeform de Apple para las tareas que voy a hacer en el dia de hoy. Freeform es un programa con lienzo infinito, parecido a [Miro](https://miro.com). Tiene las ventajas de las notas Post-it sin sus inconvenientes. Puedo personalizarlo y crear mi propio sistema. Por ejemplo he creado la casilla `DOING NOW` donde solo cabe una nota. Para mi eso es importante, porque yo solo puedo hacer una cosa a la vez. Tambien puedo dibujar a mano y eso me gusta. Probablemente haré un video explicandolo todo con más detalle.
 
-![](img/w01/freeform.webp)
+![](../../img/w01/freeform.webp)
 
 ## Boceto del proyecto final
 Todo lo relacionado con el proyecto final lo he movido a su [correspondiente sección](final-es.md).

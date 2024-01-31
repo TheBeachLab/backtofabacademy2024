@@ -22,7 +22,7 @@
     }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
-  <link rel="stylesheet" href="base.css" />
+  <link rel="stylesheet" href="../../../base.css" />
 </head>
 <body>
 <h1 id="woche-1.-prinzipien-und-praktiken-projektmanagement">Woche 1.
@@ -56,7 +56,7 @@ href="https://drop.com/buy/preonic-mechanical-keyboard">ortho-lineare
 Tastatur</a>, auf der ich das Colemak-Layout habe, und ich übe etwa fünf
 Minuten pro Tag. Was mir am Colemak-Layout am besten gefällt, ist, dass
 die Rücktaste neben der Taste <code>A</code> liegt.</p>
-<p><img src="img/w01/preonic.webp" /></p>
+<p><img src="../../img/w01/preonic.webp" /></p>
 <p>Außerdem habe ich eine <a
 href="https://karabiner-elements.pqrs.org">Software auf macOS</a>, die
 meine Tastaturbelegung auf Colemak umstellt und die Funktion der
@@ -95,7 +95,7 @@ für die Dokumentation ausprobieren, die es mir erlaubt, die
 Dokumentation in zwei (oder mehr) Sprachen zu haben. Im Moment wird der
 Großteil des Textes, den du liest, auf Spanisch in meinen Mac
 diktiert.</p>
-<p><img src="img/w01/dictation.webp" /></p>
+<p><img src="../../img/w01/dictation.webp" /></p>
 <p>Das spart mir etwas Zeit beim Schreiben. Einige Teile, wie Code, muss
 ich manuell eingeben. Auch Korrekturen muss ich manuell machen, zum
 Beispiel, wenn ich Links einfüge.</p>
@@ -169,7 +169,7 @@ von ChatGPT bat ich um ein Programm, das die Übersetzung mit der
 OpenAI-Bibliothek automatisiert. Aber das hat nicht gut geklappt. Nach
 einigem Hin und Her (die KI generiert selten beim ersten Mal korrekten
 Code) wurde ich frustriert und beschimpfte Bing.</p>
-<p><img src="img/w01/bing.webp" /></p>
+<p><img src="../../img/w01/bing.webp" /></p>
 <p>Letztendlich musste ich die Dokumentation der API lesen, um das
 Programm zum Laufen zu bringen.</p>
 <p>Um unnötige Kosten zu vermeiden, übersetzt das Skript nur die
@@ -190,10 +190,11 @@ erstellen, habe ich ein Skript in Bash, das ich für das Bildungsprogramm
 hatte, in Python umgewandelt. Der Code konvertiert alle
 <code>.md</code>-Dateien in <code>.html</code> unter Nutzung von <a
 href="https://pandoc.org/index.html">Pandoc</a> mit einer <a
-href="base.css">CSS-Stilvorlage</a>. Während der Konvertierung wird,
-wenn ein Link zu einem Markdown-Dokument gefunden wird, dieser in einen
-Link zu dem entsprechenden HTML-Dokument umgewandelt, indem <a
-href="../links-to-html.lua">dieser LUA-Filter</a> verwendet wird.</p>
+href="../../../base.css">CSS-Stilvorlage</a>. Während der Konvertierung
+wird, wenn ein Link zu einem Markdown-Dokument gefunden wird, dieser in
+einen Link zu dem entsprechenden HTML-Dokument umgewandelt, indem <a
+href="../../../links-to-html.lua">dieser LUA-Filter</a> verwendet
+wird.</p>
 <p>Optional automatisiert das Skript auch die Übersetzungen ins
 Englische und Deutsche und das Hochladen der Dateien auf Github. Wenn
 ich also meinen Fortschritt hochladen möchte, schreibe ich:</p>
@@ -205,7 +206,7 @@ Github hoch, solange eine Nachricht vorhanden ist, in diesem Fall
 <code>updating week 1</code>. Gibt es keine Nachricht, führt es keinen
 der mit git verbundenen Prozesse durch.</p>
 <p>Das Skript kannst du hier einsehen: <a
-href="../auto.py">auto.py</a></p>
+href="../../../auto.py">auto.py</a></p>
 <h3
 id="nutzung-von-cdci-in-github-für-das-hosting-der-webseiten">Nutzung
 von CD/CI in Github für das Hosting der Webseiten</h3>
@@ -220,7 +221,7 @@ von Pandoc generiert wurden.</li>
 <p>Das Einzige, was jetzt noch fehlt, ist ein Webserver. Und das kannst
 du über Github machen, indem du zu den Einstellungen des Repositories
 gehst.</p>
-<p><img src="img/w01/cicd.webp" /></p>
+<p><img src="../../img/w01/cicd.webp" /></p>
 <p>Dies wird eine Datei unter <code>.github/workflows/static.yml</code>
 erstellen, wo ich nur den <code>runner</code> ändern musste, da
 <code>runs-on: ubuntu-latest</code> nicht funktionierte. Ich habe es zu
@@ -311,9 +312,11 @@ ist das wichtig, weil ich nur eine Sache gleichzeitig machen kann.
 Außerdem kann ich mit der Hand zeichnen, und das gefällt mir.
 Wahrscheinlich werde ich ein Video machen, in dem ich alles
 detaillierter erkläre.</p>
-<p><img src="img/w01/freeform.webp" /></p>
+<p><img src="../../img/w01/freeform.webp" /></p>
 <h2 id="skizze-des-abschlussprojekts">Skizze des Abschlussprojekts</h2>
-<p>Alles bezüglich des Abschlussprojekts habe ich in den [entsprechenden
-Abschnitt</p>
+<p>Alles bezüglich des Abschlussprojekts habe ich in den <a
+href="final-de.html">entsprechenden Abschnitt</a> verschoben.</p>
+<p><a href="index-de.html">&lt;&lt; Zurück zum Anfang</a><br />
+<a href="w02-de.html">Nächste Woche &gt;&gt;</a></p>
 </body>
 </html>
