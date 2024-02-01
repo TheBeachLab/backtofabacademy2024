@@ -1,3 +1,8 @@
+---
+title: "Semana 2. Diseño Asistido por Ordenador"
+subtitle: "Retransmitiendo las crónicas de Fab Academy 2024 de Fran desde el `Pirate Node`"
+author: "Fran Sanchez"
+---
 # Semana 2. Diseño Asistido por Ordenador
 
  > *Tarea :*

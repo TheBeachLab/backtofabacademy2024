@@ -4,6 +4,7 @@ Der größte Teil des Textes, den du gerade liest, wurde **auf Spanisch** in ein
 ![](../../img/w01/dictation.webp)
 
 Ich mag dieses Tool wirklich sehr, weil:
+
 - Es überall im Betriebssystem funktioniert, einschließlich des Terminals.
 - Du kannst sprechen und Pausen von bis zu 30 Sekunden machen, ohne dass es sich trennt.
 - Du kannst den Text während des Diktierens bearbeiten.

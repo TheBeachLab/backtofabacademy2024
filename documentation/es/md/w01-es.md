@@ -1,13 +1,43 @@
-# Semana 1. Principios y prácticas, Gestión de Proyectos
+---
+title: "Semana 1. Principios y prácticas, Gestión de Proyectos"
+subtitle: "Regreso a Fab Academy 2024. Fran Sanchez (Nodo Pirata)"
+return-url: index-es.md
+return-text: "← Volver al inicio"
+lang: es-ES
+---
+:::{.note .yellow}
+|     |
+| --- |
+| *Tarea A:* |
+| Planifica y realiza un boceto de un potencial proyecto final.  |
+|     |
+| *Tarea B:* |
+| Realiza un tutorial de Git paso a paso. |
+| Construye un sitio personal en el repositorio de la clase describiéndote a ti y tu proyecto final. |
+:::
 
- > *Tarea A:*
- >
- > Planifica y realiza un boceto de un potencial proyecto final. 
- >
- > *Tarea B:*
- >
- > Realiza un tutorial de Git paso a paso.  
- > Construye un sitio personal en el repositorio de la clase describiéndote a ti y tu proyecto final.
+## Mi entorno
+
+### Estoy usando macOS otra vez ¿Cómo pude caer tan bajo?
+A ver como explico ésto... Otro dia lo explico.
+
+### Mi teclado es raro
+Nunca supe escribir a máquina, aunque siempre quise aprender. Mientras trabajaba en la organización de Fab15 en Egipto, me fijé en que Sherry Lassiter tiene una gran habilidad para escribir a máquina. En ese momento, me decidí a aprender. Hay una ventaja cuando aprendes a hacer una cosa desde cero, y es que no tienes ningún vicio. Así que yo no aprendí el sistema QWERTY, que está originalmente diseñado para que las antiguas máquinas de escribir no se atascaran. Yo aprendí con el sistema [Colemak](https://colemak.com). Colemak está diseñado para que las letras de mayor uso en idioma ingles esten en la fila central. Tengo un [teclado orto lineal](https://drop.com/buy/preonic-mechanical-keyboard) al que he puesto el layout colemak, y practico unos cinco minutos al día. Lo que más me gusta de la distribución Colemak es que la tecla de borrar está al lado izquierdo de la tecla `A`.
+
+![](../../img/w01/preonic.webp)
+
+También tengo un [software en macOS](https://karabiner-elements.pqrs.org) que cambia mi distribución del teclado a Colemak y también cambia la función de la tecla bloqueo de mayúsculas por el borrado hacia atrás.
+
+### Mi editor de texto también es raro
+Mi intención es usar únicamente `vim`, un editor de texto en la línea de comandos. Tengo algunas nociones de `vim` y quiero profundizar en el aprendizaje. Me gusta la idea de usar únicamente el teclado para editar texto. Para evitar la tentación de usar Visual Studio Code, lo he desinstalado. El editor de texto vim es bastante parco de origen. Por ello, voy a instalar algunos plugins. Esta es una lista que iré ampliando con el tiempo:
+
+- [NERDTree](https://github.com/preservim/nerdtree) para tener una barra lateral con el listado de ficheros, y así poder navegar rápidamente entre archivos.
+- [vim-devicons](https://github.com/ryanoasis/vim-devicons) para visualizar con un pequeño icono gráfico los archivos y las carpetas. 
+
+ Otros enlaces utiles:
+
+- [VimAwesome](https://vimawesome.com) es una página con cientos de plugins de vim
+- [Fran's My Computing repo](https://github.com/TheBeachLab/myComputing) con algunos trucos, si te gusta usar la línea de comandos.
 
 ## Reinventando mi proceso de documentar
 Debo ser realista. No tengo mucho tiempo libre y, dentro de poco, aún tendré menos. Así que necesito un sistema para escribir la documentación de forma ágil. Voy a probar un nuevo sistema para documentar. Como beneficio inesperado, este sistema me va a permitir tener la documentación en dos (o más) idiomas.
@@ -18,7 +48,7 @@ Aquí no quiero innovar demasiado. La estrategía que me ha funcionado muy bien 
 - No necesitas ningún programa especial para escribir texto plano. Incluso puedes escribirlo a mano si tienes buena letra y escanearlo luego.
 -  Es fácil de escribir, no tienes que retorcerte los dedos escribiendo `</h1>` y cosas así. 
 -  Es fácil aplicar estilos y organizar el texto.
--  Se puede leer sin que parezca que estas decodificando Matrix. 
+-  Se puede leer sin que parezca que estas decodificando Matrix.
 
 ![Cuando puedes leer tu página desde el código HTML](../../img/w01/code.webp)
 
@@ -34,6 +64,7 @@ La mayor parte del texto que estas leyendo, esta siendo dictado **en español** 
 ![](../../img/w01/dictation.webp)
 
 Me gusta mucho esta herramienta porque:
+
 - Funciona en todas partes del sistema operativo, incluyendo el terminal.
 - Te permite hablar y hacer pausas de hasta 30 segundos sin que se desconecte.
 - Puedes editar el texto mientras dicta.

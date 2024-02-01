@@ -4,6 +4,7 @@ La mayor parte del texto que estas leyendo, esta siendo dictado **en español** 
 ![](../../img/w01/dictation.webp)
 
 Me gusta mucho esta herramienta porque:
+
 - Funciona en todas partes del sistema operativo, incluyendo el terminal.
 - Te permite hablar y hacer pausas de hasta 30 segundos sin que se desconecte.
 - Puedes editar el texto mientras dicta.

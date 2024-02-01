@@ -4,7 +4,7 @@ Aquí no quiero innovar demasiado. La estrategía que me ha funcionado muy bien 
 - No necesitas ningún programa especial para escribir texto plano. Incluso puedes escribirlo a mano si tienes buena letra y escanearlo luego.
 -  Es fácil de escribir, no tienes que retorcerte los dedos escribiendo `</h1>` y cosas así. 
 -  Es fácil aplicar estilos y organizar el texto.
--  Se puede leer sin que parezca que estas decodificando Matrix. 
+-  Se puede leer sin que parezca que estas decodificando Matrix.
 
 ![Cuando puedes leer tu página desde el código HTML](../../img/w01/code.webp)
 

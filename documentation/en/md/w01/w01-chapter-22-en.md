@@ -4,6 +4,7 @@ Most of the text you're reading has been dictated **in Spanish** into a Markdown
 ![](../../img/w01/dictation.webp)
 
 I really like this tool because:
+
 - It works everywhere on the operating system, including the terminal.
 - It allows you to speak and pause for up to 30 seconds without disconnecting.
 - You can edit the text while dictating.

@@ -44,7 +44,9 @@ if len(sys.argv) > 1:
 concatenate_files('documentation')
 
 # Step 2. README.md --> index.html in the current folder
-subprocess.run(['pandoc', '-s', '-c', 'base.css', 'README.md', '-t', 'html', '-o', 'index.html', '--lua-filter=links-to-html.lua'], stderr=subprocess.DEVNULL)
+#subprocess.run(['pandoc', '-s', '-c', 'base.css', 'README.md', '-t', 'html', '-o', 'index.html', '--lua-filter=links-to-html.lua'], stderr=subprocess.DEVNULL)
+subprocess.run(['pandoc', '--katex', '--from', 'markdown+tex_math_single_backslash', '--filter', 'pandoc-sidenote', '--to', 'html5+smart', '--template=template', '--css=css/theme.css', '--css=css/skylighting-solarized-theme.css', '--wrap=none', '--output', "index.html", '--lua-filter=links-to-html.lua', "README.md"])
+
 
 # Step 3. /md/*.md --> /html/*.html in the documentation folders
 documentation_folders = ['documentation/es/md', 'documentation/en/md', 'documentation/de/md']
@@ -55,7 +57,9 @@ for folder in documentation_folders:
         input_file = os.path.join(folder, f)
         output_file = os.path.join(html_folder, f"{os.path.splitext(f)[0]}.html")
         print(f"Converting {input_file} to {output_file}")
-        subprocess.run(['pandoc', '-s', '-c', '../../../base.css', input_file, '-t', 'html', '-o', output_file, '--lua-filter=links-to-html.lua'], stderr=subprocess.DEVNULL)
+        #subprocess.run(['pandoc', '-s', '-c', '../../../base.css', input_file, '-t', 'html', '-o', output_file, '--lua-filter=links-to-html.lua'], stderr=subprocess.DEVNULL)
+        subprocess.run(['pandoc', '--katex', '--from', 'markdown+tex_math_single_backslash', '--filter', 'pandoc-sidenote', '--to', 'html5+smart', '--template=template', '--css=../../../css/theme.css', '--css=css/skylighting-solarized-theme.css', '--wrap=none', '--output', output_file, '--toc', '--lua-filter=links-to-html.lua', input_file])
+
 
 # Step 4. Optional. Upload everything to GitHub
 # If there is a commit message (excluding -translate), then upload
