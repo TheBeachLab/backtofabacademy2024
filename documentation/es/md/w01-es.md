@@ -1,8 +1,6 @@
 ---
 title: "Semana 1. Principios y prácticas, Gestión de Proyectos"
-subtitle: "Regreso a Fab Academy 2024. Fran Sanchez (Nodo Pirata)"
-return-url: index-es.md
-return-text: "← Volver al inicio"
+subtitle: "Regreso a Fab Academy 2024. Fran Sanchez"
 lang: es-ES
 ---
 :::{.note .yellow}
@@ -192,6 +190,5 @@ Todo esto está haciendo que escribir la documentación sea lento y un poco tedi
 
 Además creo que este método va a **ayudar** a muchas personas que no pueden **expresar su talento** porque no dominan otro idioma. Es injusto que eso ocurra. Espero que la AI ayude a la gente a demostrar lo valiosas que son.
 
-[<< Volver al inicio](index-es.md)  
-[Semana siguiente >>](w02-es.md)
+[← Volver al inicio](index-es.md)
 

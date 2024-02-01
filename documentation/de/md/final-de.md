@@ -1,5 +1,8 @@
-# Abschlussprojekt
-
+---
+title: "Abschlussprojekt"
+subtitle: "Zurück zum Fab Academy 2024. Fran Sanchez"
+lang: de-DE
+---
 ![](../../img/memes/thinking.jpg)
 
 ## Ursprung der Idee
@@ -12,6 +15,8 @@
 
 Hier gibt's nicht viel zu sehen...
 
-`¯\_( ͡❛ ͜ʖ ͡❛)_/¯ `
+```{.tight-code}
+¯\_( ͡❛ ͜ʖ ͡❛)_/¯ 
+```
 
-[<< Zurück zum Anfang](index-de.md)  
+[← Zurück zum Anfang](index-de.md)  

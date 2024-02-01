@@ -1,3 +1,2 @@
-[<< Zurück zum Anfang](index-de.md)  
-[<< Vorherige Woche](w01-de.md)  
+[← Zurück zum Anfang](index-de.md) 
 

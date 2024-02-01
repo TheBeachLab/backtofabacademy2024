@@ -1,9 +1,14 @@
-# Woche 2. Computerunterstütztes Entwerfen
-
-> *Aufgabe:*
->
-> Entwirf (Raster, Vektor, 2D, 3D, Rendering, Animation, Simulation, ...) ein mögliches Abschlussprojekt,
-komprimiere deine Bilder und Videos und veröffentliche eine Beschreibung mit deinen Design-Dateien auf deiner Seite.
+---
+title: "Woche 2. Computerunterstütztes Entwerfen"
+subtitle: "Zurück zum Fab Academy 2024. Fran Sanchez"
+lang: de-DE
+---
+:::{.note .yellow}
+|     |
+| --- |
+| *Aufgabe:* |
+| Entwirf (Raster, Vektor, 2D, 3D, Rendering, Animation, Simulation, ...) ein mögliches Abschlussprojekt, komprimiere deine Bilder und Videos und veröffentliche eine Beschreibung mit deinen Design-Dateien auf deiner Seite.  |
+:::
 
 ## Ziele für die Woche
 
@@ -43,6 +48,5 @@ Letzte Woche habe ich schon schlecht angefangen. Ich hatte kaum Zeit, etwas zu e
 
 Ich glaube, ich habe übertrieben. Wenn ich ein Viertel davon schaffe, kann ich schon zufrieden sein.
 
-[<< Zurück zum Anfang](index-de.md)  
-[<< Vorherige Woche](w01-de.md)  
+[← Zurück zum Anfang](index-de.md) 
 

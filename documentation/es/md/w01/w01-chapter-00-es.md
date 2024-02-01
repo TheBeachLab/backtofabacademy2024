@@ -1,8 +1,6 @@
 ---
 title: "Semana 1. Principios y prácticas, Gestión de Proyectos"
-subtitle: "Regreso a Fab Academy 2024. Fran Sanchez (Nodo Pirata)"
-return-url: index-es.md
-return-text: "← Volver al inicio"
+subtitle: "Regreso a Fab Academy 2024. Fran Sanchez"
 lang: es-ES
 ---
 :::{.note .yellow}

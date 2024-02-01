@@ -1,9 +1,14 @@
-# Week 2. Computer-Aided Design
-
-> *Task:*
->
-> Model (raster, vector, 2D, 3D, rendering, animation, simulation, ...) a potential final project,
-compress your images and videos, and publish a description with your design files on your page.
+---
+title: "Week 2. Computer-Aided Design"
+subtitle: "Back to Fab Academy 2024. Fran Sanchez"
+lang: en-US
+---
+:::{.note .yellow}
+|     |
+| --- |
+| *Task:* |
+| Model (raster, vector, 2D, 3D, rendering, animation, simulation, ...) a potential final project, compress your images and videos, and publish a description with your design files on your page.  |
+:::
 
 ## Weekly Goals
 
@@ -43,6 +48,5 @@ Last week was off to a bad start. I barely had time to do anything. I forgot tha
 
 I think I've overreached. If I manage to do 1/4 of it, I'll be happy.
 
-[<< Back to the beginning](index-en.md)  
-[<< Previous week](w01-en.md)
+[← Back to the beginning](index-en.md)
 

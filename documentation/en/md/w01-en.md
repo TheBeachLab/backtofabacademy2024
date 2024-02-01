@@ -1,13 +1,18 @@
-# Week 1. Principles and Practices, Project Management
-
- > *Task A:*
- >
- > Plan and sketch out a potential final project. 
- >
- > *Task B:*
- >
- > Complete a step-by-step Git tutorial.  
- > Build a personal site in the class repository describing yourself and your final project.
+---
+title: "Week 1. Principles and Practices, Project Management"
+subtitle: "Back to Fab Academy 2024. Fran Sanchez"
+lang: en-US
+---
+:::{.note .yellow}
+|     |
+| --- |
+| *Task A:* |
+| Plan and sketch a potential final project.  |
+|     |
+| *Task B:* |
+| Make a step-by-step Git tutorial. |
+| Build a personal site in the class repository describing yourself and your final project. |
+:::
 
 ## My Environment
 
@@ -187,6 +192,5 @@ All of this is making the documentation writing process slow and somewhat tediou
 
 Moreover, I think this method will **assist** many people who can't **express their talent** because they don't master another language. It's unfair for that to happen. I hope AI helps people demonstrate how valuable they are.
 
-[<< Back to the beginning](index-en.md)  
-[Next week >>](w02-en.md)
+[← Back to the beginning](index-en.md)
 
