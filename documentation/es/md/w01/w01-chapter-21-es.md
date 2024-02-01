@@ -12,5 +12,5 @@ La documentación de Fab Academy se tiene que presentar en forma de página web.
 
 > Nota: "Agradable" se refiere a fácil de leer. Otro tipo de personas valoran por encima de todo el aspecto visual de la página y prefieren dedicar tiempo en crear su propia obra de arte. Mis mejores deseos para ellos.
 
-De forma temporal estoy usando la [plantilla que usé para HTGAA](http://htgaa.beachlab.org) en 2015. Pero voy a cambiar a [esta plantilla pronto](https://jez.io/pandoc-markdown-css-theme/), porque necesito añadir más funcionalidades (ecuaciones, tablas, números de línea en el código, notas laterales, etc.).
+ Estoy usando [esta plantilla CSS](https://jez.io/pandoc-markdown-css-theme/), que me permite añadir funcionalidades como ecuaciones, tablas, números de línea en el código, notas laterales, etc.
 
