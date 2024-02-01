@@ -74,5 +74,5 @@ for f in changed_files:
             run = wait_on_run(run, thread)
             translated_text = get_translated_text(get_response(thread))
             with open(filename, 'w') as out_file:
-                out_file.write(translated_text)
+                out_file.write(translated_text + '\n\n')  # Add two empty lines at the end
                 print(f"Translation completed for {f}")
