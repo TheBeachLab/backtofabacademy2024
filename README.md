@@ -8,9 +8,9 @@ author: "by Fran Sanchez"
 
 In 2013 I took Fab Academy Class in Fab Lab Barcelona, a life changing experience. Since then I have been instructor in the program, member of the global eval and member of the assessment committee. Now, a decade later, I'm embarking on a revisit of this journey, approaching the course again from a participant's viewpoint. The curriculum has evolved with new topics, lots of AI coming up. I won't actively participate in the class or undergo evaluation. But otherwise I am identical to any other student in the course. Ready? 
 
-[Documentación en Español (original)](documentation/es/md/index-es.md)  
-[English Documentation (AI generated)](documentation/en/md/index-en.md)  
-[Deutsche Dokumentation (Künstlich generiert durch KI)](documentation/de/md/index-de.md)
+[→ Documentación en Español (original)](documentation/es/md/index-es.md)  
+[→ English Documentation (AI generated)](documentation/en/md/index-en.md)  
+[→ Deutsche Dokumentation (Künstlich generiert durch KI)](documentation/de/md/index-de.md)
 
 ![](documentation/img/backtofab.jpeg)
 

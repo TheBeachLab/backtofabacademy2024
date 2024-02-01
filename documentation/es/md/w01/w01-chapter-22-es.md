@@ -7,10 +7,10 @@ Me gusta mucho esta herramienta porque:
 
 - Funciona en todas partes del sistema operativo, incluyendo el terminal.
 - Te permite hablar y hacer pausas de hasta 30 segundos sin que se desconecte.
-- Puedes editar el texto mientras dicta.
+- Puedes editar el texto mientras dictaestas dictando.
 - Puedes añadir emojis 😊 
 - Añade signos de puntuación automáticamente, y tambien los puedes añadir manualmente.
-- También puedes cambiar de línea y de parrafo diciendo.
+- También puedes cambiar de línea y de parrafo usando la voz.
 - Si tu procesador es Apple Silicon entiende el contexto y se autocorrige. Todo ello sin conexión.
 - Lo puedo usar mientras escucho música con mis auriculares.
 

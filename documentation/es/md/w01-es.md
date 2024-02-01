@@ -65,10 +65,10 @@ Me gusta mucho esta herramienta porque:
 
 - Funciona en todas partes del sistema operativo, incluyendo el terminal.
 - Te permite hablar y hacer pausas de hasta 30 segundos sin que se desconecte.
-- Puedes editar el texto mientras dicta.
+- Puedes editar el texto mientras dictaestas dictando.
 - Puedes añadir emojis 😊 
 - Añade signos de puntuación automáticamente, y tambien los puedes añadir manualmente.
-- También puedes cambiar de línea y de parrafo diciendo.
+- También puedes cambiar de línea y de parrafo usando la voz.
 - Si tu procesador es Apple Silicon entiende el contexto y se autocorrige. Todo ello sin conexión.
 - Lo puedo usar mientras escucho música con mis auriculares.
 
@@ -112,7 +112,7 @@ Tengo otro modelo en alemán con instrucciones similares. Voy cambiando las inst
 
 Esta página que estas leyendo tiene unos 4000 tokens. Puedes saber cuantos tokens tiene un texto usando el [OpenAI Tokenizer](https://platform.openai.com/tokenizer). El coste de la traducción a los dos idiomas de esta página es aproximadamente 0.32 USD, teniendo en cuenta que cada 1000 tokens cuestan 0.01 USD el input y 0.03 USD el output. Me parece bastante caro, y además el coste va a subir a medida que avanza Fab Academy. Por ese motivo solo traduciré los contenidos cuando considere avanzado el trabajo.
 
-Por el momento las traducciones son bastante buenas. Algunas veces no cambia correctamente los enlaces, así que en el futuro esa tarea la voy a realizar mediante un script que es más fiable. Pedí a [Sophia Döring](https://fabacademy.org/2024/labs/kamplintfort/students/sophia-doring/) que revisara también la traducción en alemán. Me ha dicho que en general también está bastante bien, aunque ha veces usa palabras en alemán en poco uso, sobretodo para referirse a términos técnicos. Puede que eso sea provocado por como escribo el texto original. Estoy usando los equivalentes en español de términos técnicos que en el día a día realmente digo en inglés.
+Por el momento las traducciones son bastante buenas. Algunas veces no cambia correctamente los enlaces, así que en el futuro esa tarea la voy a realizar mediante un script que es más fiable. Pedí a [Sophia Döring](https://fabacademy.org/2024/labs/kamplintfort/students/sophia-doring/) que revisara también la traducción en alemán. Me ha dicho que en general también está bastante bien, aunque a veces usa palabras en alemán en poco uso, sobretodo para referirse a términos técnicos. Puede que eso esté provocado por como escribo el texto original. Estoy usando los equivalentes en español de términos técnicos que en el día a día realmente digo en inglés.
 
 En mi lista de deseos voy a seguir buscando un modelo que sea local. De ese modo podré traducir los contenidos más frecuentemente. Por ahora he estado probando los modelos `Phi 2` y `Yarn Mistral` con resultados nefastos.
 
@@ -132,7 +132,9 @@ Para automatizar el proceso completo he convertido a Python un script en lenguaj
 
 `python auto.py --translate updating week 1`
 
-El script traduce las los capitulos modificados si encuentra `--translate` entre los argumentos. Eso lo hago para ahorrar costes. Después concatena todos los capítulos y crea un único archivo Markdown de cada semana. El paso siguiente es la conversión a HTML de todos esos archivos. Durante la conversión, si encuentra un enlace a un documento de markdown, lo convierte en un enlace a su correspondiente documento HTML usando [este filtro LUA](../../../links-to-html.lua). Finalmente lo sube todo a Github siempre que exista un mensaje, que en este caso es `updating week 1`. Si no hay mensaje, no realiza ninguno de los procesos relacionados con git. 
+El script traduce las los capitulos modificados si encuentra `--translate` entre los argumentos[^1]. Después concatena todos los capítulos y crea un único archivo Markdown de cada semana. El paso siguiente es la conversión a HTML de todos esos archivos. Durante la conversión, si encuentra un enlace a un documento de markdown, lo convierte en un enlace a su correspondiente documento HTML usando [este filtro LUA](../../../links-to-html.lua). Finalmente lo sube todo a Github siempre que exista un mensaje, que en este caso es `updating week 1`. Si no hay mensaje, no realiza ninguno de los procesos relacionados con git. 
+
+[^1]: Eso lo hago para ahorrar costes, ya que no quiero traducir las páginas en cada modificación.
 
 Puedes analizar el script aquí: [auto.py](../../../auto.py)
 
