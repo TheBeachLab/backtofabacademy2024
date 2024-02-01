@@ -9,10 +9,12 @@ if len(sys.argv) > 1:
         subprocess.run(['python3', 'translate-en.py'])
         subprocess.run(['python3', 'translate-de.py'])
 
-# Step 1. File conversion from README.md to index.html in the current folder
+# Step 1. Concatenate chapters
+
+# Step 1. README.md --> index.html in the current folder
 subprocess.run(['pandoc', '-s', '-c', 'base.css', 'README.md', '-t', 'html', '-o', 'index.html', '--lua-filter=links-to-html.lua'], stderr=subprocess.DEVNULL)
 
-# Step 2. File conversion from /md/*.md to /html/*.html in the documentation folders
+# Step 2. /md/*.md --> /html/*.html in the documentation folders
 documentation_folders = ['documentation/es/md', 'documentation/en/md', 'documentation/de/md']
 for folder in documentation_folders:
     html_folder = os.path.join(os.path.dirname(folder), 'html')
@@ -23,7 +25,7 @@ for folder in documentation_folders:
         print(f"Converting {input_file} to {output_file}")
         subprocess.run(['pandoc', '-s', '-c', '../../../base.css', input_file, '-t', 'html', '-o', output_file, '--lua-filter=links-to-html.lua'], stderr=subprocess.DEVNULL)
 
-# Step 3. Uploading everything to GitHub
+# Step 3. Upload everything to GitHub
 # If there is a commit message (excluding -translate), then upload
 if len([arg for arg in sys.argv[1:] if arg != '--translate']) > 0:
     subprocess.run(['git', 'add', '--all']) 
