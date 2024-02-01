@@ -20,3 +20,4 @@ Week 18: Invention, Intellectual Property, and Income - May 29
 
 ## Final Project
 [Final Project Page](final-en.md)
+

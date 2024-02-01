@@ -20,3 +20,4 @@ Woche 18: Erfindung, geistiges Eigentum und Einkommen - 29. Mai
 
 ## Abschlussprojekt
 [Seite des Abschlussprojekts](final-de.md)
+

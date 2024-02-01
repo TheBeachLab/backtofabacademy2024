@@ -35,3 +35,4 @@ Last week was off to a bad start. I barely had time to do anything. I forgot tha
   - I'm going to take some time to learn a bit about Sonic Pi.
 
 I think I've overreached. If I manage to do 1/4 of it, I'll be happy.
+

@@ -35,3 +35,4 @@ Letzte Woche habe ich schon schlecht angefangen. Ich hatte kaum Zeit, etwas zu e
   - Ich werde mir etwas Zeit nehmen, um etwas über Sonic Pi zu lernen.
 
 Ich glaube, ich habe übertrieben. Wenn ich ein Viertel davon schaffe, kann ich schon zufrieden sein.
+
