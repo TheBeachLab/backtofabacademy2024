@@ -58,7 +58,11 @@ $if(toc)$
   $if(return-url)$
   <a href="$return-url$">$if(return-text)$$return-text$$else$← Return$endif$</a><br>
   $endif$
-  <strong>Contents</strong><label for="contents">⊕</label>
+  <strong>$if(toc-title)$
+  $toc-title$
+  $else$
+  Contents
+  $endif$</strong><label for="contents">⊕</label>
   <input type="checkbox" id="contents">
   $table-of-contents$
 </nav>

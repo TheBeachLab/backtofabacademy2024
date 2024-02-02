@@ -1,6 +1,7 @@
 ---
 title: "Woche 2. Computerunterstütztes Entwerfen"
 subtitle: "Zurück zum Fab Academy 2024. Fran Sanchez"
+toc-title: "Inhaltsverzeichnis"
 lang: de-DE
 ---
 :::{.note .yellow}

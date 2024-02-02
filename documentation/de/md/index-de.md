@@ -1,5 +1,6 @@
 ---
 title: "Zurück zum Fab Academy 2024"
+toc-title: "Inhaltsverzeichnis"
 lang: de-DE
 ---
 ## Über mich

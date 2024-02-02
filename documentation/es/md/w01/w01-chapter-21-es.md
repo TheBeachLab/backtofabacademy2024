@@ -8,9 +8,40 @@ Aquí no quiero innovar demasiado. La estrategía que me ha funcionado muy bien 
 
 ![Cuando puedes leer tu página desde el código HTML](../../img/w01/code.webp)
 
-La documentación de Fab Academy se tiene que presentar en forma de página web. Existe un programa para la línea de comandos llamado [Pandoc](https://pandoc.org/index.html) que literalmente convierte cualquier formato de texto. Voy a usarlo para convertir los los archivos `.md` en páginas `.html` de "aspecto agradable" con una plantilla de estilo CSS.
+La documentación de Fab Academy se tiene que presentar en forma de página web. Existe un programa para la línea de comandos llamado [Pandoc](https://pandoc.org/index.html) que literalmente convierte cualquier formato de texto. Voy a usarlo para convertir los los archivos `.md` en páginas `.html` de *aspecto agradable*[^nice] con una plantilla de estilo CSS.
 
-> Nota: "Agradable" se refiere a fácil de leer. Otro tipo de personas valoran por encima de todo el aspecto visual de la página y prefieren dedicar tiempo en crear su propia obra de arte. Mis mejores deseos para ellos.
+[^nice]: *Agradable* se refiere a fácil de leer. Otro tipo de personas valoran por encima de todo el aspecto visual de la página y prefieren dedicar tiempo en crear su propia obra de arte. Mis mejores deseos para ellos.
 
- Estoy usando [esta plantilla CSS](https://jez.io/pandoc-markdown-css-theme/), que me permite añadir funcionalidades como ecuaciones, tablas, números de línea en el código, notas laterales, etc.
+He modificado [esta plantilla CSS](https://jez.io/pandoc-markdown-css-theme/), que me permite añadir funcionalidades como ecuaciones, tablas, números de línea en el código, notas laterales, etc. La plantilla tenía el nombre del índice como `Contents` y lo he modificado para poder incluir una variable en el 
+
+```html{.html .numberLines .hl-6 .tight-code}
+$if(toc)$
+<nav id="$idprefix$TOC" role="doc-toc">
+  $if(return-url)$
+  <a href="$return-url$">$if(return-text)$$return-text$$else$← Return$endif$</a><br>
+  $endif$
+  <strong>Contents</strong><label for="contents">⊕</label>
+  <input type="checkbox" id="contents">
+  $table-of-contents$
+</nav>
+$endif$
+```
+
+
+```{.html .numberLines .hl-6 .hl-7 .hl-8 .hl-9 .hl-10 .tight-code}
+$if(toc)$
+<nav id="$idprefix$TOC" role="doc-toc">
+  $if(return-url)$
+  <a href="$return-url$">$if(return-text)$$return-text$$else$← Return$endif$</a><br>
+  $endif$
+  <strong>$if(toc-title)$
+  $toc-title$
+  $else$
+  Contents
+  $endif$</strong><label for="contents">⊕</label>
+  <input type="checkbox" id="contents">
+  $table-of-contents$
+</nav>
+$endif$
+```
 

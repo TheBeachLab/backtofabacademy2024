@@ -1,6 +1,7 @@
 ---
 title: "Week 2. Computer-Aided Design"
 subtitle: "Back to Fab Academy 2024. Fran Sanchez"
+toc-title: "Index"
 lang: en-US
 ---
 :::{.note .yellow}

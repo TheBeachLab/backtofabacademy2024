@@ -1,6 +1,7 @@
 ---
 title: "Woche 1. Prinzipien und Praktiken, Projektmanagement"
 subtitle: "Zurück zum Fab Academy 2024. Fran Sanchez"
+toc-title: "Inhaltsverzeichnis"
 lang: de-DE
 ---
 :::{.note .yellow}

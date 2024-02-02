@@ -1,6 +1,7 @@
 ---
 title: "Semana 1. Principios y prácticas, Gestión de Proyectos"
 subtitle: "Regreso a Fab Academy 2024. Fran Sanchez"
+toc-title: "Índice"
 lang: es-ES
 ---
 :::{.note .yellow}

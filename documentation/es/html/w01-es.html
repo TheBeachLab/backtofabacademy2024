@@ -18,7 +18,8 @@
 </header>
 
 <nav id="TOC" role="doc-toc">
-    <strong>Contents</strong><label for="contents">⊕</label>
+    <strong>  Índice
+  </strong><label for="contents">⊕</label>
   <input type="checkbox" id="contents">
   <ul>
   <li><a href="#mi-entorno" id="toc-mi-entorno">Mi entorno</a>
@@ -105,11 +106,34 @@
 <img src="../../img/w01/code.webp" alt="Cuando puedes leer tu página desde el código HTML" />
 <figcaption aria-hidden="true">Cuando puedes leer tu página desde el código HTML</figcaption>
 </figure>
-<p>La documentación de Fab Academy se tiene que presentar en forma de página web. Existe un programa para la línea de comandos llamado <a href="https://pandoc.org/index.html">Pandoc</a> que literalmente convierte cualquier formato de texto. Voy a usarlo para convertir los los archivos <code>.md</code> en páginas <code>.html</code> de “aspecto agradable” con una plantilla de estilo CSS.</p>
-<blockquote>
-<p>Nota: “Agradable” se refiere a fácil de leer. Otro tipo de personas valoran por encima de todo el aspecto visual de la página y prefieren dedicar tiempo en crear su propia obra de arte. Mis mejores deseos para ellos.</p>
-</blockquote>
-<p>Estoy usando <a href="https://jez.io/pandoc-markdown-css-theme/">esta plantilla CSS</a>, que me permite añadir funcionalidades como ecuaciones, tablas, números de línea en el código, notas laterales, etc.</p>
+<p>La documentación de Fab Academy se tiene que presentar en forma de página web. Existe un programa para la línea de comandos llamado <a href="https://pandoc.org/index.html">Pandoc</a> que literalmente convierte cualquier formato de texto. Voy a usarlo para convertir los los archivos <code>.md</code> en páginas <code>.html</code> de <em>aspecto agradable</em><span class="sidenote-wrapper"><label for="sn-0" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-0" class="margin-toggle"/><span class="sidenote"><em>Agradable</em> se refiere a fácil de leer. Otro tipo de personas valoran por encima de todo el aspecto visual de la página y prefieren dedicar tiempo en crear su propia obra de arte. Mis mejores deseos para ellos.<br />
+<br />
+</span></span> con una plantilla de estilo CSS.</p>
+<p>He modificado <a href="https://jez.io/pandoc-markdown-css-theme/">esta plantilla CSS</a>, que me permite añadir funcionalidades como ecuaciones, tablas, números de línea en el código, notas laterales, etc. La plantilla tenía el nombre del índice como <code>Contents</code> y lo he modificado para poder incluir una variable en el</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource html html numberLines hl-6 tight-code"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1"></a>$if(toc)$</span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="dt">&lt;</span><span class="kw">nav</span><span class="ot"> id</span><span class="op">=</span><span class="st">&quot;$idprefix$TOC&quot;</span><span class="ot"> role</span><span class="op">=</span><span class="st">&quot;doc-toc&quot;</span><span class="dt">&gt;</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a>  $if(return-url)$</span>
+<span id="cb1-4"><a href="#cb1-4"></a>  <span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> href</span><span class="op">=</span><span class="st">&quot;$return-url$&quot;</span><span class="dt">&gt;</span>$if(return-text)$$return-text$$else$← Return$endif$<span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;&lt;</span><span class="kw">br</span><span class="dt">&gt;</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a>  $endif$</span>
+<span id="cb1-6"><a href="#cb1-6"></a>  <span class="dt">&lt;</span><span class="kw">strong</span><span class="dt">&gt;</span>Contents<span class="dt">&lt;/</span><span class="kw">strong</span><span class="dt">&gt;&lt;</span><span class="kw">label</span><span class="ot"> for</span><span class="op">=</span><span class="st">&quot;contents&quot;</span><span class="dt">&gt;</span>⊕<span class="dt">&lt;/</span><span class="kw">label</span><span class="dt">&gt;</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a>  <span class="dt">&lt;</span><span class="kw">input</span><span class="ot"> type</span><span class="op">=</span><span class="st">&quot;checkbox&quot;</span><span class="ot"> id</span><span class="op">=</span><span class="st">&quot;contents&quot;</span><span class="dt">&gt;</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a>  $table-of-contents$</span>
+<span id="cb1-9"><a href="#cb1-9"></a><span class="dt">&lt;/</span><span class="kw">nav</span><span class="dt">&gt;</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a>$endif$</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource html numberLines hl-6 hl-7 hl-8 hl-9 hl-10 tight-code"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1"></a>$if(toc)$</span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="dt">&lt;</span><span class="kw">nav</span><span class="ot"> id</span><span class="op">=</span><span class="st">&quot;$idprefix$TOC&quot;</span><span class="ot"> role</span><span class="op">=</span><span class="st">&quot;doc-toc&quot;</span><span class="dt">&gt;</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a>  $if(return-url)$</span>
+<span id="cb2-4"><a href="#cb2-4"></a>  <span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> href</span><span class="op">=</span><span class="st">&quot;$return-url$&quot;</span><span class="dt">&gt;</span>$if(return-text)$$return-text$$else$← Return$endif$<span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;&lt;</span><span class="kw">br</span><span class="dt">&gt;</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a>  $endif$</span>
+<span id="cb2-6"><a href="#cb2-6"></a>  <span class="dt">&lt;</span><span class="kw">strong</span><span class="dt">&gt;</span>$if(toc-title)$</span>
+<span id="cb2-7"><a href="#cb2-7"></a>  $toc-title$</span>
+<span id="cb2-8"><a href="#cb2-8"></a>  $else$</span>
+<span id="cb2-9"><a href="#cb2-9"></a>  Contents</span>
+<span id="cb2-10"><a href="#cb2-10"></a>  $endif$<span class="dt">&lt;/</span><span class="kw">strong</span><span class="dt">&gt;&lt;</span><span class="kw">label</span><span class="ot"> for</span><span class="op">=</span><span class="st">&quot;contents&quot;</span><span class="dt">&gt;</span>⊕<span class="dt">&lt;/</span><span class="kw">label</span><span class="dt">&gt;</span></span>
+<span id="cb2-11"><a href="#cb2-11"></a>  <span class="dt">&lt;</span><span class="kw">input</span><span class="ot"> type</span><span class="op">=</span><span class="st">&quot;checkbox&quot;</span><span class="ot"> id</span><span class="op">=</span><span class="st">&quot;contents&quot;</span><span class="dt">&gt;</span></span>
+<span id="cb2-12"><a href="#cb2-12"></a>  $table-of-contents$</span>
+<span id="cb2-13"><a href="#cb2-13"></a><span class="dt">&lt;/</span><span class="kw">nav</span><span class="dt">&gt;</span></span>
+<span id="cb2-14"><a href="#cb2-14"></a>$endif$</span></code></pre></div>
 <h3 id="ahorrar-tiempo-dictando">Ahorrar tiempo dictando</h3>
 <p>La mayor parte del texto que estas leyendo, esta siendo dictado <strong>en español</strong> dentro de un archivo de texto Markdown. El motivo por el cual no lo dicto directamente en inglés es que mi acento es tan malo que el ordenador no me entiende. Para dictar estoy usando la herramienta de dictado de macOS.</p>
 <p><img src="../../img/w01/dictation.webp" /></p>
@@ -161,7 +185,7 @@
 <h3 id="automatizando-todo-el-proceso">Automatizando todo el proceso</h3>
 <p>Para automatizar el proceso completo he convertido a Python un script en lenguaje Bash que hice para el programa educativo <a href="https://github.com/Academany/fabzero">FabZero</a>. Yo escribo algo así:</p>
 <p><code>python auto.py --translate updating week 1</code></p>
-<p>El script traduce las los capitulos modificados si encuentra <code>--translate</code> entre los argumentos<span class="sidenote-wrapper"><label for="sn-0" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-0" class="margin-toggle"/><span class="sidenote">Eso lo hago para ahorrar costes, ya que no quiero traducir las páginas en cada modificación.<br />
+<p>El script traduce las los capitulos modificados si encuentra <code>--translate</code> entre los argumentos<span class="sidenote-wrapper"><label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle"/><span class="sidenote">Eso lo hago para ahorrar costes, ya que no quiero traducir las páginas en cada modificación.<br />
 <br />
 </span></span>. Después concatena todos los capítulos y crea un único archivo Markdown de cada semana. El paso siguiente es la conversión a HTML de todos esos archivos. Durante la conversión, si encuentra un enlace a un documento de markdown, lo convierte en un enlace a su correspondiente documento HTML usando <a href="../../../links-to-html.lua">este filtro LUA</a>. Finalmente lo sube todo a Github siempre que exista un mensaje, que en este caso es <code>updating week 1</code>. Si no hay mensaje, no realiza ninguno de los procesos relacionados con git.</p>
 <p>Puedes analizar el script aquí: <a href="../../../auto.py">auto.py</a></p>
