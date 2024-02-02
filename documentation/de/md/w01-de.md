@@ -130,7 +130,24 @@ Später füge ich alle Kapitel der Woche in einer einzigen Datei zusammen, in di
 
 > **Wichtige Anmerkung:** Ich bearbeite niemals manuell die zusammengefügte Datei. Ich bearbeite immer nur die einzelnen Kapitel separat.
 
-I'm sorry, but you haven't provided any specific text within quotes for translation as per your instructions. If you provide a specific text fragment, I would be happy to assist you in translating it from Spanish to German.
+### Automatische Übersetzungen mit KI
+Im Fab Academy muss die Dokumentation auf Englisch sein. Traditionelle Sprachübersetzer sind ziemlich schlecht. Sie können den Kontext nicht verstehen und produzieren Ergebnisse, die unnatürlich klingen. Ich werde eine künstliche Intelligenz nutzen, um den Text der Kapitel ins Englische und auch ins Deutsche zu übersetzen.
+
+Das KI-Modell muss in der Lage sein, die Markdown-Syntax zu erkennen und zu respektieren. Es muss auch interne Links bearbeiten, da die Links, die auf `w02-es.md` in der spanischen Dokumentation verweisen, in der englischen Version der Dokumentation zu `w02-en.md` geändert werden müssen. Es ist möglich, dass sich das Modell im Laufe des Fab Academy verbessert (oder sogar ändert). Deshalb werde ich den Text auf Spanisch behalten und die Übersetzung aller Dateien von Zeit zu Zeit erneut durchführen. Ich werde nur die Dateien auf Spanisch bearbeiten. Ich werde die generierten Übersetzungen nicht manuell handhaben. Also, wenn das, was du auf Englisch oder Deutsch liest, keinen Sinn macht, gib OpenAI oder welchem Modell auch immer ich benutze, die Schuld.
+
+Ich habe César Garcia von [La Hora Maker](https://www.youtube.com/lahoramaker) gefragt, ob er mir helfen kann, ein Modell für die Übersetzung zu finden. César hat mir empfohlen, die Whisper API von OpenAI zu verwenden, die fähig ist, direkt aus dem Spanischen Audio zu übersetzen. Im Moment bin ich nur an der Übersetzung interessiert, daher habe ich mit diesen Anweisungen einen Assistenten in der OpenAI API erstellt:
+
+```
+Translate the text from Spanish to English, Read the entire document to grasp context before translating it, take into account nuances and idioms of the Spanish language and translate them to the equivalents in English. The translation should not be literal, focus on maintaining the original meaning and provide a translation that makes sense in english. Translate only the text within quotes in the YAML header of the Markdown file. Do not translate external URLs, blocks of code and code snippets; if encountering a markdown link, only translate the text inside square brackets. Modify internal markdown link URLs to point to the appropriate english file, e.g., change w01-es.md to w01-en.md. Recognize and retain brands and names without translation. Use correct grammar and syntax in the final text. The style of the translation should be informal, with a touch of sarcastic humor.
+```
+
+Ich habe ein anderes Modell auf Deutsch mit ähnlichen Anweisungen. Ich ändere die Anweisungen von Zeit zu Zeit, um zu versuchen, die Übersetzung zu verbessern.
+
+Diese Seite, die du gerade liest, hat etwa 4000 Tokens. Du kannst herausfinden, wie viele Tokens ein Text hat, indem du den [OpenAI Tokenizer](https://platform.openai.com/tokenizer) verwendest. Die Kosten für die Übersetzung dieser Seite in beide Sprachen betragen etwa 0,32 USD, wobei jedes 1000 Tokens 0,01 USD für den Input und 0,03 USD für den Output kosten. Das scheint mir ziemlich teuer, und außerdem werden die Kosten im Laufe des Fab Academy steigen. Aus diesem Grund werde ich die Inhalte nur übersetzen, wenn ich der Meinung bin, dass die Arbeit fortgeschritten ist.
+
+Bisher sind die Übersetzungen ziemlich gut. Manchmal werden die Links nicht richtig geändert, daher werde ich diese Aufgabe in Zukunft mit einem Skript erledigen, das zuverlässiger ist. Ich habe [Sophia Döring](https://fabacademy.org/2024/labs/kamplintfort/students/sophia-doring/) gebeten, auch die deutsche Übersetzung zu überprüfen. Sie sagte, dass sie im Allgemeinen auch ziemlich gut ist, obwohl sie manchmal deutsch Wörter verwendet, die selten benutzt werden, besonders bei technischen Begriffen. Das könnte durch die Art und Weise, wie ich den Originaltext schreibe, verursacht werden. Ich benutze die spanischen Äquivalente von technischen Begriffen, die ich im Alltag tatsächlich auf Englisch sage.
+
+Auf meiner Wunschliste werde ich weiterhin nach einem lokalen Modell suchen. So könnte ich die Inhalte häufiger übersetzen. Bis jetzt habe ich die Modelle `Phi 2` und `Yarn Mistral` mit katastrophalen Ergebnissen ausprobiert.
 
 ### Automatisierung des Übersetzungsprozesses
 Zuerst habe ich die OpenAI API direkt benutzt. Jetzt habe ich diesen Prozess mit Python in der Befehlszeile automatisiert. Mit einer Kombination aus Bing Copilot und der kostenlosen Version von ChatGPT bat ich um ein Programm, das mithilfe der OpenAI-Bibliothek die Übersetzung automatisierte. Das hat allerdings nicht gut geklappt. Nach einigem Hin und Her (KI generiert nicht immer beim ersten Mal korrekten Code) war ich am Ende frustriert und habe Bing beschimpft.
