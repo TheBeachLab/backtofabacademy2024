@@ -55,9 +55,9 @@ La documentación de Fab Academy se tiene que presentar en forma de página web.
 
 [^nice]: *Agradable* se refiere a fácil de leer. Otro tipo de personas valoran por encima de todo el aspecto visual de la página y prefieren dedicar tiempo en crear su propia obra de arte. Mis mejores deseos para ellos.
 
-He modificado [esta plantilla CSS](https://jez.io/pandoc-markdown-css-theme/), que me permite añadir funcionalidades como ecuaciones, tablas, números de línea en el código, notas laterales, etc. La plantilla tenía el nombre del índice como `Contents` y lo he modificado para poder incluir una variable en el 
+He usado [esta plantilla CSS](https://jez.io/pandoc-markdown-css-theme/), que me permite añadir funcionalidades como ecuaciones, tablas, números de línea en el código, notas laterales, etc. La plantilla tenía el nombre del índice como `Contents` y lo he modificado para poder incluir una variable en el encabezado:
 
-```html{.html .numberLines .hl-6 .tight-code}
+```{.html .numberLines .hl-6 .tight-code}
 $if(toc)$
 <nav id="$idprefix$TOC" role="doc-toc">
   $if(return-url)$

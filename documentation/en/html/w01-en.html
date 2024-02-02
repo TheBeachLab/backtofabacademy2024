@@ -95,22 +95,43 @@
 <h2 id="reinventing-my-documentation-process">Reinventing My Documentation Process</h2>
 <p>I have to be realistic. I don’t have much free time, and soon I’ll have even less. So, I need a system to quickly write documentation. I’m going to try out a new system for documenting. As an unexpected benefit, this system will allow me to have the documentation in two (or more) languages.</p>
 <h3 id="using-markdown">Using Markdown</h3>
-<p>Here, I don’t want to innovate too much. The strategy that has worked very well for me for many years is to write content in a plain text file in a format called <a href="https://www.markdownguide.org">Markdown</a> <code>.md</code>. This way, I focus solely on writing the content. Advantages of writing in Markdown:</p>
+<p>Here, I don’t want to get too fancy. The strategy that has worked very well for me for many years is to write content in a plain text file in a format called <a href="https://www.markdownguide.org">Markdown</a> <code>.md</code>. This way, I focus solely on writing the content. Advantages of writing in Markdown:</p>
 <ul>
-<li>You don’t need any special program to write plain text. You can even write it by hand if you have good handwriting and then scan it.</li>
-<li>It’s easy to write, you don’t have to twist your fingers typing <code>&lt;/h1&gt;</code> and stuff like that.</li>
+<li>You don’t need any special program to write plain text. You could even write it by hand if you have good handwriting and scan it later.</li>
+<li>It’s easy to write, you don’t have to twist your fingers typing <code>&lt;/h1&gt;</code> and things like that.</li>
 <li>It’s easy to apply styles and organize the text.</li>
-<li>It can be read without feeling like you’re decoding The Matrix.</li>
+<li>It can be read without feeling like you’re decoding the Matrix.</li>
 </ul>
 <figure>
 <img src="../../img/w01/code.webp" alt="When you can read your page from the HTML code" />
 <figcaption aria-hidden="true">When you can read your page from the HTML code</figcaption>
 </figure>
-<p>Fab Academy documentation has to be presented in the form of a web page. There is a command-line program called <a href="https://pandoc.org/index.html">Pandoc</a> that literally converts any text format. I’m going to use it to convert <code>.md</code> files into “nice-looking” <code>.html</code> pages with a CSS style template.</p>
-<blockquote>
-<p>Note: “Nice” refers to easy to read. Other people value above all the visual aspect of the page and prefer to spend time creating their own work of art. My best wishes to them.</p>
-</blockquote>
-<p>I’m using <a href="https://jez.io/pandoc-markdown-css-theme/">this CSS template</a>, which allows me to add functionalities like equations, tables, line numbers in code, side notes, etc.</p>
+<p>The Fab Academy documentation has to be presented in the form of a web page. There’s a command-line program called <a href="https://pandoc.org/index.html">Pandoc</a> that literally converts any text format. I’m going to use it to convert the <code>.md</code> files into <em>nice-looking</em> <code>.html</code> pages with a CSS style template.</p>
+<p>I used <a href="https://jez.io/pandoc-markdown-css-theme/">this CSS template</a>, which allows me to add features like equations, tables, line numbers in code, side notes, etc. The template had the index name as <code>Contents</code>, and I’ve modified it to be able to include a variable in the header:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource html numberLines hl-6 tight-code"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1"></a>$if(toc)$</span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="dt">&lt;</span><span class="kw">nav</span><span class="ot"> id</span><span class="op">=</span><span class="st">&quot;$idprefix$TOC&quot;</span><span class="ot"> role</span><span class="op">=</span><span class="st">&quot;doc-toc&quot;</span><span class="dt">&gt;</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a>  $if(return-url)$</span>
+<span id="cb1-4"><a href="#cb1-4"></a>  <span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> href</span><span class="op">=</span><span class="st">&quot;$return-url$&quot;</span><span class="dt">&gt;</span>$if(return-text)$$return-text$$else$← Return$endif$<span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;&lt;</span><span class="kw">br</span><span class="dt">&gt;</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a>  $endif$</span>
+<span id="cb1-6"><a href="#cb1-6"></a>  <span class="dt">&lt;</span><span class="kw">strong</span><span class="dt">&gt;</span>Contents<span class="dt">&lt;/</span><span class="kw">strong</span><span class="dt">&gt;&lt;</span><span class="kw">label</span><span class="ot"> for</span><span class="op">=</span><span class="st">&quot;contents&quot;</span><span class="dt">&gt;</span>⊕<span class="dt">&lt;/</span><span class="kw">label</span><span class="dt">&gt;</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a>  <span class="dt">&lt;</span><span class="kw">input</span><span class="ot"> type of checkbox</span><span class="er">&quot;</span><span class="ot"> id</span><span class="op">=</span><span class="st">&quot;contents&quot;</span><span class="dt">&gt;</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a>  $table-of-contents$</span>
+<span id="cb1-9"><a href="#cb1-9"></a><span class="dt">&lt;/</span><span class="kw">nav</span><span class="dt">&gt;</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a>$endif$</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource html numberLines hl-6 hl-7 hl-8 hl-9 hl-10 tight-code"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1"></a>$if(toc)$</span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="dt">&lt;</span><span class="kw">nav</span><span class="ot"> id</span><span class="op">=</span><span class="st">&quot;$idprefix$TOC&quot;</span><span class="ot"> role</span><span class="op">=</span><span class="st">&quot;doc-toc&quot;</span><span class="dt">&gt;</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a>  $if(return-url)$</span>
+<span id="cb2-4"><a href="#cb2-4"></a>  <span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> href</span><span class="op">=</span><span class="st">&quot;$return-url$&quot;</span><span class="dt">&gt;</span>$if(return-text)$$return-text$$else$← Return$endif$<span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;&lt;</span><span class="kw">br</span><span class="dt">&gt;</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a>  $endif$</span>
+<span id="cb2-6"><a href="#cb2-6"></a>  <span class="dt">&lt;</span><span class="kw">strong</span><span class="dt">&gt;</span>$if(toc-title)$</span>
+<span id="cb2-7"><a href="#cb2-7"></a>  $toc-title$</span>
+<span id="cb2-8"><a href="#cb2-8"></a>  $else$</span>
+<span id="cb2-9"><a href="#cb2-9"></a>  Contents</span>
+<span id="cb2-10"><a href="#cb2-10"></a>  $endif$<span class="dt">&lt;/</span><span class="kw">strong</span><span class="dt">&gt;&lt;</span><span class="kw">label</span><span class="ot"> for</span><span class="op">=</span><span class="st">&quot;contents&quot;</span><span class="dt">&gt;</span>⊕<span class="dt">&lt;/</span><span class="kw">label</span><span class="dt">&gt;</span></span>
+<span id="cb2-11"><a href="#cb2-11"></a>  <span class="dt">&lt;</span><span class="kw">input</span><span class="ot"> type</span><span class="op">=</span><span class="st">&quot;checkbox&quot;</span><span class="ot"> id</span><span class="op">=</span><span class="st">&quot;contents&quot;</span><span class="dt">&gt;</span></span>
+<span id="cb2-12"><a href="#cb2-12"></a>  $table-of-contents$</span>
+<span id="cb2-13"><a href="#cb2-13"></a><span class="dt">&lt;/</span><span class="kw">nav</span><span class="dt">&gt;</span></span>
+<span id="cb2-14"><a href="#cb2-14"></a>$endif$</span></code></pre></div>
 <h3 id="saving-time-by-dictating">Saving Time by Dictating</h3>
 <p>Most of the text you’re reading has been dictated <strong>in Spanish</strong> into a Markdown text file. The reason I don’t directly dictate it in English is because my accent is so bad that the computer fails to understand me. For dictation, I’m using macOS’s dictation tool.</p>
 <p><img src="../../img/w01/dictation.webp" /></p>

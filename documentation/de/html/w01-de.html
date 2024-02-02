@@ -30,7 +30,7 @@
   </ul></li>
   <li><a href="#meine-dokumentationsprozesse-neu-erfinden" id="toc-meine-dokumentationsprozesse-neu-erfinden">Meine Dokumentationsprozesse neu erfinden</a>
   <ul>
-  <li><a href="#markdown-nutzen" id="toc-markdown-nutzen">Markdown nutzen</a></li>
+  <li><a href="#mit-markdown-arbeiten" id="toc-mit-markdown-arbeiten">Mit Markdown arbeiten</a></li>
   <li><a href="#zeit-sparen-durch-diktieren" id="toc-zeit-sparen-durch-diktieren">Zeit sparen durch Diktieren</a></li>
   <li><a href="#dateistruktur" id="toc-dateistruktur">Dateistruktur</a></li>
   <li><a href="#automatische-übersetzungen-mit-ki" id="toc-automatische-übersetzungen-mit-ki">Automatische Übersetzungen mit KI</a></li>
@@ -94,23 +94,46 @@
 </ul>
 <h2 id="meine-dokumentationsprozesse-neu-erfinden">Meine Dokumentationsprozesse neu erfinden</h2>
 <p>Ich muss realistisch sein. Ich habe nicht viel Freizeit und bald werde ich noch weniger davon haben. Daher benötige ich ein System, das mir ermöglicht, Dokumentationen flink zu verfassen. Ich werde ein neues System zum Dokumentieren ausprobieren. Als unerwarteten Vorteil wird mir dieses System ermöglichen, die Dokumentation in zwei (oder mehr) Sprachen zu haben.</p>
-<h3 id="markdown-nutzen">Markdown nutzen</h3>
-<p>Hier will ich nicht zu sehr innovieren. Die Strategie, die mir schon seit vielen Jahren sehr gut funktioniert, ist das Schreiben von Inhalten in einer einfachen Textdatei in einem Format namens <a href="https://www.markdownguide.org">Markdown</a> <code>.md</code>. Auf diese Weise konzentriere ich mich ausschließlich auf das Schreiben des Inhalts. Vorteile des Schreibens in Markdown:</p>
+<h3 id="mit-markdown-arbeiten">Mit Markdown arbeiten</h3>
+<p>Hier möchte ich nicht zu innovativ sein. Die Strategie, die mir bereits seit vielen Jahren sehr gut dient, ist das Schreiben von Inhalten in einer einfachen Textdatei im sogenannten <a href="https://www.markdownguide.org">Markdown</a> Format <code>.md</code>. Auf diese Weise konzentriere ich mich ausschließlich auf das Schreiben des Inhalts. Vorteile des Schreibens in Markdown:</p>
 <ul>
-<li>Du brauchst kein spezielles Programm, um Plain Text zu schreiben. Du kannst es sogar von Hand schreiben, wenn du eine gute Handschrift hast, und es danach einscannen.</li>
-<li>Es ist leicht zu schreiben; du musst nicht deine Finger verrenken, um <code>&lt;/h1&gt;</code> und solche Dinge zu tippen.</li>
-<li>Es ist einfach, Stile anzuwenden und den Text zu organisieren.</li>
-<li>Es kann gelesen werden, ohne dass es aussieht, als würdest du die Matrix entschlüsseln.</li>
+<li>Du benötigst kein spezielles Programm, um einfachen Text zu schreiben. Theoretisch könntest du sogar von Hand schreiben, wenn du eine gute Handschrift hast, und es später scannen.</li>
+<li>Es ist einfach zu schreiben, du musst nicht deine Finger verknoten, indem du <code>&lt;/h1&gt;</code> und ähnliches tippst.</li>
+<li>Stile anwenden und den Text organisieren, geht leicht von der Hand.</li>
+<li>Es ist lesbar, ohne dass es aussieht, als würdest du Matrix entschlüsseln.</li>
 </ul>
 <figure>
-<img src="../../img/w01/code.webp" alt="Wenn du deine Seite vom HTML-Code aus lesen kannst" />
-<figcaption aria-hidden="true">Wenn du deine Seite vom HTML-Code aus lesen kannst</figcaption>
+<img src="../../img/w01/code.webp" alt="Wenn du deine Seite direkt aus dem HTML-Code lesen kannst" />
+<figcaption aria-hidden="true">Wenn du deine Seite direkt aus dem HTML-Code lesen kannst</figcaption>
 </figure>
-<p>Die Dokumentation für das Fab Academy muss in Form einer Webseite präsentiert werden. Es gibt ein Kommandozeilenprogramm namens <a href="https://pandoc.org/index.html">Pandoc</a>, das buchstäblich jedes Textformat umwandeln kann. Ich werde es nutzen, um die <code>.md</code> Dateien in “ansehnliche” <code>.html</code> Seiten mithilfe einer CSS-Stilvorlage umzuwandeln.</p>
-<blockquote>
-<p>Anmerkung: “Ansehnlich” bezieht sich auf leicht lesbar. Andere Leute schätzen das visuelle Erscheinungsbild der Seite über alles und ziehen es vor, Zeit damit zu verbringen, ihr eigenes Kunstwerk zu erschaffen. Ich wünsche ihnen alles Gute.</p>
-</blockquote>
-<p>Ich benutze <a href="https://jez.io/pandoc-markdown-css-theme/">diese CSS-Vorlage</a>, die es mir erlaubt, Funktionen wie Gleichungen, Tabellen, Zeilennummern im Code, Randnotizen usw. hinzuzufügen.</p>
+<p>Die Dokumentation der Fab Academy muss in Form einer Webseite präsentiert werden. Es gibt ein Programm für die Kommandozeile namens <a href="https://pandoc.org/index.html">Pandoc</a>, das buchstäblich jedes Textformat umwandeln kann. Ich werde es verwenden, um die <code>.md</code>-Dateien in <em>ansehnliche</em><span class="sidenote-wrapper"><label for="sn-0" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-0" class="margin-toggle"/><span class="sidenote"><em>Ansehnlich</em> bezieht sich hier auf leichte Lesbarkeit. Andere Leute setzen hingegen alles auf das visuelle Erscheinungsbild der Seite und investieren Zeit darin, ihr eigenes Kunstwerk zu erschaffen. Ich wünsche ihnen dabei alles Gute.<br />
+<br />
+</span></span> <code>.html</code>-Seiten mit einem CSS-Style-Template zu verwandeln.</p>
+<p>Ich habe <a href="https://jez.io/pandoc-markdown-css-theme/">diese CSS-Vorlage</a> verwendet, die es mir ermöglicht, Funktionen wie Gleichungen, Tabellen, Zeilennummern im Code, Randnotizen usw. hinzuzufügen. Die Vorlage nannte den Index „Contents“, und ich habe es geändert, um eine Variable im Header einfügen zu können:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource html numberLines hl-6 tight-code"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1"></a>$if(toc)$</span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="dt">&lt;</span><span class="kw">nav</span><span class="ot"> id</span><span class="op">=</span><span class="st">&quot;$idprefix$TOC&quot;</span><span class="ot"> role</span><span class="op">=</span><span class="st">&quot;doc-toc&quot;</span><span class="dt">&gt;</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a>  $if(return-url)$</span>
+<span id="cb1-4"><a href="#cb1-4"></a>  <span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> href</span><span class="op">=</span><span class="st">&quot;$return-url$&quot;</span><span class="dt">&gt;</span>$if(return-text)$$return-text$$else$← Zurück$endif$<span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;&lt;</span><span class="kw">br</span><span class="dt">&gt;</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a>  $endif$</span>
+<span id="cb1-6"><a href="#cb1-6"></a>  <span class="dt">&lt;</span><span class="kw">strong</span><span class="dt">&gt;</span>Inhalt<span class="dt">&lt;/</span><span class="kw">strong</span><span class="dt">&gt;&lt;</span><span class="kw">label</span><span class="ot"> for</span><span class="op">=</span><span class="st">&quot;contents&quot;</span><span class="dt">&gt;</span>⊕<span class="dt">&lt;/</span><span class="kw">label</span><span class="dt">&gt;</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a>  <span class="dt">&lt;</span><span class="kw">input</span><span class="ot"> type</span><span class="op">=</span><span class="st">&quot;checkbox&quot;</span><span class="ot"> id</span><span class="op">=</span><span class="st">&quot;contents&quot;</span><span class="dt">&gt;</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a>  $table-of-contents$</span>
+<span id="cb1-9"><a href="#cb1-9"></a><span class="dt">&lt;/</span><span class="kw">nav</span><span class="dt">&gt;</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a>$endif$</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource html numberLines hl-6 hl-7 hl-8 hl-9 hl-10 tight-code"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1"></a>$if(toc)$</span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="dt">&lt;</span><span class="kw">nav</span><span class="ot"> id</span><span class="op">=</span><span class="st">&quot;$idprefix$TOC&quot;</span><span class="ot"> role</span><span class="op">=</span><span class="st">&quot;doc-toc&quot;</span><span class="dt">&gt;</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a>  $if(return-url)$</span>
+<span id="cb2-4"><a href="#cb2-4"></a>  <span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> href</span><span class="op">=</span><span class="st">&quot;$return-url$&quot;</span><span class="dt">&gt;</span>$if(return-text)$$return-text$$else$← Zurück$endif$<span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;&lt;</span><span class="kw">br</span><span class="dt">&gt;</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a>  $endif$</span>
+<span id="cb2-6"><a href="#cb2-6"></a>  <span class="dt">&lt;</span><span class="kw">strong</span><span class="dt">&gt;</span>$if(toc-title)$</span>
+<span id="cb2-7"><a href="#cb2-7"></a>  $toc-title$</span>
+<span id="cb2-8"><a href="#cb2-8"></a>  $else$</span>
+<span id="cb2-9"><a href="#cb2-9"></a>  Inhalt</span>
+<span id="cb2-10"><a href="#cb2-10"></a>  $endif$<span class="dt">&lt;/</span><span class="kw">strong</span><span class="dt">&gt;&lt;</span><span class="kw">label</span><span class="ot"> for</span><span class="op">=</span><span class="st">&quot;contents&quot;</span><span class="dt">&gt;</span>⊕<span class="dt">&lt;/</span><span class="kw">label</span><span class="dt">&gt;</span></span>
+<span id="cb2-11"><a href="#cb2-11"></a>  <span class="dt">&lt;</span><span class="kw">input</span><span class="ot"> type</span><span class="op">=</span><span class="st">&quot;checkbox&quot;</span><span class="ot"> id</span><span class="op">=</span><span class="st">&quot;contents&quot;</span><span class="dt">&gt;</span></span>
+<span id="cb2-12"><a href="#cb2-12"></a>  $table-of-contents$</span>
+<span id="cb2-13"><a href="#cb2-13"></a><span class="dt">&lt;/</span><span class="kw">nav</span><span class="dt">&gt;</span></span>
+<span id="cb2-14"><a href="#cb2-14"></a>$endif$</span></code></pre></div>
 <h3 id="zeit-sparen-durch-diktieren">Zeit sparen durch Diktieren</h3>
 <p>Der größte Teil des Textes, den du gerade liest, wurde <strong>auf Spanisch</strong> in eine Markdown-Datei diktiert. Der Grund, warum ich es nicht direkt auf Englisch diktiere, ist, dass mein Akzent so schlecht ist, dass mich der Computer nicht versteht. Zum Diktieren verwende ich das Diktierwerkzeug von macOS.</p>
 <p><img src="../../img/w01/dictation.webp" /></p>

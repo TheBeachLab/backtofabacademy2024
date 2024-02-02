@@ -41,22 +41,52 @@ Weitere nützliche Links:
 ## Meine Dokumentationsprozesse neu erfinden
 Ich muss realistisch sein. Ich habe nicht viel Freizeit und bald werde ich noch weniger davon haben. Daher benötige ich ein System, das mir ermöglicht, Dokumentationen flink zu verfassen. Ich werde ein neues System zum Dokumentieren ausprobieren. Als unerwarteten Vorteil wird mir dieses System ermöglichen, die Dokumentation in zwei (oder mehr) Sprachen zu haben.
 
-### Markdown nutzen
+### Mit Markdown arbeiten
+Hier möchte ich nicht zu innovativ sein. Die Strategie, die mir bereits seit vielen Jahren sehr gut dient, ist das Schreiben von Inhalten in einer einfachen Textdatei im sogenannten [Markdown](https://www.markdownguide.org) Format `.md`. Auf diese Weise konzentriere ich mich ausschließlich auf das Schreiben des Inhalts. Vorteile des Schreibens in Markdown:
 
-Hier will ich nicht zu sehr innovieren. Die Strategie, die mir schon seit vielen Jahren sehr gut funktioniert, ist das Schreiben von Inhalten in einer einfachen Textdatei in einem Format namens [Markdown](https://www.markdownguide.org) `.md`. Auf diese Weise konzentriere ich mich ausschließlich auf das Schreiben des Inhalts. Vorteile des Schreibens in Markdown:
+- Du benötigst kein spezielles Programm, um einfachen Text zu schreiben. Theoretisch könntest du sogar von Hand schreiben, wenn du eine gute Handschrift hast, und es später scannen.
+- Es ist einfach zu schreiben, du musst nicht deine Finger verknoten, indem du `</h1>` und ähnliches tippst.
+- Stile anwenden und den Text organisieren, geht leicht von der Hand.
+- Es ist lesbar, ohne dass es aussieht, als würdest du Matrix entschlüsseln.
 
-- Du brauchst kein spezielles Programm, um Plain Text zu schreiben. Du kannst es sogar von Hand schreiben, wenn du eine gute Handschrift hast, und es danach einscannen.
-- Es ist leicht zu schreiben; du musst nicht deine Finger verrenken, um `</h1>` und solche Dinge zu tippen.
-- Es ist einfach, Stile anzuwenden und den Text zu organisieren.
-- Es kann gelesen werden, ohne dass es aussieht, als würdest du die Matrix entschlüsseln.
+![Wenn du deine Seite direkt aus dem HTML-Code lesen kannst](../../img/w01/code.webp)
 
-![Wenn du deine Seite vom HTML-Code aus lesen kannst](../../img/w01/code.webp)
+Die Dokumentation der Fab Academy muss in Form einer Webseite präsentiert werden. Es gibt ein Programm für die Kommandozeile namens [Pandoc](https://pandoc.org/index.html), das buchstäblich jedes Textformat umwandeln kann. Ich werde es verwenden, um die `.md`-Dateien in *ansehnliche*[^nice] `.html`-Seiten mit einem CSS-Style-Template zu verwandeln.
 
-Die Dokumentation für das Fab Academy muss in Form einer Webseite präsentiert werden. Es gibt ein Kommandozeilenprogramm namens [Pandoc](https://pandoc.org/index.html), das buchstäblich jedes Textformat umwandeln kann. Ich werde es nutzen, um die `.md` Dateien in "ansehnliche" `.html` Seiten mithilfe einer CSS-Stilvorlage umzuwandeln.
+[^nice]: *Ansehnlich* bezieht sich hier auf leichte Lesbarkeit. Andere Leute setzen hingegen alles auf das visuelle Erscheinungsbild der Seite und investieren Zeit darin, ihr eigenes Kunstwerk zu erschaffen. Ich wünsche ihnen dabei alles Gute.
 
-> Anmerkung: "Ansehnlich" bezieht sich auf leicht lesbar. Andere Leute schätzen das visuelle Erscheinungsbild der Seite über alles und ziehen es vor, Zeit damit zu verbringen, ihr eigenes Kunstwerk zu erschaffen. Ich wünsche ihnen alles Gute.
+Ich habe [diese CSS-Vorlage](https://jez.io/pandoc-markdown-css-theme/) verwendet, die es mir ermöglicht, Funktionen wie Gleichungen, Tabellen, Zeilennummern im Code, Randnotizen usw. hinzuzufügen. Die Vorlage nannte den Index „Contents“, und ich habe es geändert, um eine Variable im Header einfügen zu können:
 
-Ich benutze [diese CSS-Vorlage](https://jez.io/pandoc-markdown-css-theme/), die es mir erlaubt, Funktionen wie Gleichungen, Tabellen, Zeilennummern im Code, Randnotizen usw. hinzuzufügen.
+```{.html .numberLines .hl-6 .tight-code}
+$if(toc)$
+<nav id="$idprefix$TOC" role="doc-toc">
+  $if(return-url)$
+  <a href="$return-url$">$if(return-text)$$return-text$$else$← Zurück$endif$</a><br>
+  $endif$
+  <strong>Inhalt</strong><label for="contents">⊕</label>
+  <input type="checkbox" id="contents">
+  $table-of-contents$
+</nav>
+$endif$
+```
+
+
+```{.html .numberLines .hl-6 .hl-7 .hl-8 .hl-9 .hl-10 .tight-code}
+$if(toc)$
+<nav id="$idprefix$TOC" role="doc-toc">
+  $if(return-url)$
+  <a href="$return-url$">$if(return-text)$$return-text$$else$← Zurück$endif$</a><br>
+  $endif$
+  <strong>$if(toc-title)$
+  $toc-title$
+  $else$
+  Inhalt
+  $endif$</strong><label for="contents">⊕</label>
+  <input type="checkbox" id="contents">
+  $table-of-contents$
+</nav>
+$endif$
+```
 
 ### Zeit sparen durch Diktieren
 Der größte Teil des Textes, den du gerade liest, wurde **auf Spanisch** in eine Markdown-Datei diktiert. Der Grund, warum ich es nicht direkt auf Englisch diktiere, ist, dass mein Akzent so schlecht ist, dass mich der Computer nicht versteht. Zum Diktieren verwende ich das Diktierwerkzeug von macOS.
