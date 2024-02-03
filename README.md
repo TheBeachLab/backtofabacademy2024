@@ -10,4 +10,4 @@ In [2013](https://fabacademy.org/archives/2013/students/sanchez.francisco/index.
 [→ English Documentation (AI generated)](documentation/en/md/index.md)  
 [→ Deutsche Dokumentation (Künstlich generiert durch KI)](documentation/de/md/index.md)
 
-![I will vlogging my experience in [Youtube](https://www.youtube.com/playlist?list=PLKDpiLmgp6Evt30dhHgRlcB80OhMfcs2W). Some content will also be shared in [Instagram](https://www.instagram.com/thebeachlab)](documentation/img/backtofab.jpeg)
+![I will be vlogging my experience in [Youtube](https://www.youtube.com/playlist?list=PLKDpiLmgp6Evt30dhHgRlcB80OhMfcs2W). Some content will also be shared in [Instagram](https://www.instagram.com/thebeachlab)](documentation/img/backtofab.jpeg)

@@ -1,5 +1,5 @@
 ### AI-driven automatic translations
-At Fab Academy, documentation has to be in English. Traditional language translators are pretty bad. They can't understand context and produce results that don't sound natural. I'll be using artificial intelligence to translate the text of the chapters into English and also into German.
+[At Fab Academy]{.smallcaps}, documentation has to be in English. Traditional language translators are pretty bad. They can't understand context and produce results that don't sound natural. I'll be using artificial intelligence to translate the text of the chapters into English and also into German.
 
 The AI model must be able to recognize Markdown syntax and respect it. The model may improve (or even change) throughout Fab Academy. That's why I'll keep the text in Spanish and rerun the translations on all files from time to time. I will only edit the files in Spanish. I won't manually manipulate the generated translations. So, if what you read in English or German makes no sense, blame OpenAI or whichever model I'm using.
 

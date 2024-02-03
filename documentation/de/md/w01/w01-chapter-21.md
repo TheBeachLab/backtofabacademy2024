@@ -1,5 +1,5 @@
 ### Markdown nutzen
-["Hier will ich nicht allzu innovativ sein."]{.smallcaps} Die Strategie, die mir schon seit vielen Jahren sehr gut dient, ist das Schreiben von Inhalten in einer einfachen Textdatei im Format namens [Markdown](https://www.markdownguide.org) `.md`. So konzentriere ich mich ausschließlich auf das Schreiben des Inhalts. Vorteile des Schreibens in Markdown:
+[Hier will ich nicht allzu innovativ sein.]{.smallcaps} Die Strategie, die mir schon seit vielen Jahren sehr gut dient, ist das Schreiben von Inhalten in einer einfachen Textdatei im Format namens [Markdown](https://www.markdownguide.org) `.md`. So konzentriere ich mich ausschließlich auf das Schreiben des Inhalts. Vorteile des Schreibens in Markdown:
 
 - Du benötigst kein spezielles Programm, um einfachen Text zu schreiben. Du könntest ihn sogar per Hand schreiben, wenn du eine gute Handschrift hast, und ihn später scannen.
 - Es ist einfach zu schreiben, du musst dir nicht die Finger verrenken, indem du `</h1>` und so weiter tippst.
