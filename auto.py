@@ -24,13 +24,14 @@ def concatenate_files(directory):
         # Sort the files to maintain chapter order
         files.sort()
         # Create the new file name
-        new_file_name = re.sub(r'-chapter-\d{2}-', '-', os.path.basename(files[0]))
+        new_file_name = re.sub(r'-chapter-\d{2}', '', os.path.basename(files[0]))
         new_file_path = os.path.join(os.path.dirname(dir_name), new_file_name)
         # Concatenate the files
         with open(new_file_path, 'w') as outfile:
             for file_name in files:
                 with open(file_name, 'r') as infile:
                     outfile.write(infile.read())
+
 
 
 # Step 0. Optional. Translation if first parameter is '--translate'
@@ -56,7 +57,7 @@ for folder in documentation_folders:
         input_file = os.path.join(folder, f)
         output_file = os.path.join(html_folder, f"{os.path.splitext(f)[0]}.html")
         print(f"Converting {input_file} to {output_file}")
-        subprocess.run(['pandoc', '--katex', '--from', 'markdown+tex_math_single_backslash', '--filter', 'pandoc-sidenote', '--to', 'html5+smart', '--template=template', '--css=../../../css/theme.css', '--css=../../../css/skylighting-solarized-theme.css', '--wrap=none', '--output', output_file, '--toc', '--lua-filter=links-to-html.lua', input_file])
+        subprocess.run(['pandoc', '--katex', '--from', 'markdown+tex_math_single_backslash', '--filter', 'pandoc-sidenote', '--to', 'html5+smart', '--template=template', '--css=../../../css/theme.css', '--css=../../../css/tufte.css', '--css=../../../css/skylighting-solarized-theme.css', '--wrap=none', '--output', output_file, '--toc', '--lua-filter=links-to-html.lua', input_file])
 
 
 # Step 4. Optional. Upload everything to GitHub

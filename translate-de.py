@@ -64,8 +64,8 @@ def wait_on_run(run, thread):
 # Step 0. Translate all markdown files ending in -es.md that have changed
 changed_files = subprocess.check_output(['git', 'diff', '--name-only', '--cached']).decode().splitlines()
 for f in changed_files:
-    if f.endswith('-es.md') and 'chapter' in f and os.path.exists(f): # Only Spanish chapters (ignore the tracked as deleted)
-        filename = os.path.join(os.path.dirname(f).replace('/es/', '/de/'), os.path.basename(f).replace('-es.md', '-de.md')) # destination filename
+    if 'chapter' in f and f.endswith('.md') and 'documentation/es/' in f and os.path.exists(f): # Only Spanish chapters (ignore the tracked as deleted)
+        filename = os.path.join(os.path.dirname(f).replace('/es/', '/de/'), os.path.basename(f)) # destination filename
         print(f"Translating {f} to {filename}")
         with open(f, 'r') as file:
             text = file.read()

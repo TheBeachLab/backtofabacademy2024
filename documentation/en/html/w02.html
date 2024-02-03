@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-ES" xml:lang="es-ES">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc-markdown-css-theme" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Week 2. Computer-Aided Design</title>
+  <link rel="stylesheet" href="../../../css/theme.css" />
+  <link rel="stylesheet" href="../../../css/tufte.css" />
+  <link rel="stylesheet" href="../../../css/skylighting-solarized-theme.css" />
+</head>
+<body>
+
+<header>
+<h1 class="title">Week 2. Computer-Aided Design</h1>
+<blockquote class="metadata">
+<p class="subtitle">Back to Fab Academy 2024. Fran Sanchez</p>
+</blockquote>
+</header>
+
+<nav id="TOC" role="doc-toc">
+    <a href="../html/">← Go back</a><br>
+    <strong>  Table of Contents
+  </strong><label for="contents">⊕</label>
+  <input type="checkbox" id="contents">
+  <ul>
+  <li><a href="#weeks-goals" id="toc-weeks-goals">Week’s Goals</a></li>
+  </ul>
+</nav>
+
+<main>
+<div class="note yellow">
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><em>Task:</em></td>
+</tr>
+<tr class="even">
+<td>Model (raster, vector, 2D, 3D, rendering, animation, simulation, …) a possible final project, compress your images and videos, and publish a description with your design files on your page.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="weeks-goals">Week’s Goals</h2>
+<p><span class="smallcaps">Last week started off on the wrong foot</span>. I barely had time to do anything.<span class="sidenote-wrapper"><label for="sn-0" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-0" class="margin-toggle"/><span class="sidenote">I forgot that I never follow my own advice.<br />
+<br />
+</span></span> This week I’m going to be more disciplined. The first thing I’m doing is defining my goals and setting a deadline to achieve them. It’s one of my favorite weeks because <strong>I love trying out new software</strong>. In order of preference, I’m planning to:</p>
+<ul>
+<li><strong>OpenFOAM. 1 day of dedication</strong>
+<ul>
+<li>I want to learn how to create geometries in Blender.</li>
+<li>I want to run a simulation of an airfoil.</li>
+<li>I want to simulate incompressible flow.</li>
+<li>I want to learn how to visualize results in Paraview.</li>
+</ul></li>
+<li><strong>FreeCAD. 1 day of dedication</strong>. I have a love-hate relationship with FreeCAD. I use it, I hate it, then I miss it, I use it again, and then I hate it again. Let’s see if I can fall in love with <a href="https://ondsel.com">Ondsel</a> this time. Specifically, here’s what I’d like to do this week:
+<ul>
+<li>Give all the tools another try to see if they’ve improved.</li>
+<li>Test out the Assembly Workbench.</li>
+<li>Try the TechDraw Workbench.</li>
+<li>Run a simulation in Calculix.</li>
+<li>I hope to integrate some hardware device to control parameters.</li>
+<li>I aim to install and test the add-on by <a href="https://pieterhijma.net/index.html">Pieter Hijma</a> <code>OSH Automated Documentation</code>.</li>
+</ul></li>
+<li><strong>Blender. 2 days of dedication.</strong> This is where I’ve got my work cut out for me.
+<ul>
+<li>Learn as much as I can about Geometry Nodes.</li>
+<li>Real-time rendering with EEVEE.</li>
+<li>Control a virtual camera with my phone.</li>
+<li>Create a physics simulation.</li>
+<li>Create an animation with Grease Pencil.</li>
+<li>Explore Blender’s serial port interface.</li>
+</ul></li>
+<li><strong>JavaScript. 1 day of dedication</strong>
+<ul>
+<li>I want to use ThreeJS to visualize 3D models on the web page.</li>
+<li>I want to learn more about D3JS for data visualizations and mapping.</li>
+</ul></li>
+<li><strong>Artificial Intelligence. 1 day of dedication</strong>
+<ul>
+<li>Explore the status of generative models in 3D</li>
+<li>Read the paper on generating 3D models from large language models (LLM).</li>
+<li>Use Midjourney or something similar to generate some images for the final project.</li>
+</ul></li>
+<li><strong>Command line. 1/2 day of dedication</strong>
+<ul>
+<li>I will integrate Imagemagick into the documentation generation scripts to automate image compression.</li>
+<li>I will also integrate ffmpeg into the scripts for video compression.</li>
+</ul></li>
+<li><strong>Audio. 1/2 day of dedication</strong>
+<ul>
+<li>I’m going to take some time to learn a bit about Sonic Pi.</li>
+</ul></li>
+</ul>
+<p>I think I may have overdone it. If I manage to do 1/4 of this, I’ll be more than happy.</p>
+</main>
+
+<footer>
+<p class="signoff">
+  <a href="../html/">← Go back</a>
+</p>
+</footer>
+<script>
+;(function() {
+  // Non-essential if user has JavaScript off. Just makes checkboxes look nicer.
+  var selector = '.task-list > li > input[type="checkbox"]';
+  var checkboxes = document.querySelectorAll(selector);
+  Array.from(checkboxes).forEach((checkbox) => {
+    var wasChecked = checkbox.checked;
+    checkbox.disabled = false;
+    checkbox.addEventListener('click', (ev) => {ev.target.checked = wasChecked});
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-ES" xml:lang="es-ES">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc-markdown-css-theme" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Semana 1. Principios y prácticas, Gestión de Proyectos</title>
+  <link rel="stylesheet" href="../../../css/theme.css" />
+  <link rel="stylesheet" href="../../../css/tufte.css" />
+  <link rel="stylesheet" href="../../../css/skylighting-solarized-theme.css" />
+</head>
+<body>
+
+<header>
+<h1 class="title">Semana 1. Principios y prácticas, Gestión de Proyectos</h1>
+<blockquote class="metadata">
+<p class="subtitle">Regreso a Fab Academy 2024. Fran Sanchez</p>
+</blockquote>
+</header>
+
+<nav id="TOC" role="doc-toc">
+    <a href="../html/">← Volver atrás</a><br>
+    <strong>  Índice
+  </strong><label for="contents">⊕</label>
+  <input type="checkbox" id="contents">
+  <ul>
+  <li><a href="#mi-entorno" id="toc-mi-entorno">Mi entorno</a>
+  <ul>
+  <li><a href="#macos-otra-vez-cómo-pude-caer-tan-bajo" id="toc-macos-otra-vez-cómo-pude-caer-tan-bajo">macOS otra vez ¿Cómo pude caer tan bajo?</a></li>
+  <li><a href="#mi-teclado-es-raro" id="toc-mi-teclado-es-raro">Mi teclado es raro</a></li>
+  <li><a href="#mi-editor-de-texto-también-es-raro" id="toc-mi-editor-de-texto-también-es-raro">Mi editor de texto también es raro</a></li>
+  </ul></li>
+  <li><a href="#reinventando-la-rueda" id="toc-reinventando-la-rueda">Reinventando la rueda</a>
+  <ul>
+  <li><a href="#usando-markdown" id="toc-usando-markdown">Usando Markdown</a></li>
+  <li><a href="#ahorrar-tiempo-dictando" id="toc-ahorrar-tiempo-dictando">Ahorrar tiempo dictando</a></li>
+  <li><a href="#estructura-de-archivos" id="toc-estructura-de-archivos">Estructura de archivos</a></li>
+  <li><a href="#traducciones-automáticas-con-ia" id="toc-traducciones-automáticas-con-ia">Traducciones automáticas con IA</a></li>
+  <li><a href="#automatizando-la-traducción" id="toc-automatizando-la-traducción">Automatizando la traducción</a></li>
+  <li><a href="#todo-en-uno" id="toc-todo-en-uno">Todo en uno</a></li>
+  <li><a href="#sirviendo-las-páginas-web" id="toc-sirviendo-las-páginas-web">Sirviendo las páginas web</a></li>
+  <li><a href="#resultado-final" id="toc-resultado-final">Resultado final</a></li>
+  </ul></li>
+  <li><a href="#git-ese-pozo-sin-fondo" id="toc-git-ese-pozo-sin-fondo">Git: Ese pozo sin fondo</a></li>
+  <li><a href="#gestión-de-proyectos" id="toc-gestión-de-proyectos">Gestión de proyectos</a></li>
+  <li><a href="#boceto-del-proyecto-final" id="toc-boceto-del-proyecto-final">Boceto del proyecto final</a></li>
+  <li><a href="#conclusión" id="toc-conclusión">Conclusión</a></li>
+  </ul>
+</nav>
+
+<main>
+<div class="note yellow">
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><em>Tarea A:</em></td>
+</tr>
+<tr class="even">
+<td>Planifica y realiza un boceto de un potencial proyecto final.</td>
+</tr>
+<tr class="odd">
+<td></td>
+</tr>
+<tr class="even">
+<td><em>Tarea B:</em></td>
+</tr>
+<tr class="odd">
+<td>Realiza un tutorial de Git paso a paso.</td>
+</tr>
+<tr class="even">
+<td>Construye un sitio personal en el repositorio de la clase describiéndote a ti y tu proyecto final.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="mi-entorno">Mi entorno</h2>
+<h3 id="macos-otra-vez-cómo-pude-caer-tan-bajo">macOS otra vez ¿Cómo pude caer tan bajo?</h3>
+<p>A ver como explico ésto… Mejor lo explico en un video<span class="sidenote-wrapper"><label for="sn-0" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-0" class="margin-toggle"/><span class="sidenote">Próximamente en <a href="https://www.youtube.com/playlist?list=PLKDpiLmgp6Evt30dhHgRlcB80OhMfcs2W">Youtube</a> o <a href="https://www.instagram.com/thebeachlab">Instagram</a>.<br />
+<br />
+</span></span>.</p>
+<h3 id="mi-teclado-es-raro">Mi teclado es raro</h3>
+<p><span class="smallcaps">Mientras trabajaba en la organización de Fab15 en Egipto</span>, me fijé en que Sherry Lassiter puede escribir a toda velocidad sin mirar el teclado. En aquel momento, yo tecleaba con 2 dedos y siempre mirando el teclado. Así que me decidí a aprender. Hay una ventaja cuando aprendes a hacer algo desde cero, y es que no tienes ningún vicio. Así que yo no aprendí el sistema QWERTY, que estaba originalmente diseñada para que las antiguas máquinas de escribir no se atascaran. Yo aprendí con el sistema <a href="https://colemak.com">Colemak</a><span class="sidenote-wrapper"><label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle"/><span class="sidenote">Colemak está diseñado para que las letras de mayor uso en idioma ingles esten en la fila central.<br />
+<br />
+</span></span>. Tengo un <a href="https://drop.com/buy/preonic-mechanical-keyboard">teclado orto-lineal</a> acon disposición Colemak, y practico unos cinco minutos al día.</p>
+<figure>
+<img src="../../img/w01/preonic.webp" alt="Lo que más me gusta de la distribución Colemak es que la tecla de borrar está al lado izquierdo de la tecla A" />
+<figcaption aria-hidden="true">Lo que más me gusta de la distribución Colemak es que la tecla de borrar está al lado izquierdo de la tecla <code>A</code></figcaption>
+</figure>
+<p>También tengo un <a href="https://karabiner-elements.pqrs.org">software en macOS</a> que cambia mi distribución del teclado a Colemak y además cambia la función de la tecla bloqueo de mayúsculas<span class="sidenote-wrapper"><label for="sn-2" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-2" class="margin-toggle"/><span class="sidenote">En realidad solo la usaba para insultar<br />
+<br />
+</span></span> por el borrado hacia atrás.</p>
+<h3 id="mi-editor-de-texto-también-es-raro">Mi editor de texto también es raro</h3>
+<p><span class="smallcaps">Mi intención es usar únicamente <code>vim</code></span>, un editor de texto en la línea de comandos. Tengo algunas nociones de <code>vim</code> y quiero profundizar en el aprendizaje. Me gusta la idea de usar únicamente el teclado para editar texto. Para evitar la tentación de usar Visual Studio Code, lo he desinstalado<span class="sidenote-wrapper"><label for="sn-3" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-3" class="margin-toggle"/><span class="sidenote">Es mentira, solo me he quitado el acceso directo.<br />
+<br />
+</span></span>. El editor de texto vim es bastante parco de origen. Por eso he instalado algunos plugins. Esta es una lista que iré ampliando con el tiempo:</p>
+<ul>
+<li><a href="https://github.com/preservim/nerdtree">→ NERDTree</a> para tener una barra lateral con el listado de ficheros, y así poder navegar rápidamente entre archivos.</li>
+<li><a href="https://github.com/ryanoasis/vim-devicons">→ vim-devicons</a> para visualizar con un pequeño icono gráfico los archivos y las carpetas.</li>
+</ul>
+<p>Otros enlaces utiles:</p>
+<ul>
+<li><a href="https://vimawesome.com">→ VimAwesome</a> es una página con cientos de plugins de vim</li>
+<li><a href="https://github.com/TheBeachLab/myComputing">→ Fran’s My Computing repo</a> con algunos trucos, por si te gusta usar<span class="sidenote-wrapper"><label for="sn-4" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-4" class="margin-toggle"/><span class="sidenote">0.01% de la población<br />
+<br />
+</span></span> la línea de comandos.</li>
+</ul>
+<h2 id="reinventando-la-rueda">Reinventando la rueda</h2>
+<p><span class="smallcaps">No tengo mucho tiempo libre</span>. Así que necesito inventar un sistema para poder escribir la documentación de forma ágil. Como beneficio inesperado, este sistema te permite tener la documentación en dos (o más) idiomas.</p>
+<h3 id="usando-markdown">Usando Markdown</h3>
+<p><span class="smallcaps">Aquí no quiero innovar demasiado</span>. La estrategia que me ha funcionado muy bien desde hace muchos años es escribir contenido en un archivo de texto plano en un formato llamado <a href="https://www.markdownguide.org">Markdown</a> <code>.md</code>. De esta manera, me centro solamente en escribir el contenido. Ventajas de escribir en Markdown:</p>
+<ul>
+<li>No necesitas ningún programa especial para escribir texto plano. Incluso puedes escribirlo a mano si tienes buena letra y escanearlo luego.</li>
+<li>Es fácil de escribir, no tienes que retorcerte los dedos escribiendo <code>&lt;/h1&gt;</code> y cosas así.</li>
+<li>Es fácil aplicar estilos y organizar el texto.</li>
+<li>Se puede leer sin que parezca que estas decodificando Matrix.</li>
+</ul>
+<figure>
+<img src="../../img/w01/code.webp" alt="Cuando puedes leer tu página desde el código HTML" />
+<figcaption aria-hidden="true">Cuando puedes leer tu página desde el código HTML</figcaption>
+</figure>
+<p>La documentación de Fab Academy se tiene que presentar en forma de página web. Existe un programa para la línea de comandos llamado <a href="https://pandoc.org/index.html">Pandoc</a> que literalmente convierte cualquier formato de texto. Voy a usarlo para convertir los los archivos <code>.md</code> en páginas <code>.html</code> de <em>aspecto agradable</em><span class="sidenote-wrapper"><label for="sn-5" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-5" class="margin-toggle"/><span class="sidenote"><em>Agradable</em> se refiere a fácil de leer. Otras personas valoran por encima de todo el aspecto visual de la página y prefieren dedicar tiempo en crear su propia obra de arte. Mis mejores deseos para ellos.<br />
+<br />
+</span></span> con una plantilla de estilo CSS. La plantilla tiene dos ventajas. Por un lado me permite despreocuparme del aspecto visual de la página. Por otro lado, me permite añadir fácilmente funcionalidades como ecuaciones, tablas, números de línea en el código, notas laterales, etc.</p>
+<p>La plantilla que he usado se llama <a href="https://github.com/jez/tufte-pandoc-css">Tufte CSS.</a><span class="sidenote-wrapper"><label for="sn-6" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-6" class="margin-toggle"/><span class="sidenote">Fuertemente inspirada en el estilo visual de los libros de Edward R. Tufte.<br />
+<br />
+</span></span> He modificado la plantilla porque no estaba totalmente pensada para multiples idiomas.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource html numberLines hl-6 tight-code"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1"></a>$if(toc)$</span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="dt">&lt;</span><span class="kw">nav</span><span class="ot"> id</span><span class="op">=</span><span class="st">&quot;$idprefix$TOC&quot;</span><span class="ot"> role</span><span class="op">=</span><span class="st">&quot;doc-toc&quot;</span><span class="dt">&gt;</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a>  $if(return-url)$</span>
+<span id="cb1-4"><a href="#cb1-4"></a>  <span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> href</span><span class="op">=</span><span class="st">&quot;$return-url$&quot;</span><span class="dt">&gt;</span>$if(return-text)$$return-text$$else$← Return$endif$<span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;&lt;</span><span class="kw">br</span><span class="dt">&gt;</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a>  $endif$</span>
+<span id="cb1-6"><a href="#cb1-6"></a>  <span class="dt">&lt;</span><span class="kw">strong</span><span class="dt">&gt;</span>Contents<span class="dt">&lt;/</span><span class="kw">strong</span><span class="dt">&gt;&lt;</span><span class="kw">label</span><span class="ot"> for</span><span class="op">=</span><span class="st">&quot;contents&quot;</span><span class="dt">&gt;</span>⊕<span class="dt">&lt;/</span><span class="kw">label</span><span class="dt">&gt;</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a>  <span class="dt">&lt;</span><span class="kw">input</span><span class="ot"> type</span><span class="op">=</span><span class="st">&quot;checkbox&quot;</span><span class="ot"> id</span><span class="op">=</span><span class="st">&quot;contents&quot;</span><span class="dt">&gt;</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a>  $table-of-contents$</span>
+<span id="cb1-9"><a href="#cb1-9"></a><span class="dt">&lt;/</span><span class="kw">nav</span><span class="dt">&gt;</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a>$endif$</span></code></pre></div>
+<p>En la línea 6, la palabrá Índice estaba grabada a fuego como <code>Contents</code>. Ahora la palabra proviene de la variable <code>toc-title</code> en el encabezado:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource html numberLines hl-6 hl-7 hl-8 hl-9 hl-10 tight-code"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1"></a>$if(toc)$</span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="dt">&lt;</span><span class="kw">nav</span><span class="ot"> id</span><span class="op">=</span><span class="st">&quot;$idprefix$TOC&quot;</span><span class="ot"> role</span><span class="op">=</span><span class="st">&quot;doc-toc&quot;</span><span class="dt">&gt;</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a>  $if(return-url)$</span>
+<span id="cb2-4"><a href="#cb2-4"></a>  <span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> href</span><span class="op">=</span><span class="st">&quot;$return-url$&quot;</span><span class="dt">&gt;</span>$if(return-text)$$return-text$$else$← Return$endif$<span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;&lt;</span><span class="kw">br</span><span class="dt">&gt;</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a>  $endif$</span>
+<span id="cb2-6"><a href="#cb2-6"></a>  <span class="dt">&lt;</span><span class="kw">strong</span><span class="dt">&gt;</span>$if(toc-title)$</span>
+<span id="cb2-7"><a href="#cb2-7"></a>  $toc-title$</span>
+<span id="cb2-8"><a href="#cb2-8"></a>  $else$</span>
+<span id="cb2-9"><a href="#cb2-9"></a>  Contents</span>
+<span id="cb2-10"><a href="#cb2-10"></a>  $endif$<span class="dt">&lt;/</span><span class="kw">strong</span><span class="dt">&gt;&lt;</span><span class="kw">label</span><span class="ot"> for</span><span class="op">=</span><span class="st">&quot;contents&quot;</span><span class="dt">&gt;</span>⊕<span class="dt">&lt;/</span><span class="kw">label</span><span class="dt">&gt;</span></span>
+<span id="cb2-11"><a href="#cb2-11"></a>  <span class="dt">&lt;</span><span class="kw">input</span><span class="ot"> type</span><span class="op">=</span><span class="st">&quot;checkbox&quot;</span><span class="ot"> id</span><span class="op">=</span><span class="st">&quot;contents&quot;</span><span class="dt">&gt;</span></span>
+<span id="cb2-12"><a href="#cb2-12"></a>  $table-of-contents$</span>
+<span id="cb2-13"><a href="#cb2-13"></a><span class="dt">&lt;/</span><span class="kw">nav</span><span class="dt">&gt;</span></span>
+<span id="cb2-14"><a href="#cb2-14"></a>$endif$</span></code></pre></div>
+<h3 id="ahorrar-tiempo-dictando">Ahorrar tiempo dictando</h3>
+<p><span class="smallcaps">La mayor parte del texto que estas leyendo</span>, esta siendo dictado <strong>en español</strong><span class="sidenote-wrapper"><label for="sn-7" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-7" class="margin-toggle"/><span class="sidenote">El motivo por el cual no lo dicto directamente en inglés es que mi acento es tan malo que el ordenador no me entiende.<br />
+<br />
+</span></span> dentro de un archivo de texto Markdown. Para dictar estoy usando la herramienta de dictado de macOS.</p>
+<p><img src="../../img/w01/dictation.webp" /></p>
+<p>Me gusta mucho esta herramienta porque:</p>
+<ul>
+<li>Funciona en todas partes del sistema operativo, incluyendo el terminal.</li>
+<li>Te permite hablar y hacer pausas de hasta 30 segundos sin que se desconecte.</li>
+<li>Puedes editar el texto mientras estas dictando.</li>
+<li>Puedes añadir emojis 😊</li>
+<li>Añade signos de puntuación automáticamente, y también los puedes añadir manualmente.</li>
+<li>También puedes cambiar de línea y de párrafo usando la voz.</li>
+<li>Si tu procesador es Apple Silicon entiende el contexto y se auto corrige. Todo ello sin conexión.</li>
+<li>Lo puedo usar mientras escucho música con mis auriculares.</li>
+</ul>
+<p>Aquí esta la lista completa de comandos de voz en <a href="https://support.apple.com/es-es/guide/mac-help/mh40695/14.0/mac/14.0">español</a>, <a href="https://support.apple.com/en-gb/guide/mac-help/mh40695/14.0/mac/14.0">inglés</a> y <a href="https://support.apple.com/de-de/guide/mac-help/mh40695/14.0/mac/14.0">alemán</a>. Esto me ahorra algo tiempo a la hora de escribir. Algunas partes las tengo que escribir manualmente, por ejemplo, cuando escribo código o incluyo enlaces. También tengo que hacer algunas correcciones manualmente.</p>
+<h3 id="estructura-de-archivos">Estructura de archivos</h3>
+<p><span class="smallcaps">Al principio</span>, escribía el texto de cada semana en un único archivo. Pero como leerás más adelante, uso un servicio de pago para la traducción. Cada vez que editaba una línea, tenía que traducir todo el archivo entero de nuevo. Para limitar los costes he dividido la semana en capítulos<span class="sidenote-wrapper"><label for="sn-8" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-8" class="margin-toggle"/><span class="sidenote">Mi estructura de archivos está inspirada en el lenguaje de programación <a href="https://en.wikipedia.org/wiki/BASIC">BASIC</a><br />
+<br />
+</span></span> y creo un archivo para cada capítulo. De ese modo solo se traducen los capítulos que he modificado.</p>
+<pre><code>/documentation
+    /es
+        /md
+            /w01
+                w01-chapter-00.md
+                w01-chapter-10.md
+                w01-chapter-20.md
+                w01-chapter-21.md
+                ...
+                w01-chapter-90.md</code></pre>
+<p>El nombre del archivo contiene codificado la semana en la que me encuentro y el capítulo. El capítulo 00 es el encabezado. Uso los capítulos 10, 20, 30… para desarrollar los apartados de la semana. Si un capítulo es muy largo lo subdivido usando los números intermedios: 20, 21, 22, etc. El capítulo 90 siempre es la conclusión.</p>
+<p>Posteriormente concateno<span class="sidenote-wrapper"><label for="sn-9" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-9" class="margin-toggle"/><span class="sidenote"><strong>Nota Importante:</strong> Nunca edito manualmente el archivo concatenado. Sólo edito los capítulos por separado.<br />
+<br />
+</span></span> todos los capítulos de la semana en un sólo archivo, en este caso <code>w01.md</code>.</p>
+<h3 id="traducciones-automáticas-con-ia">Traducciones automáticas con IA</h3>
+<p><span class="smallcaps">En Fab Academy</span>, la documentación tiene que estar en inglés. Los traductores de idiomas tradicionales son bastante malos. No son capaces de entender el contexto y producen resultados que no suenan naturales. Voy a usar una inteligencia artificial para traducir el texto de los capítulos al inglés y también al alemán.</p>
+<p>El modelo de inteligencia artificial tiene que ser capaz de reconocer la sintaxis de Markdown y ser capaz de respetarla. Es posible que el modelo vaya mejorando (o incluso cambie) a lo largo de Fab Academy. Por eso mantendré el texto en español y volveré a ejecutar la traducción de todos los archivos de vez en cuando. Solo voy a editar los archivos en español. No manipularé manualmente las traducciones generadas. Así que si lo que lees en ingles o alemán no tiene sentido, echale la culpa a OpenAI o cual sea el modelo que esté usando.</p>
+<p>He preguntado a César Garcia, de <a href="https://www.youtube.com/lahoramaker">La Hora Maker</a>, que me ayude a encontrar un modelo para la traducción. César me ha recomendado usar la API Whisper de OpenAI, que es capaz de traducir directamente desde el audio en español. De momento solo estoy interesado en la traducción, por lo que he creado un asistente en la API de OpenAI con estas instrucciones:</p>
+<pre><code>Translate the text from Spanish to English. Read the entire document to grasp context before translating it. Take into account nuances and idioms of the Spanish language and translate them to the equivalents in English. The translation should not be literal, focus on maintaining the original meaning and provide a translation that makes sense in english. Translate only the text within quotes in the YAML header of the Markdown file. Do not translate links, URLs, blocks of code and code snippets. If encountering a markdown link, only translate the text inside square brackets. Recognize and retain brands and names without translation. Use correct grammar and syntax in the final text. The style of the translation should be informal, with a touch of sarcastic humor.</code></pre>
+<p>Tengo otro modelo en alemán con instrucciones similares. Voy cambiando las instrucciones de vez en cuando para intentar mejorar la traducción.</p>
+<p>Esta página que estas leyendo tiene unos 4000 tokens. Puedes saber cuantos tokens tiene un texto usando el <a href="https://platform.openai.com/tokenizer">OpenAI Tokenizer</a>. El coste de la traducción a los dos idiomas de esta página es aproximadamente 0.32 USD, teniendo en cuenta que cada 1000 tokens cuestan 0.01 USD el input y 0.03 USD el output. Me parece bastante caro, y además el coste va a subir a medida que avanza Fab Academy. Por ese motivo solo traduciré los contenidos cuando considere avanzado el trabajo.</p>
+<p>Por el momento las traducciones inglesas son bastante buenas. Pedí a <a href="https://fabacademy.org/2024/labs/kamplintfort/students/sophia-doring/">Sophia Döring</a> que revisara también la traducción en alemán. Me ha dicho que, en general, también está bastante bien, aunque a veces usa palabras en alemán de uso poco frecuente<span class="sidenote-wrapper"><label for="sn-10" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-10" class="margin-toggle"/><span class="sidenote">Puede que eso esté provocado por como escribo el texto original. Estoy usando los equivalentes en español de términos técnicos que, en el día a día, realmente digo en inglés.<br />
+<br />
+</span></span>, sobretodo para referirse a términos técnicos.</p>
+<p>En mi lista de deseos voy a seguir buscando un modelo que sea local. De ese modo podré traducir los contenidos más frecuentemente y sin preocuparme por el coste. Recientemente he probando el modelo <code>Miqu-1-70b</code><span class="sidenote-wrapper"><label for="sn-11" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-11" class="margin-toggle"/><span class="sidenote"><a href="https://the-decoder.com/unintentional-ai-leak-from-mistral-becomes-an-unexpected-powerhouse/">Supuestamente</a> filtrado por un empleado de forma no intencionada. Miqu-1-70b podría ser un buen competidor de GPT4<br />
+<br />
+</span></span> con resultados lentos pero satisfactorios. Veo luz al final del túnel.</p>
+<h3 id="automatizando-la-traducción">Automatizando la traducción</h3>
+<p><span class="smallcaps">Inicialmente</span>, estuve usando la ventana de API de OpenAI. Ahora he automatizado este proceso con un script de Python. Usando una mezcla de Bing Copilot y la versión gratuita de ChatGPT, pedí un programa que automatizase la traducción usando la librería de OpenAI. Pero no salió bien. Después de bastante tira y afloja (la IA no suele generar código correcto a la primera), acabé desquiciado e insultando a Bing.</p>
+<p><img src="../../img/w01/bing.webp" /></p>
+<p>Al final tuve que leer la documentación de la API para hacer que el programa funcionase.</p>
+<p>Para evitar sobrecostes innecesarios, el script solo traduce los capítulos en español que he añadido usando <code>git add</code>. Gracias a eso puedo controlar mejor el coste. Una vez hecho esto, simplemente ejecuto <code>python translate-en.py</code> y el script genera las páginas Markdown traducidas al ingles. Hago lo mismo para el alemán.</p>
+<p>En realidad, normalmente no hago la traducción de forma aislada, porque lo he incluido en el siguiente paso.</p>
+<h3 id="todo-en-uno">Todo en uno</h3>
+<p><span class="smallcaps">Así funciona mi proceso:</span> Cuando he terminado de editar los capítulos, ejecuto el siguiente script<span class="sidenote-wrapper"><label for="sn-12" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-12" class="margin-toggle"/><span class="sidenote">Es un script originalmente escrito en lenguaje Bash que hice para el programa educativo <a href="https://github.com/Academany/fabzero">FabZero</a> y que ahora he convertido a Python.<br />
+<br />
+</span></span></p>
+<p><code>python auto.py --translate updating week 1</code></p>
+<p>Si el script encuentra <code>--translate</code> entre los argumentos<span class="sidenote-wrapper"><label for="sn-13" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-13" class="margin-toggle"/><span class="sidenote">Eso lo hago para ahorrar costes, ya que no quiero traducir las páginas en cada modificación.<br />
+<br />
+</span></span>, traduce las los capítulos modificados. Después concatena todos los capítulos y crea un único archivo Markdown para cada semana. El paso siguiente es la conversión a HTML de todos esos archivos. Si durante la conversión encuentra un enlace a un documento de Markdown, lo convierte en un enlace a su correspondiente documento HTML usando <a href="../../../links-to-html.lua">este filtro LUA</a>. Finalmente lo sube todo a Github siempre que exista un mensaje, que en este caso es <code>updating week 1</code>. Si no hay mensaje, no realiza ninguno de los procesos relacionados con git.</p>
+<p>Puedes analizar el script aquí: <a href="../../../auto.py">auto.py</a></p>
+<h3 id="sirviendo-las-páginas-web">Sirviendo las páginas web</h3>
+<p>Veamos lo que tengo hasta ahora en Github:</p>
+<ul>
+<li>Mis archivos <code>.md</code> originales en español</li>
+<li>Los archivos <code>.md</code> traducidos por IA al inglés y alemán</li>
+<li>Las páginas <code>.html</code> de todos los archivos <code>.md</code> generadas por Pandoc.</li>
+</ul>
+<p>Lo único que falta ahora es un servidor web. Y eso lo puedes hacer desde Github accediendo a los ajustes CI/CD del repositorio.</p>
+<p><img src="../../img/w01/cicd.webp" /></p>
+<p>Esto creará un archivo en <code>.github/workflows/static.yml</code>, del cual solo tuve que modificar el <code>runner</code>, porque <code>runs-on: ubuntu-latest</code> no funcionaba. Lo cambié por <code>runs-on: ubuntu-22.04</code> y al hacer <code>commit</code>, las páginas se sirvieron de forma automática.</p>
+<h3 id="resultado-final">Resultado final</h3>
+<p><a href="https://thebeachlab.github.io/backtofabacademy2024/">https://thebeachlab.github.io/backtofabacademy2024/</a></p>
+<h2 id="git-ese-pozo-sin-fondo">Git: Ese pozo sin fondo</h2>
+<p><span class="smallcaps">Alguien podría pensar que</span> como uso git desde hace 10 años ya se todo lo que hay que saber acerca del sistema de control de versiones. Para nada. Estas son las cosas que quiero mejorar durante este ciclo de Fab Academy:</p>
+<ul>
+<li>Reprimir mi tendencia a subir los cambios a la rama principal. Normalmente no pasa nada, pero tengo que acostumbrarme a crear una nueva rama para cada cambio.</li>
+<li><del>Robar los</del> Inspirarme en los <a href="http://academy.cba.mit.edu/classes/project_management/archive.html">alias de Neil</a> para ejecutar comandos de git más rápidamente.</li>
+</ul>
+<p>(Puede que añada más cosas a lo largo de Fab Academy…)</p>
+<h2 id="gestión-de-proyectos">Gestión de proyectos</h2>
+<p><span class="smallcaps">Me gustaría dedicar unas líneas</span> a explicar como gestiono mis proyectos<span class="sidenote-wrapper"><label for="sn-14" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-14" class="margin-toggle"/><span class="sidenote">No dejes que nadie te diga como debes gestionar un proyecto. Es algo muy personal y debes crear tu propio sistema.<br />
+<br />
+</span></span>. Cuando no tienes jefe, y nadie te dice lo que tienes que hacer, hay que ser muy disciplinado. De lo contrario puedes caer en una espiral negativa.</p>
+<p>Lo más importante es <strong>saber a donde vas</strong>. Porque si no lo sabes, tienes un problema muy grave. A veces te encontrarás perdido en Fab Academy (y en tu vida). No sabrás lo que quieres hacer, no tienes ganas de nada y parece que te mueves a cámara lenta mientras el mundo se mueve a toda velocidad. Cuando eso te ocurra, recuerda a <a href="https://www.thetoolsbook.com">Phil Stutz</a>. Invierte en tí mismo: Haz ejercicio, conecta con otras personas, escribe tus memorias en un diario. A mi me ayuda y estoy convencido de que a ti también te ayudará. Pronto verás tu estrella polar. Pon rumbo a ella.</p>
+<p>Lo segundo es <strong>aprender a reducir y simplificar</strong>. Unos de tus mayores problemas en Fab Academy va a ser parecido a este: No encuentras una foto que estas seguro que tenias. No sabes si está en las fotos del móvil, en el Google Drive, o en el disco USB, si la pasaste a la carpeta del ordenador, o alguien te la dio por WhatsApp… Simplifica. Reduce.</p>
+<p>Y por último, y creo que lo más importante. El verdadero secreto de conseguir cualquier cosa, da igual lo difícil que sea, es avanzar dando <strong>muchos pasos muy pequeños</strong>. Solucionas un problema pequeño, después otro, y después otro más. Así es como funciona.</p>
+<p>En cuanto a herramientas para ayudarte a gestionar, he probado unas cuantas. Así que empezaré por las que no me funcionan:</p>
+<ul>
+<li>Notas Post-it en la pared. La idea es buena. Muy visual y ágil. Pero tiene dos problemas. Primer problema: En Barcelona suele hace mucha calor y las notas se caen. Segundo problema: Si no veo la pared no hay proyecto.</li>
+<li>Software tipo Kanban y similares. Intentan parecerse a las notas Post-it. No las uso porque: Me parecen complicadas y no me dejan dibujar.</li>
+<li>Microsoft Project y similares. Sin comentarios.</li>
+<li>Servicios web como Notion.com, Monday.com y similares. No pienso dedicar ni un segundo de mi corta vida a entender como funciona un servicio que solo se ve fácil en TikTok (y que posiblemente cerrará mañana por la tarde).</li>
+</ul>
+<p>Ahora estoy usando una combinación de texto plano para objetivos a largo plazo, recordatorios para objetivos a medio plazo y Freeform de Apple para las tareas que voy a hacer en el dia de hoy. Freeform es un programa con lienzo infinito, parecido a <a href="https://miro.com">Miro</a>. Tiene las ventajas de las notas Post-it sin sus inconvenientes. Puedo personalizarlo y crear mi propio sistema. Por ejemplo he creado la casilla <code>DOING NOW</code> donde solo cabe una nota. Para mi eso es importante, porque yo solo puedo hacer una cosa a la vez. También puedo dibujar a mano y eso me gusta. Probablemente haré un video explicándolo todo con más detalle.</p>
+<p><img src="../../img/w01/freeform.webp" /></p>
+<h2 id="boceto-del-proyecto-final">Boceto del proyecto final</h2>
+<p>Todo lo relacionado con el proyecto final lo he movido a su <a href="final.html">correspondiente sección</a>.</p>
+<h2 id="conclusión">Conclusión</h2>
+<p><span class="smallcaps">En este momento</span>, todo este sistema está haciendo que escribir la documentación sea lento y un poco tedioso. Pero creo que con éste sistema, <strong>la velocidad va a aumentar drásticamente semana a semana</strong> y al final seré capaz de documentar con gran velocidad y nivel de detalle.</p>
+<p>Además creo que este método va a <strong>ayudar</strong> a muchas personas que no pueden <strong>expresar su talento</strong> porque no dominan otro idioma. Es injusto que eso ocurra. Espero que la AI ayude a la gente a demostrar lo valiosas que son.</p>
+</main>
+
+<footer>
+<p class="signoff">
+  <a href="../html/">← Volver atrás</a>
+</p>
+</footer>
+<script>
+;(function() {
+  // Non-essential if user has JavaScript off. Just makes checkboxes look nicer.
+  var selector = '.task-list > li > input[type="checkbox"]';
+  var checkboxes = document.querySelectorAll(selector);
+  Array.from(checkboxes).forEach((checkbox) => {
+    var wasChecked = checkbox.checked;
+    checkbox.disabled = false;
+    checkbox.addEventListener('click', (ev) => {ev.target.checked = wasChecked});
+  });
+})();
+</script>
+</body>
+</html>
