@@ -20,4 +20,4 @@ Por el momento las traducciones inglesas son bastante buenas. Pedí a [Sophia D�
 En mi lista de deseos voy a seguir buscando un modelo que sea local. De ese modo podré traducir los contenidos más frecuentemente y sin preocuparme por el coste. Recientemente he probando el modelo `Miqu-1-70b`[^241] con resultados lentos pero satisfactorios. Veo luz al final del túnel.
 
 [^241]: [Supuestamente](https://the-decoder.com/unintentional-ai-leak-from-mistral-becomes-an-unexpected-powerhouse/) filtrado por un empleado de forma no intencionada. Miqu-1-70b podría ser un buen competidor de GPT4
-
+ 

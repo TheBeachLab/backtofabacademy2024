@@ -1,5 +1,5 @@
 ### Automatizando la traducción
-[Inicialmente]{.smallcaps}, estuve usando la ventana de API de OpenAI. Ahora he automatizado este proceso con un script de Python. Usando una mezcla de Bing Copilot y la versión gratuita de ChatGPT, pedí un programa que automatizase la traducción usando la librería de OpenAI. Pero no salió bien. Después de bastante tira y afloja (la IA no suele generar código correcto a la primera), acabé desquiciado e insultando a Bing.
+[Inicialmente]{.smallcaps}, estuve usando la ventana de API de OpenAI. Ahora he automatizado este proceso con un script de Python. Usando una mezcla de Bing Copilot y la versión gratuita de ChatGPT, pedí un programa que automatizase la traducción usando la librería de OpenAI. Pero no salió bien. Después de bastante tira y afloja (la IA no suele generar código correcto a la primera), acabé desquiciado e insultando a Bing. 
 
 ![](../../img/w01/bing.webp)
 
