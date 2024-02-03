@@ -8,6 +8,22 @@
   <link rel="stylesheet" href="../../../css/theme.css" />
   <link rel="stylesheet" href="../../../css/tufte.css" />
   <link rel="stylesheet" href="../../../css/skylighting-solarized-theme.css" />
+  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" />
 </head>
 <body>
 
@@ -25,6 +41,7 @@
   <input type="checkbox" id="contents">
   <ul>
   <li><a href="#weeks-goals" id="toc-weeks-goals">Week’s Goals</a></li>
+  <li><a href="#openfoam" id="toc-openfoam">OpenFOAM</a></li>
   </ul>
 </nav>
 
@@ -96,6 +113,33 @@
 </ul></li>
 </ul>
 <p>I think I may have overdone it. If I manage to do 1/4 of this, I’ll be more than happy.</p>
+<h2 id="openfoam">OpenFOAM</h2>
+<p><span class="smallcaps">The Navier-Stokes Equation</span> is a set of partial differential equations that describe the motion of fluids. In vector form, and in a three-dimensional coordinate system, the Navier-Stokes equations for an incompressible fluid are:</p>
+<p><span class="math display">
+\rho \left( \frac{\partial \mathbf{v}}{\partial t} + (\mathbf{v} \cdot \nabla)\mathbf{v} \right) = -\nabla p + \mu \nabla^2 \mathbf{v} + \rho \mathbf{g}
+</span></p>
+<p>where:</p>
+<ul>
+<li><span class="math inline">\rho</span> is the fluid density,</li>
+<li><span class="math inline">\mathbf{v}</span> is the fluid velocity vector,</li>
+<li><span class="math inline">t</span> is time,</li>
+<li><span class="math inline">p</span> is the pressure,</li>
+<li><span class="math inline">\mu</span> is the fluid dynamic viscosity,</li>
+<li><span class="math inline">\nabla</span> is the nabla operator,</li>
+<li><span class="math inline">\nabla^2</span> is the Laplacian,</li>
+<li><span class="math inline">\mathbf{g}</span> is the acceleration vector due to gravity.</li>
+</ul>
+<p>This equation describes the conservation of momentum and the relationship between pressure, viscosity, and fluid acceleration. Solving these equations can be complex, especially in nonlinear or turbulent situations. If the fluid is compressible, things get a bit more complicated because <span class="math inline">\rho</span> is no longer constant but can vary over time and space.</p>
+<p><span class="math display">
+\frac{\partial \rho}{\partial t} + \nabla \cdot (\rho \mathbf{v}) = 0
+</span></p>
+<p>These equations cannot be solved analytically; numerical methods are required. That’s where <a href="https://openfoam.org">OpenFOAM</a><span class="sidenote-wrapper"><label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle"/><span class="sidenote">Open Source Field Operation and Manipulation<br />
+<br />
+</span></span>, a set of open-source programs for the numerical simulation of fluids<span class="sidenote-wrapper"><label for="sn-2" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-2" class="margin-toggle"/><span class="sidenote">CFD, for its acronym in English<br />
+<br />
+</span></span>, comes in. OpenFOAM does not have a graphical interface. All files, including the geometry, initial conditions, boundary conditions, model, etc., are introduced through text files<span class="sidenote-wrapper"><label for="sn-3" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-3" class="margin-toggle"/><span class="sidenote">Get this: If your job involves using a program with a graphical interface, you’ll soon be on the unemployment list. Why do you think there is a significant investment in artificial intelligence with language models?<br />
+<br />
+</span></span>.</p>
 </main>
 
 <footer>
