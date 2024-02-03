@@ -1,4 +1,4 @@
-### Webseiten servieren
+## Webseiten servieren
 
 Schauen wir mal, was ich bisher auf Github habe:
 
@@ -12,7 +12,7 @@ Das Einzige, was jetzt noch fehlt, ist ein Webserver. Und das kannst du direkt �
 
 Das erstellt eine Datei unter `.github/workflows/static.yml`, bei der ich nur den `runner` ändern musste, weil `runs-on: ubuntu-latest` nicht funktionierte. Ich habe es auf `runs-on: ubuntu-22.04` geändert und nach dem `commit` wurden die Seiten automatisch serviert.
 
-### Endergebnis
+## Endergebnis
 
 [https://thebeachlab.github.io/backtofabacademy2024/](https://thebeachlab.github.io/backtofabacademy2024/)
 

@@ -1,4 +1,4 @@
-## OpenFOAM
+# OpenFOAM
 
 [Die Navier-Stokes-Gleichung]{.smallcaps} sind eine Reihe von partiellen Differentialgleichungen, die die Bewegung von Fluiden beschreiben. In vektorieller Form und in einem dreidimensionalen Koordinatensystem sind die Navier-Stokes-Gleichungen für ein inkompressibles Fluid:
 

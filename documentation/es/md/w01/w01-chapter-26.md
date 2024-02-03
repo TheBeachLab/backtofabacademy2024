@@ -1,4 +1,4 @@
-### Todo en uno
+## Todo en uno
 [Así funciona mi proceso:]{.smallcaps} Cuando he terminado de editar los capítulos, ejecuto el siguiente script[^261]
 
 [^261]: Es un script originalmente escrito en lenguaje Bash que hice para el programa educativo [FabZero](https://github.com/Academany/fabzero) y que ahora he convertido a Python.

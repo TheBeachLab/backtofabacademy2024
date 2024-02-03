@@ -7,13 +7,13 @@ return-text: '← Zurück'
 lang: de-DE
 ---
 
-## Die Idee
+# Die Idee
 
-## Skizze und Erklärung
+# Skizze und Erklärung
 
-## Planung
+# Planung
 
-## Budget
+# Budget
 
 Hier gibt's echt nicht viel zu sehen...
 

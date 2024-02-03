@@ -1,4 +1,4 @@
-## OpenFOAM
+# OpenFOAM
 
 [The Navier-Stokes Equation]{.smallcaps} is a set of partial differential equations that describe the motion of fluids. In vector form, and in a three-dimensional coordinate system, the Navier-Stokes equations for an incompressible fluid are:
 

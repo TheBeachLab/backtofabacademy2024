@@ -1,8 +1,8 @@
-## Erwartungen vs. Realität
+# Erwartungen vs. Realität
 
 Das sind meine Ziele und Erwartungen für diesen Zyklus.
 
-### Erwartungen (geschrieben am 19. Januar)
+## Erwartungen (geschrieben am 19. Januar)
 
 - Ich bin sehr gespannt darauf, die Grenzen der Avantgarde zu erkunden.
 - Da dies meine zweite Runde im Fab Academy ist, erwarte ich, dass das Ergebnis jeder Woche ein Produkt[^901] ist.
@@ -14,7 +14,7 @@ Ich habe gerade meine Erwartungen noch einmal durchgelesen und bereue sie bereit
 
 [^901]: Ein *Produkt* im Sinne von etwas, das fertig genug ist, um auf den Markt zu kommen.
 
-### Realität (wir werden es am 5. Juni sehen)
+## Realität (wir werden es am 5. Juni sehen)
 
 - Platz reserviert für eine lange Liste kläglicher Misserfolge.
 

@@ -1,4 +1,4 @@
-### All in one
+## All in one
 [Here’s how my process works:]{.smallcaps} When I’m done editing the chapters, I run the following script[^261]
 
 [^261]: It's a script originally written in Bash language that I created for the educational program [FabZero](https://github.com/Academany/fabzero) and now I have converted to Python.

@@ -1,4 +1,4 @@
-### Zeit sparen durch Diktieren
+## Zeit sparen durch Diktieren
 [Der größte Teil des Textes, den du liest,]{.smallcaps} wird **auf Spanisch**[^221] in einer Markdown-Datei diktiert. Zum Diktieren verwende ich das Diktierwerkzeug von macOS.
 
 [^221]: Der Grund, warum ich es nicht direkt auf Englisch diktiere, ist, dass mein Akzent so schrecklich ist, dass mich der Computer nicht versteht.

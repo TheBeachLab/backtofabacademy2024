@@ -1,4 +1,4 @@
-### Simulación de un perfil alar
+## Simulación de un perfil alar
 
 Vuelo en un avión ultraligero ICP Savannah S. Tiene un perfil alar NACA-65018[^211] modificado. 
 
@@ -10,4 +10,6 @@ Cerca del borde de ataque tiene unas piezas de plástico llamadas generadores de
 
 
 [^212]: Condición que se da cuando el ala pierde sustentación al superar el ángulo de ataque crítico. En la práctica, la sensación es que el avión se cae como una piedra.
+
+### Generación de geometría
 

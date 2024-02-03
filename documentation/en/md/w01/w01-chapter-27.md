@@ -1,4 +1,4 @@
-### Serving Web Pages
+## Serving Web Pages
 
 Let's take a look at what I have on GitHub so far:
 
@@ -12,7 +12,7 @@ The only thing missing now is a web server. And you can set that up from GitHub 
 
 This will create a file in `.github/workflows/static.yml`, of which I only had to change the `runner`, because `runs-on: ubuntu-latest` wasn't working. I changed it to `runs-on: ubuntu-22.04` and upon committing, the pages were automatically served.
 
-### Final Result
+## Final Result
 
 [https://thebeachlab.github.io/backtofabacademy2024/](https://thebeachlab.github.io/backtofabacademy2024/)
 

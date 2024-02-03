@@ -1,4 +1,4 @@
-### Traducciones automáticas con IA
+## Traducciones automáticas con IA
 [En Fab Academy]{.smallcaps}, la documentación tiene que estar en inglés. Los traductores de idiomas tradicionales son bastante malos. No son capaces de entender el contexto y producen resultados que no suenan naturales. Voy a usar una inteligencia artificial para traducir el texto de los capítulos al inglés y también al alemán.
 
 El modelo de inteligencia artificial tiene que ser capaz de reconocer la sintaxis de Markdown y ser capaz de respetarla. Es posible que el modelo vaya mejorando (o incluso cambie) a lo largo de Fab Academy. Por eso mantendré el texto en español y volveré a ejecutar la traducción de todos los archivos de vez en cuando. Solo voy a editar los archivos en español. No manipularé manualmente las traducciones generadas. Así que si lo que lees en ingles o alemán no tiene sentido, echale la culpa a OpenAI o cual sea el modelo que esté usando. 

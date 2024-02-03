@@ -1,4 +1,4 @@
-## Objetivos de la semana
+# Objetivos de la semana
 
 [La semana pasada ya empecé mal]{.smallcaps}. No me dió tiempo a hacer casi nada.[^101] Esta semana voy a ser más disciplinado. Lo primero que voy a hacer es definir lo que quiero hacer y asignar una fecha límite para cumplirlo. Esta es una de mis semanas favoritas porque **me encanta probar software nuevo**. por orden de preferencia voy a hacer:
 

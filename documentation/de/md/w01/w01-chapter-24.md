@@ -1,4 +1,4 @@
-### KI-gestützte automatische Übersetzungen
+## KI-gestützte automatische Übersetzungen
 [Im Fab Academy]{.smallcaps} muss die Dokumentation auf Englisch sein. Traditionelle Sprachübersetzer sind ziemlich schlecht. Sie können den Kontext nicht verstehen und erzeugen Ergebnisse, die unnatürlich klingen. Ich werde eine künstliche Intelligenz nutzen, um den Text der Kapitel ins Englische und auch ins Deutsche zu übersetzen.
 
 Das KI-Modell muss in der Lage sein, die Syntax von Markdown zu erkennen und sie zu respektieren. Es ist möglich, dass sich das Modell im Verlauf des Fab Academy verbessert (oder sogar ändert). Deshalb werde ich den Text auf Spanisch behalten und die Übersetzung aller Dateien von Zeit zu Zeit erneut durchführen. Ich werde nur die Dateien auf Spanisch bearbeiten. Ich werde die generierten Übersetzungen nicht manuell anpassen. Also, wenn das, was du auf Englisch oder Deutsch liest, keinen Sinn ergibt, gib die Schuld OpenAI oder welchem Modell auch immer ich gerade nutze.

@@ -1,4 +1,4 @@
-## Week's Goals
+# Week's Goals
 
 [Last week started off on the wrong foot]{.smallcaps}. I barely had time to do anything.[^101] This week I'm going to be more disciplined. The first thing I'm doing is defining my goals and setting a deadline to achieve them. It's one of my favorite weeks because **I love trying out new software**. In order of preference, I'm planning to:
 

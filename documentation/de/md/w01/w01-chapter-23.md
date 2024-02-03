@@ -1,4 +1,4 @@
-### Dateistruktur
+## Dateistruktur
 [Am Anfang]{.smallcaps} schrieb ich den Text jeder Woche in einer einzigen Datei. Aber wie du später noch lesen wirst, verwende ich einen kostenpflichtigen Service für die Übersetzung. Jedes Mal, wenn ich eine Zeile bearbeitete, musste ich die ganze Datei erneut übersetzen lassen. Um die Kosten zu begrenzen, habe ich die Woche in Kapitel[^231] aufgeteilt und erstelle eine Datei für jedes Kapitel. So müssen nur die Kapitel, die ich geändert habe, übersetzt werden.
 
 [^231]: Meine Dateistruktur ist inspiriert von der Programmiersprache [BASIC](https://en.wikipedia.org/wiki/BASIC)

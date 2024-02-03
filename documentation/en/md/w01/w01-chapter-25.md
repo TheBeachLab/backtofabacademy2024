@@ -1,4 +1,4 @@
-### Automating Translation
+## Automating Translation
 [Initially]{.smallcaps}, I was using the OpenAI API window. Now, I've automated this process with a Python script. Using a mix of Bing Copilot and the free version of ChatGPT, I requested a program that could automate translation using OpenAI's library. But it didn't go well. After a lot of back-and-forth (AI doesn't usually spit out correct code on the first try), I ended up losing my mind and hurling insults at Bing.
 
 ![](../../img/w01/bing.webp)

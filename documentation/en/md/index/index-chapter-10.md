@@ -1,4 +1,4 @@
-## Week by Week
+# Week by Week
 [Week 1: Principles and Practices, Project Management - January 24](w01.md)  
 [Week 2: Computer-Aided Design - January 31](w02.md)   
 Week 3: Computer-Controlled Cutting - February 7    
@@ -18,6 +18,6 @@ Week 16: Applications and Implications, Project Development - May 15
 Week 17: System Integration - May 22    
 Week 18: Invention, Intellectual Property, and Income - May 29  
 
-## Final Project
+# Final Project
 [Final Project Page](final.md)
 

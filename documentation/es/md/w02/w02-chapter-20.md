@@ -1,4 +1,4 @@
-## OpenFOAM
+# OpenFOAM
 
 [La ecuación de Navier-Stokes]{.smallcaps} es un conjunto de ecuaciones diferenciales parciales que describen el movimiento de los fluidos. En forma vectorial y en un sistema de coordenadas tridimensional, las ecuaciones de Navier-Stokes para un fluido incompresible son:
 

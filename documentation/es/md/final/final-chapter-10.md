@@ -1,10 +1,10 @@
-## La idea
+# La idea
 
-## Boceto y explicación
+# Boceto y explicación
 
-## Planificación
+# Planificación
 
-## Presupuesto
+# Presupuesto
 
 No hay mucho que ver por aquí...
 

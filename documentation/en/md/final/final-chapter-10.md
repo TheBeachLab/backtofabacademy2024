@@ -1,10 +1,10 @@
-## The Idea
+# The Idea
 
-## Sketch and Explanation
+# Sketch and Explanation
 
-## Planning
+# Planning
 
-## Budget
+# Budget
 
 Not much to see here...
 

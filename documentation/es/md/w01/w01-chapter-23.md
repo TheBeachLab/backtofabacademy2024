@@ -1,4 +1,4 @@
-### Estructura de archivos
+## Estructura de archivos
 [Al principio]{.smallcaps}, escribía el texto de cada semana en un único archivo. Pero como leerás más adelante, uso un servicio de pago para la traducción. Cada vez que editaba una línea, tenía que traducir todo el archivo entero de nuevo. Para limitar los costes he dividido la semana en capítulos[^231] y creo un archivo para cada capítulo. De ese modo solo se traducen los capítulos que he modificado.
 
 [^231]: Mi estructura de archivos está inspirada en el lenguaje de programación [BASIC](https://en.wikipedia.org/wiki/BASIC)

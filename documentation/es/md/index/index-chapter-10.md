@@ -1,4 +1,4 @@
-## Semana a semana
+# Semana a semana
 [Semana 1: Principios y Prácticas, Gestión de Proyectos - 24 de enero](w01.md)  
 [Semana 2: Diseño Asistido por Ordenador - 31 de enero](w02.md)   
 Semana 3: Corte Controlado por Ordenador - 07 de febrero    
@@ -18,6 +18,6 @@ Semana 16: Aplicaciones e Implicaciones, Desarrollo de Proyectos - 15 de mayo
 Semana 17: Integración de Sistemas - 22 de mayo    
 Semana 18: Invención, Propiedad Intelectual e Ingresos - 29 de mayo  
 
-## Proyecto final
+# Proyecto final
 [Página del Proyecto Final](final.md)
 

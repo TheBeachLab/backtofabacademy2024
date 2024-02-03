@@ -1,4 +1,4 @@
-### Sirviendo las páginas web
+## Sirviendo las páginas web
 
 Veamos lo que tengo hasta ahora en Github:
 
@@ -12,7 +12,7 @@ Lo único que falta ahora es un servidor web. Y eso lo puedes hacer desde Github
 
 Esto creará un archivo en `.github/workflows/static.yml`, del cual solo tuve que modificar el `runner`, porque `runs-on: ubuntu-latest` no funcionaba. Lo cambié por `runs-on: ubuntu-22.04` y al hacer `commit`, las páginas se sirvieron de forma automática.
 
-### Resultado final
+## Resultado final
 
 [https://thebeachlab.github.io/backtofabacademy2024/](https://thebeachlab.github.io/backtofabacademy2024/)
 

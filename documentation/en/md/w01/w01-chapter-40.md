@@ -1,4 +1,4 @@
-## Project Management
+# Project Management
 [I'd like to dedicate a few lines]{.smallcaps} to explain how I manage my projects[^401]. When you don't have a boss, and nobody tells you what to do, you have to be very disciplined. Otherwise, you might fall into a negative spiral.
 
 [^401]: Don't let anyone tell you how to manage a project. It's something very personal and you have to create your own system.

@@ -43,7 +43,10 @@
   <li><a href="#objetivos-de-la-semana" id="toc-objetivos-de-la-semana">Objetivos de la semana</a></li>
   <li><a href="#openfoam" id="toc-openfoam">OpenFOAM</a>
   <ul>
-  <li><a href="#simulación-de-un-perfil-alar" id="toc-simulación-de-un-perfil-alar">Simulación de un perfil alar</a></li>
+  <li><a href="#simulación-de-un-perfil-alar" id="toc-simulación-de-un-perfil-alar">Simulación de un perfil alar</a>
+  <ul>
+  <li><a href="#generación-de-geometría" id="toc-generación-de-geometría">Generación de geometría</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 </nav>
@@ -64,7 +67,7 @@
 </tbody>
 </table>
 </div>
-<h2 id="objetivos-de-la-semana">Objetivos de la semana</h2>
+<h1 id="objetivos-de-la-semana">Objetivos de la semana</h1>
 <p><span class="smallcaps">La semana pasada ya empecé mal</span>. No me dió tiempo a hacer casi nada.<span class="sidenote-wrapper"><label for="sn-0" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-0" class="margin-toggle"/><span class="sidenote">Se me había olvidado que nunca sigo los consejos que doy.<br />
 <br />
 </span></span> Esta semana voy a ser más disciplinado. Lo primero que voy a hacer es definir lo que quiero hacer y asignar una fecha límite para cumplirlo. Esta es una de mis semanas favoritas porque <strong>me encanta probar software nuevo</strong>. por orden de preferencia voy a hacer:</p>
@@ -116,7 +119,7 @@
 </ul></li>
 </ul>
 <p>Creo que me he pasado. Si hago 1/4 parte ya puedo estar contento.</p>
-<h2 id="openfoam">OpenFOAM</h2>
+<h1 id="openfoam">OpenFOAM</h1>
 <p><span class="smallcaps">La ecuación de Navier-Stokes</span> es un conjunto de ecuaciones diferenciales parciales que describen el movimiento de los fluidos. En forma vectorial y en un sistema de coordenadas tridimensional, las ecuaciones de Navier-Stokes para un fluido incompresible son:</p>
 <p><span class="math display">
 \rho \left( \frac{\partial \mathbf{v}}{\partial t} + (\mathbf{v} \cdot \nabla)\mathbf{v} \right) = -\nabla p + \mu \nabla^2 \mathbf{v} + \rho \mathbf{g}
@@ -143,7 +146,7 @@
 </span></span>. OpenFOAM no tiene interfaz gráfica. Todos los archivos, incluyendo la geometría, condiciones iniciales, condiciones de contorno, modelo, etc. se introducen mediante archivos de texto<span class="sidenote-wrapper"><label for="sn-3" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-3" class="margin-toggle"/><span class="sidenote">Entiende esto: Si tu trabajo consiste en usar un programa con interfaz gráfica pronto estarás en la lista del paro. ¿Por qué crees que se está haciendo una gran inversión en inteligencia artificial con modelos de lenguaje?<br />
 <br />
 </span></span>.</p>
-<h3 id="simulación-de-un-perfil-alar">Simulación de un perfil alar</h3>
+<h2 id="simulación-de-un-perfil-alar">Simulación de un perfil alar</h2>
 <p>Vuelo en un avión ultraligero ICP Savannah S. Tiene un perfil alar NACA-65018<span class="sidenote-wrapper"><label for="sn-4" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-4" class="margin-toggle"/><span class="sidenote">Son perfiles con propiedades muy bien conocidas, desarrollados por la National Advisory Committee for Aeronautics. Los números son en realidad parámetros que se pueden introducir en ecuaciones para generar de forma precisa la sección transversal y calcular sus propiedades.<br />
 <br />
 </span></span> modificado.</p>
@@ -151,6 +154,7 @@
 <p>Cerca del borde de ataque tiene unas piezas de plástico llamadas generadores de vortex. Quiero simular una sección del ala con y sin generadores de vortex y comprobar si hay alguna diferencia al entrar en pérdida.<span class="sidenote-wrapper"><label for="sn-5" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-5" class="margin-toggle"/><span class="sidenote">Condición que se da cuando el ala pierde sustentación al superar el ángulo de ataque crítico. En la práctica, la sensación es que el avión se cae como una piedra.<br />
 <br />
 </span></span></p>
+<h3 id="generación-de-geometría">Generación de geometría</h3>
 </main>
 
 <footer>

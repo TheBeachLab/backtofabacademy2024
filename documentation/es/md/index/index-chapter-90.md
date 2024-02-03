@@ -1,8 +1,8 @@
-## Expectativas vs Realidad
+# Expectativas vs Realidad
 
 Estos son mis objetivos y expectativas para este ciclo.
 
-### Expectativas (escrito el 19 de enero)
+## Expectativas (escrito el 19 de enero)
 
 - Tengo muchas ganas de explorar los límites de la vanguardia.
 - Dado que esta es mi segunda iteración de Fab Academy, espero que el resultado de cada semana sea un producto[^901].
@@ -14,7 +14,7 @@ Acabo de releer mis expectativas, y ya me estoy arrepintiendo. Pero estoy compro
 
 [^901]: Un *producto* entendido como algo suficientemente terminado como para que pueda llegar al mercado. 
 
-### Realidad (lo veremos el 5 de junio)
+## Realidad (lo veremos el 5 de junio)
 
 - Espacio reservado para una larga lista de fracasos miserables.
 

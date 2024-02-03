@@ -1,4 +1,4 @@
-### Saving time by dictating
+## Saving time by dictating
 [Most of the text you're reading]{.smallcaps}, is being dictated **in Spanish**[^221] inside a Markdown file. For dictating, I'm using macOS's dictation tool.
 
 [^221]: The reason why I don't dictate directly in English is that my accent is so bad that the computer can't understand me.

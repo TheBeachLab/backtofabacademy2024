@@ -1,4 +1,4 @@
-### Automatisierung der Übersetzung
+## Automatisierung der Übersetzung
 [Zu Beginn]{.smallcaps} habe ich das OpenAI API-Fenster verwendet. Jetzt habe ich diesen Prozess mit einem Python-Skript automatisiert. Unter Verwendung einer Mischung aus Bing Copilot und der kostenlosen Version von ChatGPT bat ich um ein Programm, das die Übersetzung mit der OpenAI-Bibliothek automatisieren sollte. Aber es ging schief. Nach einigem Hin und Her (KI generiert selten beim ersten Versuch korrekten Code), endete ich frustriert und fluchte über Bing.
 
 ![](../../img/w01/bing.webp)

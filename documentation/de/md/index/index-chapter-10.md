@@ -1,4 +1,4 @@
-## Woche für Woche
+# Woche für Woche
 [Woche 1: Grundlagen und Praktiken, Projektmanagement - 24. Januar](w01.md)  
 [Woche 2: Computerunterstütztes Design - 31. Januar](w02.md)   
 Woche 3: Computerkontrolliertes Schneiden - 07. Februar    
@@ -18,6 +18,6 @@ Woche 16: Anwendungen und Implikationen, Projektentwicklung - 15. Mai
 Woche 17: Systemintegration - 22. Mai    
 Woche 18: Erfindung, geistiges Eigentum und Einkünfte - 29. Mai  
 
-## Abschlussprojekt
+# Abschlussprojekt
 [Seite des Abschlussprojekts](final.md)
 

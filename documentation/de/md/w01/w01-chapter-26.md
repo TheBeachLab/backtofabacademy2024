@@ -1,4 +1,4 @@
-### Alles in einem
+## Alles in einem
 [So funktioniert mein Prozess:]{.smallcaps} Wenn ich fertig bin mit dem Bearbeiten der Kapitel, führe ich das folgende Skript aus[^261]
 
 [^261]: Es ist ein Skript, das ursprünglich in Bash geschrieben wurde, welches ich für das Bildungsprogramm [FabZero](https://github.com/Academany/fabzero) erstellt habe und das ich jetzt in Python umgewandelt habe.

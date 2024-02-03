@@ -1,4 +1,4 @@
-### File Structure
+## File Structure
 In the beginning, I used to write the text for each week in a single file. But as you'll read later, I use a paid service for translation. Every time I edited a line, I had to translate the entire file again. To cut costs, I've divided the week into chapters[^231] and created a file for each chapter. That way, only the chapters I've modified get translated.
 
 [^231]: My file structure is inspired by the programming language [BASIC](https://en.wikipedia.org/wiki/BASIC)

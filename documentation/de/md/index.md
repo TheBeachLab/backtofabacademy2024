@@ -5,12 +5,12 @@ return-url: "../../../"
 return-text: "← Sprache auswählen"
 lang: de-DE
 ---
-## Über mich
+# Über mich
 [Mein Name ist Fran Sanchez]{.smallcaps}, ich bin der Gründer von [The (fabulous) Beach Lab](http://beachlab.org), einem persönlichen und mobilen Fab Lab mit Sitz in Sitges, Spanien. Ich bin Bauingenieur für Wege, Kanäle und Häfen mit vielfältigen Leidenschaften: Ich liebe Abenteuer und Erkundungen. Ich flüchte so oft wie möglich im 4x4 in die Berge, weit weg von der Zivilisation. Um meinen Aktionsradius zu erweitern, wurde ich erst Schiffskapitän, dann Taucher und schließlich Pilot. Ich bin auch Funkamateur (EA3IRP), um Leute zu treffen, die nicht den ganzen Tag an ihren "Smartphones" kleben. Ich schwanke noch zwischen U-Booten oder Hubschraubern für mein nächstes Abenteuer. Ich liebe auch Unix-ähnliche Computer (alles, was in einem Terminal läuft), Kunst und Wissenschaft. Ja, das klingt alles sehr schön, aber es brachte kein Geld ein, also wurde ich auch Apple-Entwickler und entwickle jetzt auch Anwendungen in Swift/SwiftUI für iOS-Geräte. Aber ich verdiene immer noch kein Geld. Schau dir meine Reise-App, [Hariburi](https://apps.apple.com/us/app/hariburi/id1599749190), an!
 
 Zögere nicht, mich auf [LinkedIn](https://www.linkedin.com/in/fsancheza/) zu kontaktieren.
 
-## Woche für Woche
+# Woche für Woche
 [Woche 1: Grundlagen und Praktiken, Projektmanagement - 24. Januar](w01.md)  
 [Woche 2: Computerunterstütztes Design - 31. Januar](w02.md)   
 Woche 3: Computerkontrolliertes Schneiden - 07. Februar    
@@ -30,14 +30,14 @@ Woche 16: Anwendungen und Implikationen, Projektentwicklung - 15. Mai
 Woche 17: Systemintegration - 22. Mai    
 Woche 18: Erfindung, geistiges Eigentum und Einkünfte - 29. Mai  
 
-## Abschlussprojekt
+# Abschlussprojekt
 [Seite des Abschlussprojekts](final.md)
 
-## Erwartungen vs. Realität
+# Erwartungen vs. Realität
 
 Das sind meine Ziele und Erwartungen für diesen Zyklus.
 
-### Erwartungen (geschrieben am 19. Januar)
+## Erwartungen (geschrieben am 19. Januar)
 
 - Ich bin sehr gespannt darauf, die Grenzen der Avantgarde zu erkunden.
 - Da dies meine zweite Runde im Fab Academy ist, erwarte ich, dass das Ergebnis jeder Woche ein Produkt[^901] ist.
@@ -49,7 +49,7 @@ Ich habe gerade meine Erwartungen noch einmal durchgelesen und bereue sie bereit
 
 [^901]: Ein *Produkt* im Sinne von etwas, das fertig genug ist, um auf den Markt zu kommen.
 
-### Realität (wir werden es am 5. Juni sehen)
+## Realität (wir werden es am 5. Juni sehen)
 
 - Platz reserviert für eine lange Liste kläglicher Misserfolge.
 

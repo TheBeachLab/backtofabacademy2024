@@ -1,4 +1,4 @@
-## Projektmanagement
+# Projektmanagement
 [Ich möchte ein paar Zeilen darauf verwenden]{.smallcaps}, um zu erklären, wie ich meine Projekte verwalte[^401]. Wenn man keinen Chef hat und niemand einem sagt, was zu tun ist, muss man sehr diszipliniert sein. Andernfalls kann man schnell in einen negativen Strudel geraten.
 
 [^401]: Lass dir von niemandem sagen, wie du ein Projekt managen sollst. Es ist etwas sehr Persönliches und du musst dein eigenes System entwickeln.

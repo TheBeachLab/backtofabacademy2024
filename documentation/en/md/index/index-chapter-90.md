@@ -1,8 +1,8 @@
-## Expectations vs Reality
+# Expectations vs Reality
 
 Here are my goals and expectations for this cycle.
 
-### Expectations (written on January 19)
+## Expectations (written on January 19)
 
 - I'm really excited to explore the limits of cutting-edge advancements.
 - Since this is my second iteration of the Fab Academy, I expect the output of each week to be a product[^901].
@@ -14,7 +14,7 @@ I just reread my expectations, and I am already regretting them. But I am commit
 
 [^901]: A *product* understood as something finished enough to potentially hit the market.
 
-### Reality (we'll see on June 5)
+## Reality (we'll see on June 5)
 
 - Space reserved for a long list of miserable failures.
 

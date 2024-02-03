@@ -1,4 +1,4 @@
-### Ahorrar tiempo dictando
+## Ahorrar tiempo dictando
 [La mayor parte del texto que estas leyendo]{.smallcaps}, esta siendo dictado **en español**[^221] dentro de un archivo de texto Markdown. Para dictar estoy usando la herramienta de dictado de macOS.
 
 [^221]: El motivo por el cual no lo dicto directamente en inglés es que mi acento es tan malo que el ordenador no me entiende.

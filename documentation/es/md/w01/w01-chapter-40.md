@@ -1,4 +1,4 @@
-## Gestión de proyectos
+# Gestión de proyectos
 [Me gustaría dedicar unas líneas]{.smallcaps} a explicar como gestiono mis proyectos[^401]. Cuando no tienes jefe, y nadie te dice lo que tienes que hacer, hay que ser muy disciplinado. De lo contrario puedes caer en una espiral negativa.
 
 [^401]: No dejes que nadie te diga como debes gestionar un proyecto. Es algo muy personal y debes crear tu propio sistema. 

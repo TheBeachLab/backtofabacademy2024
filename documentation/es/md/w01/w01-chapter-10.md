@@ -1,11 +1,11 @@
-## Mi entorno
+# Mi entorno
 
-### macOS otra vez ¿Cómo pude caer tan bajo?
+## macOS otra vez ¿Cómo pude caer tan bajo?
 A ver como explico ésto... Mejor lo explico en un video[^101].
 
 [^101]: Próximamente en [Youtube](https://www.youtube.com/playlist?list=PLKDpiLmgp6Evt30dhHgRlcB80OhMfcs2W) o [Instagram](https://www.instagram.com/thebeachlab).
 
-### Mi teclado es raro
+## Mi teclado es raro
 [Mientras trabajaba en la organización de Fab15 en Egipto]{.smallcaps}, me fijé en que Sherry Lassiter puede escribir a toda velocidad sin mirar el teclado. En aquel momento, yo tecleaba con 2 dedos y siempre mirando el teclado. Así que me decidí a aprender. Hay una ventaja cuando aprendes a hacer algo desde cero, y es que no tienes ningún vicio. Así que yo no aprendí el sistema QWERTY, que estaba originalmente diseñada para que las antiguas máquinas de escribir no se atascaran. Yo aprendí con el sistema [Colemak](https://colemak.com)[^102]. Tengo un [teclado orto-lineal](https://drop.com/buy/preonic-mechanical-keyboard) acon disposición Colemak, y practico unos cinco minutos al día.
 
 [^102]: Colemak está diseñado para que las letras de mayor uso en idioma ingles esten en la fila central. 
@@ -16,7 +16,7 @@ También tengo un [software en macOS](https://karabiner-elements.pqrs.org) que c
 
 [^104]: En realidad solo la usaba para insultar
 
-### Mi editor de texto también es raro
+## Mi editor de texto también es raro
 [Mi intención es usar únicamente `vim`]{.smallcaps}, un editor de texto en la línea de comandos. Tengo algunas nociones de `vim` y quiero profundizar en el aprendizaje. Me gusta la idea de usar únicamente el teclado para editar texto. Para evitar la tentación de usar Visual Studio Code, lo he desinstalado[^103]. El editor de texto vim es bastante parco de origen. Por eso he instalado algunos plugins. Esta es una lista que iré ampliando con el tiempo:
 
 [^103]: Es mentira, solo me he quitado el acceso directo.

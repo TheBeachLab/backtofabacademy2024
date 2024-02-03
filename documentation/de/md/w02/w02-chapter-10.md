@@ -1,4 +1,4 @@
-## Ziele für die Woche
+# Ziele für die Woche
 
 [Letzte Woche habe ich schon schlecht angefangen]{.smallcaps}. Ich hatte kaum Zeit, irgendetwas zu machen.[^101] Diese Woche werde ich disziplinierter sein. Das Erste, was ich tun werde, ist, zu definieren, was ich tun möchte und ein Fälligkeitsdatum dafür festzulegen. Dies ist eine meiner Lieblingswochen, weil **ich neue Software auszuprobieren liebe**. Nach Priorität geordnet, werde ich:
 

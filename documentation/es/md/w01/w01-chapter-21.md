@@ -1,4 +1,4 @@
-### Usando Markdown
+## Usando Markdown
 [Aquí no quiero innovar demasiado]{.smallcaps}. La estrategia que me ha funcionado muy bien desde hace muchos años es escribir contenido en un archivo de texto plano en un formato llamado [Markdown](https://www.markdownguide.org) `.md`. De esta manera, me centro solamente en escribir el contenido. Ventajas de escribir en Markdown:
 
 - No necesitas ningún programa especial para escribir texto plano. Incluso puedes escribirlo a mano si tienes buena letra y escanearlo luego.

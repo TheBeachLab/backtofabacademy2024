@@ -1,4 +1,4 @@
-### Using Markdown
+## Using Markdown
 [I'm not exactly looking to break new ground here]{.smallcaps}. The strategy that has served me well for many years is to write content in a plain text file in a format called Markdown `.md`. This way, I focus solely on writing the content. Advantages of writing in Markdown:
 
 - You don't need any special program to write plain text. You could even write it by hand if you have nice handwriting and scan it later.
