@@ -6,7 +6,11 @@
 -  Es fácil aplicar estilos y organizar el texto.
 -  Se puede leer sin que parezca que estas decodificando Matrix.
 
-![Cuando puedes leer tu página desde el código HTML](../../img/w01/code.webp)
+<figure>
+[^_]![](../../img/w01/code.webp)
+
+[^_]: {-} Cuando puedes leer tu página desde el código HTML
+</figure>
 
 La documentación de Fab Academy se tiene que presentar en forma de página web. Existe un programa para la línea de comandos llamado [Pandoc](https://pandoc.org/index.html) que literalmente convierte cualquier formato de texto. Voy a usarlo para convertir los los archivos `.md` en páginas `.html` de *aspecto agradable*[^211] con una plantilla de estilo CSS. La plantilla tiene dos ventajas. Por un lado me permite despreocuparme del aspecto visual de la página. Por otro lado, me permite añadir fácilmente funcionalidades como ecuaciones, tablas, números de línea en el código, notas laterales, etc.
 

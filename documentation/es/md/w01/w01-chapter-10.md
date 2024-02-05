@@ -10,7 +10,10 @@ A ver como explico ésto... Mejor lo explico en un video[^101].
 
 [^102]: Colemak está diseñado para que las letras de mayor uso en idioma ingles esten en la fila central. 
 
-![Lo que más me gusta de la distribución Colemak es que la tecla de borrar está al lado izquierdo de la tecla `A`](../../img/w01/preonic.webp)
+<figure>
+^[{-} Lo que más me gusta de la distribución Colemak es que la tecla de borrar está al lado izquierdo de la tecla `A`]
+![](../../img/w01/preonic.webp)
+</figure>
 
 También tengo un [software en macOS](https://karabiner-elements.pqrs.org) que cambia mi distribución del teclado a Colemak y además cambia la función de la tecla bloqueo de mayúsculas[^104] por el borrado hacia atrás.
 
