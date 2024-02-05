@@ -1,15 +1,11 @@
 ## Simulación de un perfil alar
+[*en desarrollo*]{.mark .yellow}
 
-Vuelo en un avión ultraligero ICP Savannah S. Tiene un perfil alar NACA-65018[^211] modificado. 
+Vuelo en un avión *ICP Savannah S* con perfil de ala NACA-65018[^211] modificado. No es muy rápido, pero puede despegar y aterrizar en distancias muy cortas y volar a muy poca velocidad sin entrar en pérdida[^212]. Cerca del borde de ataque del ala, hay unas piezas de plástico llamadas generadores de vortex. Su función es general micro-turbulencias para evitar que la capa límite se despegue del ala. El objetivo en OpenFOAM es simular una sección del ala con y sin generadores de vortex y comprobar la diferencia.
 
-[^211]: Son perfiles con propiedades muy bien conocidas, desarrollados por la National Advisory Committee for Aeronautics. Los números son en realidad parámetros que se pueden introducir en ecuaciones para generar de forma precisa la sección transversal y calcular sus propiedades.
+![](../../img/w02/avion.webp)
 
-![](../../../img/naca650.webp)
+[^212]: Condición que se da cuando el ala pierde sustentación al superar el ángulo de ataque crítico.
 
-Cerca del borde de ataque tiene unas piezas de plástico llamadas generadores de vortex. Quiero simular una sección del ala con y sin generadores de vortex y comprobar si hay alguna diferencia al entrar en pérdida.[^212] 
-
-
-[^212]: Condición que se da cuando el ala pierde sustentación al superar el ángulo de ataque crítico. En la práctica, la sensación es que el avión se cae como una piedra.
-
-### Generación de geometría
+[^211]: Los números son parámetros que se pueden introducir en ecuaciones para generar la sección transversal y calcular sus propiedades.
 

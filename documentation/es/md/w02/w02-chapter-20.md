@@ -23,11 +23,9 @@ Esta ecuación describe la conservación de la cantidad de movimiento y la relac
 \frac{\partial \rho}{\partial t} + \nabla \cdot (\rho \mathbf{v}) = 0
 \]
 
-No se pueden resolver estas ecuaciones de forma analítica, se necesitan usar métodos numéricos. Ahí es donde interviene [OpenFOAM](https://openfoam.org)[^201], un conjunto de programas de código abierto para la simulación numérica de fluidos[^202]. OpenFOAM no tiene interfaz gráfica. Todos los archivos, incluyendo la geometría, condiciones iniciales, condiciones de contorno, modelo, etc. se introducen mediante archivos de texto[^203].
+No se pueden resolver estas ecuaciones de forma analítica, se necesitan usar métodos numéricos. Ahí es donde interviene [OpenFOAM](https://openfoam.org)[^201], un conjunto de programas de código abierto para la simulación numérica de fluidos. OpenFOAM no tiene interfaz gráfica. Todos los archivos, incluyendo la geometría, condiciones iniciales, condiciones de contorno, modelo, etc. se introducen mediante archivos de texto[^203].
 
 [^201]: Open Source Field Operation and Manipulation
 
-[^202]: CFD, por sus siglas en inglés
-
-[^203]: Entiende esto: Si tu trabajo consiste en usar un programa con interfaz gráfica pronto estarás en la lista del paro. ¿Por qué crees que se está haciendo una gran inversión en inteligencia artificial con modelos de lenguaje?
+[^203]: Si usas una interfaz gráfica pronto estarás en el paro. ¿Por qué crees que se invierte tanto en entrenar modelos de lenguaje?
 

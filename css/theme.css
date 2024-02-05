@@ -934,7 +934,7 @@ nav#TOC > input:checked + ul {
   margin-right: calc(-1 * min(var(--computed-width), var(--side-note-max-width)) - var(--margin-left));
 }
 
-/* --- Side notes and table of contents always visible --- {{{ */
+/* --- Side notes and table of contents always visible --- FIGURE BAD {{{ */
 
 /* Unfortunately, variables aren't in scope here.
  * 745px = --main-width
@@ -968,14 +968,17 @@ nav#TOC > input:checked + ul {
   }
 
   .wide.extra-wide {
-    margin-left: calc((1 - var(--extra-wide-scale-factor)) / 2 * 100%);
-    width: calc(var(--extra-wide-scale-factor) * 100%);
+    /* by Fran wip */
+    /* margin-left: calc((1 - var(--extra-wide-scale-factor)) / 2 * 100%); */
+    /* width: calc((100vw - 100%) / 2 - var(--margin-right)); */
+    width: calc((100vw - 100%) / 2 - var(--margin-right) - var(--margin-left));
   }
 
   .wide.full-width {
     margin-left: calc(var(--line-height) - ((100vw - var(--main-width)) / 2));
     width: calc(100vw - 2 * var(--line-height));
   }
+
 
   .wide.extra-wide figcaption,
   .wide.extra-wide table > caption {
@@ -990,10 +993,18 @@ nav#TOC > input:checked + ul {
     max-width: var(--main-width);
     margin-right: calc(100% - var(--main-width) - ((100vw - var(--main-width)) / 2 - var(--line-height)));
   }
+
+  /* by Fran 
+  .extra-wide figure {
+    max-width: calc(--main-width);
+    margin-left: 186px;
+    height: auto; /* maintain aspect ratio 
+  } 
+  */
 }
 
 /* }}} */
-/* --- Side notes visibile, table of contents collapsed, double-wide margins --- {{{ */
+/* --- Side notes visibile, table of contents collapsed, double-wide margins --- FIGURE BAD {{{ */
 
 /* Unfortunately, variables aren't in scope here.
  * 745px = --main-width
@@ -1059,7 +1070,7 @@ nav#TOC > input:checked + ul {
 }
 
 /* }}} */
-/* --- Side notes visibile, table of contents collapsed --- {{{ */
+/* --- Side notes visibile, table of contents collapsed --- FIGURE GOOD {{{ */
 
 /* Unfortunately, variables aren't in scope here.
  * 550px = --main-width-narrow
@@ -1107,7 +1118,7 @@ nav#TOC > input:checked + ul {
 }
 
 /* }}} */
-/* --- Side notes and table of contents collapsed --- {{{ */
+/* --- Side notes and table of contents collapsed --- FIGURE GOOD {{{ */
 
 /* Unfortunately, variables aren't in scope here.
  * See calculations above.
@@ -1270,6 +1281,13 @@ h1, h2, h3 {
 table, figure, pre, img {
   page-break-inside: avoid;
 }
+
+/* ----- by Fran----- */
+.marginnote img {
+  margin-top: 0px !important;
+  margin-bottom: 5px;
+}
+
 /* }}} */
 /* }}} */
 

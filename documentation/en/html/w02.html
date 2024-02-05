@@ -41,7 +41,28 @@
   <input type="checkbox" id="contents">
   <ul>
   <li><a href="#weeks-goals" id="toc-weeks-goals">Week’s Goals</a></li>
-  <li><a href="#openfoam" id="toc-openfoam">OpenFOAM</a></li>
+  <li><a href="#openfoam" id="toc-openfoam">OpenFOAM</a>
+  <ul>
+  <li><a href="#wing-profile-simulation" id="toc-wing-profile-simulation">Wing Profile Simulation</a></li>
+  <li><a href="#incompressible-fluid" id="toc-incompressible-fluid">Incompressible Fluid</a></li>
+  </ul></li>
+  <li><a href="#ondsel" id="toc-ondsel">Ondsel</a></li>
+  <li><a href="#blender" id="toc-blender">Blender</a></li>
+  <li><a href="#javascript" id="toc-javascript">Javascript</a></li>
+  <li><a href="#artificial-intelligence" id="toc-artificial-intelligence">Artificial intelligence</a></li>
+  <li><a href="#images" id="toc-images">Images</a>
+  <ul>
+  <li><a href="#imagemagick" id="toc-imagemagick">Imagemagick</a></li>
+  <li><a href="#pgftikz" id="toc-pgftikz">PGF/TikZ</a></li>
+  </ul></li>
+  <li><a href="#audio-and-video" id="toc-audio-and-video">Audio and video</a>
+  <ul>
+  <li><a href="#ffmpeg" id="toc-ffmpeg">ffmpeg</a></li>
+  <li><a href="#yt-dlp" id="toc-yt-dlp">yt-dlp</a></li>
+  <li><a href="#manim" id="toc-manim">Manim</a></li>
+  <li><a href="#sonic-pi" id="toc-sonic-pi">Sonic Pi</a></li>
+  </ul></li>
+  <li><a href="#conclusions" id="toc-conclusions">Conclusions</a></li>
   </ul>
 </nav>
 
@@ -114,32 +135,152 @@
 </ul>
 <p>I think I may have overdone it. If I manage to do 1/4 of this, I’ll be more than happy.</p>
 <h1 id="openfoam">OpenFOAM</h1>
-<p><span class="smallcaps">The Navier-Stokes Equation</span> is a set of partial differential equations that describe the motion of fluids. In vector form, and in a three-dimensional coordinate system, the Navier-Stokes equations for an incompressible fluid are:</p>
+<p><span class="smallcaps">The Navier-Stokes equation</span> is a set of partial differential equations that describe fluid motion. In vector form and in a three-dimensional coordinate system, the Navier-Stokes equations for an incompressible fluid are:</p>
 <p><span class="math display">
 \rho \left( \frac{\partial \mathbf{v}}{\partial t} + (\mathbf{v} \cdot \nabla)\mathbf{v} \right) = -\nabla p + \mu \nabla^2 \mathbf{v} + \rho \mathbf{g}
 </span></p>
 <p>where:</p>
 <ul>
-<li><span class="math inline">\rho</span> is the fluid density,</li>
+<li><span class="math inline">\rho</span> is fluid density,</li>
 <li><span class="math inline">\mathbf{v}</span> is the fluid velocity vector,</li>
 <li><span class="math inline">t</span> is time,</li>
-<li><span class="math inline">p</span> is the pressure,</li>
-<li><span class="math inline">\mu</span> is the fluid dynamic viscosity,</li>
+<li><span class="math inline">p</span> is pressure,</li>
+<li><span class="math inline">\mu</span> is the fluid’s dynamic viscosity,</li>
 <li><span class="math inline">\nabla</span> is the nabla operator,</li>
 <li><span class="math inline">\nabla^2</span> is the Laplacian,</li>
-<li><span class="math inline">\mathbf{g}</span> is the acceleration vector due to gravity.</li>
+<li><span class="math inline">\mathbf{g}</span> is the vector of acceleration due to gravity.</li>
 </ul>
-<p>This equation describes the conservation of momentum and the relationship between pressure, viscosity, and fluid acceleration. Solving these equations can be complex, especially in nonlinear or turbulent situations. If the fluid is compressible, things get a bit more complicated because <span class="math inline">\rho</span> is no longer constant but can vary over time and space.</p>
+<p>This equation describes the conservation of momentum and the relationship between pressure, viscosity, and fluid acceleration. Solving these equations can be complex, especially in nonlinear or turbulent situations. If the fluid is compressible, things get a bit more complicated because <span class="math inline">\rho</span> is not constant but can vary in time and space.</p>
 <p><span class="math display">
 \frac{\partial \rho}{\partial t} + \nabla \cdot (\rho \mathbf{v}) = 0
 </span></p>
-<p>These equations cannot be solved analytically; numerical methods are required. That’s where <a href="https://openfoam.org">OpenFOAM</a><span class="sidenote-wrapper"><label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle"/><span class="sidenote">Open Source Field Operation and Manipulation<br />
+<p>These equations cannot be solved analytically; numerical methods must be used. That’s where <a href="https://openfoam.org">OpenFOAM</a><span class="sidenote-wrapper"><label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle"/><span class="sidenote">Open Source Field Operation and Manipulation<br />
 <br />
-</span></span>, a set of open-source programs for the numerical simulation of fluids<span class="sidenote-wrapper"><label for="sn-2" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-2" class="margin-toggle"/><span class="sidenote">CFD, for its acronym in English<br />
-<br />
-</span></span>, comes in. OpenFOAM does not have a graphical interface. All files, including the geometry, initial conditions, boundary conditions, model, etc., are introduced through text files<span class="sidenote-wrapper"><label for="sn-3" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-3" class="margin-toggle"/><span class="sidenote">Get this: If your job involves using a program with a graphical interface, you’ll soon be on the unemployment list. Why do you think there is a significant investment in artificial intelligence with language models?<br />
+</span></span>, an open-source suite for numerical fluid simulations, comes in. OpenFOAM doesn’t have a graphical interface. All files, including the geometry, initial conditions, boundary conditions, model, etc., are introduced via text files<span class="sidenote-wrapper"><label for="sn-2" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-2" class="margin-toggle"/><span class="sidenote">If you use a graphical interface, you’ll soon be unemployed. Why do you think so much is invested in training language models?<br />
 <br />
 </span></span>.</p>
+<h2 id="wing-profile-simulation">Wing Profile Simulation</h2>
+<p><mark class="yellow"><em>under development</em></mark></p>
+<p>I fly on an <em>ICP Savannah S</em> airplane with a modified NACA-65018<span class="sidenote-wrapper"><label for="sn-3" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-3" class="margin-toggle"/><span class="sidenote">The numbers are parameters that can be input into equations to generate the cross-sectional shape and calculate its properties.<br />
+<br />
+</span></span> wing profile. It’s not very fast, but it can take off and land on very short distances and fly at very low speeds without stalling<span class="sidenote-wrapper"><label for="sn-4" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-4" class="margin-toggle"/><span class="sidenote">A condition that occurs when the wing loses lift by exceeding the critical angle of attack.<br />
+<br />
+</span></span>. Near the leading edge of the wing, there are some plastic parts called vortex generators. Their role is to create micro-turbulences to prevent the boundary layer from detaching from the wing. The goal in OpenFOAM is to simulate a section of the wing with and without vortex generators and verify the difference.</p>
+<p><img src="../../img/w02/avion.webp" /></p>
+<h2 id="incompressible-fluid">Incompressible Fluid</h2>
+<p><mark class="yellow"><em>under development</em></mark></p>
+<h1 id="ondsel">Ondsel</h1>
+<p><mark class="yellow"><em>under development</em></mark></p>
+<h1 id="blender">Blender</h1>
+<p><mark class="yellow"><em>under development</em></mark></p>
+<h1 id="javascript">Javascript</h1>
+<p><mark class="yellow"><em>under development</em></mark></p>
+<h1 id="artificial-intelligence">Artificial intelligence</h1>
+<p><mark class="yellow"><em>under development</em></mark></p>
+<h1 id="images">Images</h1>
+<p><mark class="yellow"><em>in development</em></mark></p>
+<h2 id="imagemagick">Imagemagick</h2>
+<p>It’s good for a ton of stuff. You can add a watermark to an image.<br />
+Or combine two or more images horizontally so that:<br />
+a) They have the same height<br />
+b) The images are separated by a transparent space</p>
+<p><span class="sidenote-wrapper"><label for="sn-5" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-5" class="margin-toggle"/><span class="marginnote">The composite photograph of the airplane and the airfoil profile was made like this.<br />
+<br />
+</span></span></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource sh numberLines tight-code"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="ex">montage</span> savannah.jpg naca65018.png <span class="at">-geometry</span> +5+0 <span class="at">-tile</span> 2x1<span class="dt">\ </span></span>
+<span id="cb1-2"><a href="#cb1-2"></a>  <span class="ex">-resize</span> x800 <span class="at">-background</span> none <span class="at">-gravity</span> West <span class="at">-extent</span> x800 airplane.webp</span></code></pre></div>
+<h2 id="pgftikz">PGF/TikZ</h2>
+<p>I used to use <a href="https://tikz.dev">TikZ</a> in college to make graphics.<br />
+As you can see, I’m using anything that generates through code.</p>
+<p><span class="sidenote-wrapper"><label for="sn-6" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-6" class="margin-toggle"/><span class="marginnote"><img src="../../files/w02/tikz/tikz01.svg" /> <a href="../../files/w02/tikz/tikz01.tex">→ <em>Source code</em></a><br />
+<br />
+</span></span></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource tex numberLines tight-code"><code class="sourceCode latex"><span id="cb2-1"><a href="#cb2-1"></a><span class="co">% Filename: tikz01.tex</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="co">% Usage: latex tikz01.tex --&gt; tikz01.dvi</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="co">%        dvisvgm --font-format=woff tikz01.dvi --&gt; tikz01.svg</span></span>
+<span id="cb2-4"><a href="#cb2-4"></a><span class="bu">\documentclass</span>[tikz]{<span class="ex">standalone</span>}</span>
+<span id="cb2-5"><a href="#cb2-5"></a><span class="kw">\begin</span>{<span class="ex">document</span>}</span>
+<span id="cb2-6"><a href="#cb2-6"></a><span class="kw">\begin</span>{<span class="ex">tikzpicture</span>}[domain=0:4]</span>
+<span id="cb2-7"><a href="#cb2-7"></a>  <span class="fu">\draw</span>[very thin,color=gray] (-0.1,-1.1) grid (3.9,3.9);</span>
+<span id="cb2-8"><a href="#cb2-8"></a>  <span class="fu">\draw</span>[-&gt;] (-0.2,0) -- (4.2,0) node[right] {<span class="ss">$x$</span>};</span>
+<span id="cb2-9"><a href="#cb2-9"></a>  <span class="fu">\draw</span>[-&gt;] (0,-1.2) -- (0,4.2) node[above] {<span class="ss">$f(x)$</span>};</span>
+<span id="cb2-10"><a href="#cb2-10"></a>  <span class="fu">\draw</span>[color=red]    plot (<span class="fu">\x</span>,<span class="fu">\x</span>)             node[right] {<span class="ss">$f(x) =x$</span>};</span>
+<span id="cb2-11"><a href="#cb2-11"></a>  <span class="co">% \x r means to convert &#39;\x&#39; from degrees to _r_adians:</span></span>
+<span id="cb2-12"><a href="#cb2-12"></a>  <span class="fu">\draw</span>[color=blue]   plot (<span class="fu">\x</span>,{sin(<span class="fu">\x</span> r)})    node[right] {<span class="ss">$f(x) = </span><span class="sc">\sin</span><span class="ss"> x$</span>};</span>
+<span id="cb2-13"><a href="#cb2-13"></a>  <span class="fu">\draw</span>[color=orange] plot (<span class="fu">\x</span>,{0.05*exp(<span class="fu">\x</span>)}) node[right] {<span class="ss">$f(x) = </span><span class="sc">\frac</span><span class="ss">{1}{20} </span><span class="sc">\mathrm</span><span class="ss"> e^x$</span>};</span>
+<span id="cb2-14"><a href="#cb2-14"></a><span class="kw">\end</span>{<span class="ex">tikzpicture</span>}</span>
+<span id="cb2-15"><a href="#cb2-15"></a><span class="kw">\end</span>{<span class="ex">document</span>}</span></code></pre></div>
+<h1 id="audio-and-video">Audio and video</h1>
+<p><mark class="yellow"><em>under development</em></mark></p>
+<h2 id="ffmpeg">ffmpeg</h2>
+<p>Incredibly useful for a myriad of operations. It used to be hard to memorize the commands, but now you can just ask a language model.</p>
+<h2 id="yt-dlp">yt-dlp</h2>
+<p>I use this terminal utility to download videos from Fab Academy hosted on <a href="">Youtube</a> or <a href="https://vimeo.com/academany/videos">Vimeo</a>. For example:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource bash numberLines tight-code"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a><span class="ex">yt-dlp</span> <span class="at">--write-sub</span> <span class="at">--all-subs</span> [Video URL]</span></code></pre></div>
+<h2 id="manim">Manim</h2>
+<p>You’ve likely seen a video by <a href="https://www.youtube.com/@3blue1brown">3blue1brown</a>.<br />
+<a href="#manim">Manim</a> is the Python library he created to generate his animations.<br />
+Here’s my <em>hello world!</em>: <code>manim -pqh hello_manim.py AnimatedSquareToCircle</code></p>
+<p><span class="sidenote-wrapper"><label for="sn-7" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-7" class="margin-toggle"/><span class="marginnote"><video nocontrols autoplay loop muted style="max-width: 100%; height: auto;"> <source src="../../files/w02/manim/media/videos/hello_manim/1080p60/AnimatedSquareToCircle.mp4" type="video/mp4"> Your browser does not support the video element. </video><br />
+<a href="../../files/w02/manim/hello_manim.py">→ <em>Source code</em></a><br />
+<br />
+</span></span></p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource python numberLines tight-code"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a><span class="im">from</span> manim <span class="im">import</span> <span class="op">*</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="kw">class</span> AnimatedSquareToCircle(Scene):</span>
+<span id="cb4-3"><a href="#cb4-3"></a>    <span class="kw">def</span> construct(<span class="va">self</span>):</span>
+<span id="cb4-4"><a href="#cb4-4"></a>        circle <span class="op">=</span> Circle()  <span class="co"># create a circle</span></span>
+<span id="cb4-5"><a href="#cb4-5"></a>        square <span class="op">=</span> Square()  <span class="co"># create a square</span></span>
+<span id="cb4-6"><a href="#cb4-6"></a></span>
+<span id="cb4-7"><a href="#cb4-7"></a>        <span class="va">self</span>.play(Create(square))  <span class="co"># show the square on screen</span></span>
+<span id="cb4-8"><a href="#cb4-8"></a>        <span class="va">self</span>.play(square.animate.rotate(PI <span class="op">/</span> <span class="dv">4</span>))  <span class="co"># rotate the square</span></span>
+<span id="cb4-9"><a href="#cb4-9"></a>        <span class="va">self</span>.play(</span>
+<span id="cb4-10"><a href="#cb4-10"></a>            ReplacementTransform(square, circle)</span>
+<span id="cb4-11"><a href="#cb4-11"></a>        )  <span class="co"># transform the square into a circle</span></span>
+<span id="cb4-12"><a href="#cb4-12"></a>        <span class="va">self</span>.play(</span>
+<span id="cb4-13"><a href="#cb4-13"></a>            circle.animate.set_fill(BLUE, opacity<span class="op">=</span><span class="fl">0.2</span>)</span>
+<span id="cb4-14"><a href="#cb4-14"></a>        )  <span class="co"># color the circle on screen</span></span></code></pre></div>
+<h2 id="sonic-pi">Sonic Pi</h2>
+<p>I’m putting together a session using some audio samples from Fab Academy.<br />
+I can’t share more just yet.</p>
+<p><span class="sidenote-wrapper"><label for="sn-8" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-8" class="margin-toggle"/><span class="marginnote"><audio controls> <source src="../../files/w02/sonicpi/neil_rave.m4a" type="audio/mp4"> Your browser does not support the audio element. </audio><br />
+<a href="../../files/w02/sonicpi/neil_rave.rb">→ <em>Source code</em></a><br />
+<br />
+</span></span></p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource ruby numberLines tight-code"><code class="sourceCode ruby"><span id="cb5-1"><a href="#cb5-1"></a>use_bpm <span class="dv">130</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a></span>
+<span id="cb5-3"><a href="#cb5-3"></a>live_loop <span class="wa">:met1</span> <span class="cf">do</span> <span class="co"># this is a metronome to sync the beats</span></span>
+<span id="cb5-4"><a href="#cb5-4"></a>  <span class="fu">sleep</span> <span class="dv">1</span></span>
+<span id="cb5-5"><a href="#cb5-5"></a><span class="cf">end</span></span>
+<span id="cb5-6"><a href="#cb5-6"></a></span>
+<span id="cb5-7"><a href="#cb5-7"></a>define <span class="wa">:pattern</span> <span class="cf">do</span> <span class="kw">|</span>pattern<span class="kw">|</span></span>
+<span id="cb5-8"><a href="#cb5-8"></a>  pattern<span class="at">.ring.tick</span> <span class="kw">==</span> <span class="st">&quot;x&quot;</span></span>
+<span id="cb5-9"><a href="#cb5-9"></a><span class="cf">end</span></span>
+<span id="cb5-10"><a href="#cb5-10"></a></span>
+<span id="cb5-11"><a href="#cb5-11"></a>live_loop <span class="wa">:kick</span>, <span class="wa">sync: :met1</span> <span class="cf">do</span></span>
+<span id="cb5-12"><a href="#cb5-12"></a>  a <span class="kw">=</span> <span class="dv">2</span></span>
+<span id="cb5-13"><a href="#cb5-13"></a>  sample <span class="wa">:bd_haus</span>, <span class="wa">amp: </span>a, <span class="wa">release: </span><span class="dv">8</span>, <span class="wa">cutoff: </span><span class="dv">110</span> <span class="cf">if</span> pattern(<span class="st">&quot;x-----x---x--x--&quot;</span>)</span>
+<span id="cb5-14"><a href="#cb5-14"></a>  <span class="fu">sleep</span> <span class="fl">0.25</span></span>
+<span id="cb5-15"><a href="#cb5-15"></a><span class="cf">end</span></span>
+<span id="cb5-16"><a href="#cb5-16"></a></span>
+<span id="cb5-17"><a href="#cb5-17"></a>live_loop <span class="wa">:clap</span>, <span class="wa">sync: :met1</span> <span class="cf">do</span></span>
+<span id="cb5-18"><a href="#cb5-18"></a>  <span class="fu">sleep</span> <span class="dv">1</span></span>
+<span id="cb5-19"><a href="#cb5-19"></a>  sample <span class="wa">:perc_snap</span>, <span class="wa">amp: </span><span class="dv">1</span></span>
+<span id="cb5-20"><a href="#cb5-20"></a>  <span class="fu">sleep</span> <span class="dv">1</span></span>
+<span id="cb5-21"><a href="#cb5-21"></a><span class="cf">end</span></span>
+<span id="cb5-22"><a href="#cb5-22"></a></span>
+<span id="cb5-23"><a href="#cb5-23"></a>live_loop <span class="wa">:hhc1</span>, <span class="wa">sync: :met1</span> <span class="cf">do</span></span>
+<span id="cb5-24"><a href="#cb5-24"></a>  sample <span class="wa">:drum_cymbal_closed</span>, <span class="wa">amp: </span><span class="fl">0.5</span> <span class="cf">if</span> pattern(<span class="st">&quot;x-x-x-x-xxx-x-x-&quot;</span>)</span>
+<span id="cb5-25"><a href="#cb5-25"></a>  <span class="fu">sleep</span> <span class="fl">0.125</span></span>
+<span id="cb5-26"><a href="#cb5-26"></a><span class="cf">end</span></span></code></pre></div>
+<h1 id="conclusions">Conclusions</h1>
+<p><mark class="yellow"><em>under development</em></mark></p>
+<p><span class="smallcaps">Fab Academy participants are heroes</span><span class="sidenote-wrapper"><label for="sn-9" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-9" class="margin-toggle"/><span class="sidenote">Instructors are heroes too. Especially those from <a href="https://fabacademy.org/2024/labs/puebla/">Puebla</a>.<br />
+<br />
+</span></span>. I had completely forgotten how tough the course is. I admit it’s been challenging for me. It’s Sunday and I haven’t achieved even 5% of what I had planned. Moreover, I keep making changes to the template and when I fix something, I break another.</p>
+<p>I’m glad to be participating again as a student. I’m still smiling from the back row when you all go up to the board, but not as much. I’m more human. This experience will improve my social skills as an instructor<span class="sidenote-wrapper"><label for="sn-10" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-10" class="margin-toggle"/><span class="sidenote">My educational style is somewhat peculiar. You could say I’m more like <a href="https://en.wikipedia.org/wiki/Homelander">Homelander</a> than Superman.<br />
+<br />
+</span></span>.</p>
+<p>I’m particularly proud of putting into practice engineering skills I thought I had forgotten. Fab Academy has been the motivation I needed. I believe that combining these competencies with the power of AI can achieve incredible results.</p>
 </main>
 
 <footer>
