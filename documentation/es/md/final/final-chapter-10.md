@@ -1,22 +1,28 @@
 # Las tres ideas
 
+## [base]{.underline}
+
+## Mirai 未来
+
+## Scylla Σκύλλα
+
 <figure>
-|                                 | LifePod | Scylla | Mirai |
-| ------------------------------- | ------- | ------ | ----- |
-| Corazon                         |         |        |       |
-| Cabeza                          |         |        |       |
-| Semanas$^\dagger$ |         |        |       |
-|                                 |         |        |       |
-|                                 |         |        |       |
-|                                 |         |        |       |
+|                   | [base]{.underline} | Mirai | Scylla |
+| ----------------- | ------------------ | ----- | ------ |
+| Corazon           |                    |       |        |
+| Cabeza            |                    |       |        |
+| Semanas$^\dagger$ |                    |       |        |
+|                   |                    |       |        |
+|                   |                    |       |        |
+|                   |                    |       |        |
 <figcaption>
 $^\dagger$ Tal como se muestra en el calendario
 </figcaption>
 </figure>
 
-# Ikigai 生き甲斐
+# Ikigai
 
-# Boceto 
+# Boceto
 
 # Planificación
 
