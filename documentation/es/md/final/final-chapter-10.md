@@ -9,11 +9,9 @@
 <figure>
 |                   | [base]{.underline} | Mirai | Scylla |
 | ----------------- | ------------------ | ----- | ------ |
-| Corazon           |                    |       |        |
-| Cabeza            |                    |       |        |
 | Semanas$^\dagger$ |                    |       |        |
-|                   |                    |       |        |
-|                   |                    |       |        |
+| Dificultad        |                    |       |        |
+| Coste             |                    |       |        |
 |                   |                    |       |        |
 <figcaption>
 $^\dagger$ Tal como se muestra en el calendario
