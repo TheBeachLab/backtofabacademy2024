@@ -18,10 +18,10 @@ lang: "es-ES"
 <figure>
 |                   | [base]{.underline} | Mirai | Scylla |
 | ----------------- | ------------------ | ----- | ------ |
-| Semanas$^\dagger$ |                    |       |        |
-| Dificultad        |                    |       |        |
+| Semanas$^\dagger$ |      16              |  4     |   8     |
+| Dificultad        |        $\square$            |       |        |
 | Coste             |                    |       |        |
-|                   |                    |       |        |
+|    Tamaño               |       2m             |   40    |    1m    |
 <figcaption>
 $^\dagger$ Tal como se muestra en el calendario
 </figcaption>
