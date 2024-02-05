@@ -176,7 +176,21 @@
 <h1 id="javascript">Javascript</h1>
 <p><mark class="yellow"><em>en desarrollo</em></mark></p>
 <h1 id="inteligencia-artificial">Inteligencia artificial</h1>
-<p><mark class="yellow"><em>en desarrollo</em></mark></p>
+<p><span class="smallcaps">Hemos avanzado, pero aun nos queda bastante camino</span>. Hoy 5 de febrero de 2024 he preguntado a las 4 inteligencias artificiales más conocidas (ChatGPT 3.5, ChatGPT4 Turbo, Bing y Bard) que hagan algo muy sencillo:<br />
+</p>
+<span class="sidenote-wrapper"><label for="sn-5" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-5" class="margin-toggle"/><span class="marginnote">Más abajo explico lo que es TikZ<br />
+<br />
+</span></span>
+<center>
+<em>Dibuja un diagrama Ikigai en TikZ</em>
+</center>
+<p>Tengo dos observaciones y una conclusión: La primera observación es que <strong>ninguna</strong> de las 4 inteligencias ha hecho un buen trabajo. La segunda observación, también interesante, es que <strong>no puede distinguirse</strong> que una sea especialmente mejor que la otra. A pesar de que algunos modelos son técnicamente mejores que otros. La conclusión es pues, que parece claro que las “inteligencias” artificiales tienen <strong>poca o nula capacidad de razonamiento</strong> en areas donde no han sido entrenadas. Incluso conociendo las reglas de ejecución del diagrama, no han sido capaces de dibujar 4 círculos y unas pocas etiquetas.</p>
+<figure>
+<span class="sidenote-wrapper"><label for="sn-6" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-6" class="margin-toggle"/><span class="marginnote">¿Quién es quién? Pon nombre a que IA ha hecho cada uno de estos diagramas. Solución al final de la página.<br />
+<br />
+</span></span> <img src="../../img/w02/ai_ikigai.svg" />
+</figure>
+<p>Como curiosidad Bard (modelo Gemini Pro) ni siquiera fue capaz de generar código correcto. Tuve que pasar el código de Bard a Bing para que lo corrigiese. Supuestamente Bing es ChatGPT4, pero yo creo que la fotocopia salió borrosa. Estos modelos necesitan gran cantidad de datos de entrenamiento para reconocer patrones, no razonan en el sentido humano. Podría haber pasado toda la tarde intentando que los modelos muevan los círculos a su posición correcta. Hay gente que lo hace, pero me parece absurdo. Existe un gran esfuerzo para lograr una IAG que sea capaz de razonar como un humano. No obstante, por ahora habrá que seguir entrenando a los modelos en las áreas que deseemos. Ese es uno de mis objetivos en Fab Academy.</p>
 <h1 id="imágenes">Imágenes</h1>
 <p><mark class="yellow"><em>en desarrollo</em></mark></p>
 <h2 id="imagemagick">Imagemagick</h2>
@@ -184,7 +198,7 @@
 O combinar dos o más imágenes horizontalmente de modo que:<br />
 a) Tengan la misma altura<br />
 b) Las imágenes estén separadas por un espacio transparente</p>
-<p><span class="sidenote-wrapper"><label for="sn-5" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-5" class="margin-toggle"/><span class="marginnote">La fotografía compuesta del avión y el perfil alar se han hecho así.<br />
+<p><span class="sidenote-wrapper"><label for="sn-7" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-7" class="margin-toggle"/><span class="marginnote">La fotografía compuesta del avión y el perfil alar se han hecho así.<br />
 <br />
 </span></span></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource sh numberLines tight-code"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="ex">montage</span> savannah.jpg naca65018.png <span class="at">-geometry</span> +5+0 <span class="at">-tile</span> 2x1<span class="dt">\ </span></span>
@@ -192,7 +206,7 @@ b) Las imágenes estén separadas por un espacio transparente</p>
 <h2 id="pgftikz">PGF/TikZ</h2>
 <p>Solía usar <a href="https://tikz.dev">TikZ</a> en la universidad para hacer gráficos.<br />
 Como veis, estoy usando cualquier cosa que use código para generarse.</p>
-<p><span class="sidenote-wrapper"><label for="sn-6" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-6" class="margin-toggle"/><span class="marginnote"><img src="../../files/w02/tikz/tikz01.svg" /> <a href="../../files/w02/tikz/tikz01.tex">→ <em>Código fuente</em></a><br />
+<p><span class="sidenote-wrapper"><label for="sn-8" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-8" class="margin-toggle"/><span class="marginnote"><img src="../../files/w02/tikz/tikz01.svg" /> <a href="../../files/w02/tikz/tikz01.tex">→ <em>Código fuente</em></a><br />
 <br />
 </span></span></p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode numberSource tex numberLines tight-code"><code class="sourceCode latex"><span id="cb2-1"><a href="#cb2-1"></a><span class="co">% Filename: tikz01.tex</span></span>
@@ -221,7 +235,7 @@ Como veis, estoy usando cualquier cosa que use código para generarse.</p>
 <p>Seguramente habrás visto algún video de <a href="https://www.youtube.com/@3blue1brown">3blue1brown</a>.<br />
 <a href="#manim">Manim</a> es la biblioteca de Python que él mismo creó para generar sus animaciones.<br />
 Aquí mi <em>hello world!</em>: <code>manim -pqh hello_manim.py AnimatedSquareToCircle</code></p>
-<p><span class="sidenote-wrapper"><label for="sn-7" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-7" class="margin-toggle"/><span class="marginnote"><video nocontrols autoplay loop muted style="max-width: 100%; height: auto;"> <source src="../../files/w02/manim/media/videos/hello_manim/1080p60/AnimatedSquareToCircle.mp4" type="video/mp4"> Your browser does not support the video element. </video><br />
+<p><span class="sidenote-wrapper"><label for="sn-9" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-9" class="margin-toggle"/><span class="marginnote"><video nocontrols autoplay loop muted style="max-width: 100%; height: auto;"> <source src="../../files/w02/manim/media/videos/hello_manim/1080p60/AnimatedSquareToCircle.mp4" type="video/mp4"> Your browser does not support the video element. </video><br />
 <a href="../../files/w02/manim/hello_manim.py">→ <em>Código fuente</em></a><br />
 <br />
 </span></span></p>
@@ -242,7 +256,7 @@ Aquí mi <em>hello world!</em>: <code>manim -pqh hello_manim.py AnimatedSquareTo
 <h2 id="sonic-pi">Sonic Pi</h2>
 <p>Estoy creando una sesión usando algunas muestras de audio de Fab Academy.<br />
 No puedo desvelar más.</p>
-<p><span class="sidenote-wrapper"><label for="sn-8" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-8" class="margin-toggle"/><span class="marginnote"><audio controls> <source src="../../files/w02/sonicpi/neil_rave.m4a" type="audio/mp4"> Your browser does not support the audio element. </audio><br />
+<p><span class="sidenote-wrapper"><label for="sn-10" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-10" class="margin-toggle"/><span class="marginnote"><audio controls> <source src="../../files/w02/sonicpi/neil_rave.m4a" type="audio/mp4"> Your browser does not support the audio element. </audio><br />
 <a href="../../files/w02/sonicpi/neil_rave.rb">→ <em>Código fuente</em></a><br />
 <br />
 </span></span></p>
@@ -274,13 +288,14 @@ No puedo desvelar más.</p>
 <span id="cb5-26"><a href="#cb5-26"></a><span class="cf">end</span></span></code></pre></div>
 <h1 id="conclusiones">Conclusiones</h1>
 <p><mark class="yellow"><em>en desarrollo</em></mark></p>
-<p><span class="smallcaps">Los participantes de Fab Academy son héroes</span><span class="sidenote-wrapper"><label for="sn-9" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-9" class="margin-toggle"/><span class="sidenote">Los instructores también son héroes. Sobretodo los de <a href="https://fabacademy.org/2024/labs/puebla/">Puebla</a>.<br />
+<p><span class="smallcaps">Los participantes de Fab Academy son héroes</span><span class="sidenote-wrapper"><label for="sn-11" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-11" class="margin-toggle"/><span class="sidenote">Los instructores también son héroes. Sobretodo los de <a href="https://fabacademy.org/2024/labs/puebla/">Puebla</a>.<br />
 <br />
 </span></span>. Había olvidado completamente lo duro que es el curso. Reconozco que me está costando. Hoy es domingo y no he hecho ni el 5% de lo que tenia pensado. Además sigo haciendo cambios en la plantilla y cuando arreglo una cosa, rompo otra.</p>
-<p>Me alegro de estar participando de nuevo como un estudiante. Sigo sonriendo desde la última fila cuando os sacan a la pizarra, pero no tanto. Soy más humano. Esta experiencia mejorará mi habilidades sociales como instructor<span class="sidenote-wrapper"><label for="sn-10" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-10" class="margin-toggle"/><span class="sidenote">Tengo un estilo educativo algo peculiar. Podrías decir que me parezco más a <a href="https://en.wikipedia.org/wiki/Homelander">Homelander</a> que a Superman.<br />
+<p>Me alegro de estar participando de nuevo como un estudiante. Sigo sonriendo desde la última fila cuando os sacan a la pizarra, pero no tanto. Soy más humano. Esta experiencia mejorará mi habilidades sociales como instructor<span class="sidenote-wrapper"><label for="sn-12" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-12" class="margin-toggle"/><span class="sidenote">Tengo un estilo educativo algo peculiar. Podrías decir que me parezco más a <a href="https://en.wikipedia.org/wiki/Homelander">Homelander</a> que a Superman.<br />
 <br />
 </span></span>.</p>
 <p>Estoy particularmente orgulloso de estar poniendo en práctica habilidades de ingeniería que creía olvidadas. Fab Academy ha sido la motivación que necesitaba. Creo que combinando estas competencias con el poder de la IA, se pueden lograr resultados asombrosos.</p>
+<p><em>Solución a la pregunta de la sección de inteligencia artificial: De izquierda a derecha: GPT3.5, GPT4, Bing y Bard. ¿Acertaste?</em></p>
 </main>
 
 <footer>

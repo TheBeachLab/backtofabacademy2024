@@ -176,7 +176,21 @@
 <h1 id="javascript">Javascript</h1>
 <p><mark class="yellow"><em>in Entwicklung</em></mark></p>
 <h1 id="künstliche-intelligenz">Künstliche Intelligenz</h1>
-<p><mark class="yellow"><em>in Entwicklung</em></mark></p>
+<p><span class="smallcaps">Wir haben Fortschritte gemacht, aber es gibt noch einen langen Weg vor uns</span>. Heute, am 5. Februar 2024, habe ich die vier bekanntesten künstlichen Intelligenzen (ChatGPT 3.5, ChatGPT4 Turbo, Bing und Bard) gebeten, etwas sehr Einfaches zu tun:<br />
+</p>
+<span class="sidenote-wrapper"><label for="sn-5" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-5" class="margin-toggle"/><span class="marginnote">Weiter unten erkläre ich, was TikZ ist<br />
+<br />
+</span></span>
+<center>
+<em>Zeichne ein Ikigai-Diagramm in TikZ</em>
+</center>
+<p>Ich habe zwei Beobachtungen und eine Schlussfolgerung: Die erste Beobachtung ist, dass <strong>keine</strong> der vier KIs einen guten Job gemacht hat. Die zweite Beobachtung, ebenfalls interessant, ist, dass <strong>man nicht unterscheiden kann</strong>, dass eine besonders besser als die andere wäre. Obwohl einige Modelle technisch überlegen sind. Die Schlussfolgerung ist also, dass es klar scheint, dass die “künstlichen” Intelligenzen <strong>wenig bis keine Fähigkeit zum logischen Denken</strong> in Bereichen besitzen, in denen sie nicht trainiert wurden. Selbst mit der Kenntnis der Ausführungsregeln des Diagramms waren sie nicht in der Lage, vier Kreise und einige wenige Beschriftungen zu zeichnen.</p>
+<figure>
+<span class="sidenote-wrapper"><label for="sn-6" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-6" class="margin-toggle"/><span class="marginnote">Wer ist wer? Benenne, welche KI jedes dieser Diagramme gemacht hat. Lösung am Ende der Seite.<br />
+<br />
+</span></span> <img src="../../img/w02/ai_ikigai.svg" />
+</figure>
+<p>Interessanterweise war Bard (Modell Gemini Pro) nicht einmal in der Lage, korrekten Code zu generieren. Ich musste den Code von Bard an Bing weitergeben, damit er ihn korrigieren konnte. Angeblich ist Bing ChatGPT4, aber ich glaube, die Fotokopie kam verschwommen heraus. Diese Modelle benötigen eine große Menge an Trainingsdaten, um Muster zu erkennen; sie denken nicht im menschlichen Sinne. Ich hätte den ganzen Nachmittag damit verbringen können, zu versuchen, die Modelle dazu zu bringen, die Kreise in die richtige Position zu bewegen. Es gibt Leute, die das tun, aber das erscheint mir absurd. Es wird viel Aufwand betrieben, um eine AGI zu entwickeln, die wie ein Mensch denken kann. Doch vorerst müssen wir weiterhin die Modelle in den Bereichen trainieren, in denen wir sie einsetzen möchten. Das ist eines meiner Ziele im Fab Academy.</p>
 <h1 id="bilder">Bilder</h1>
 <p><mark class="yellow"><em>in Entwicklung</em></mark></p>
 <h2 id="imagemagick">Imagemagick</h2>
@@ -184,7 +198,7 @@
 Oder zwei oder mehr Bilder horizontal kombinieren, sodass:<br />
 a) Sie die gleiche Höhe haben<br />
 b) Die Bilder durch einen transparenten Raum getrennt sind</p>
-<p><span class="sidenote-wrapper"><label for="sn-5" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-5" class="margin-toggle"/><span class="marginnote">Das zusammengesetzte Foto des Flugzeugs und des Flügelprofils wurde so gemacht.<br />
+<p><span class="sidenote-wrapper"><label for="sn-7" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-7" class="margin-toggle"/><span class="marginnote">Das zusammengesetzte Foto des Flugzeugs und des Flügelprofils wurde so gemacht.<br />
 <br />
 </span></span></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource sh numberLines tight-code"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="ex">montage</span> savannah.jpg naca65018.png <span class="at">-geometry</span> +5+0 <span class="at">-tile</span> 2x1<span class="dt">\ </span></span>
@@ -192,7 +206,7 @@ b) Die Bilder durch einen transparenten Raum getrennt sind</p>
 <h2 id="pgftikz">PGF/TikZ</h2>
 <p>Ich habe <a href="https://tikz.dev">TikZ</a> an der Universität für Grafiken benutzt.<br />
 Wie ihr seht, benutze ich alles Mögliche, was sich durch Code generieren lässt.</p>
-<p><span class="sidenote-wrapper"><label for="sn-6" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-6" class="margin-toggle"/><span class="marginnote"><img src="../../files/w02/tikz/tikz01.svg" /> <a href="../../files/w02/tikz/tikz01.tex">→ <em>Quellcode</em></a><br />
+<p><span class="sidenote-wrapper"><label for="sn-8" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-8" class="margin-toggle"/><span class="marginnote"><img src="../../files/w02/tikz/tikz01.svg" /> <a href="../../files/w02/tikz/tikz01.tex">→ <em>Quellcode</em></a><br />
 <br />
 </span></span></p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode numberSource tex numberLines tight-code"><code class="sourceCode latex"><span id="cb2-1"><a href="#cb2-1"></a><span class="co">% Filename: tikz01.tex</span></span>
@@ -221,7 +235,7 @@ Wie ihr seht, benutze ich alles Mögliche, was sich durch Code generieren lässt
 <p>Du hast sicherlich schon mal ein Video von <a href="https://www.youtube.com/@3blue1brown">3blue1brown</a> gesehen.<br />
 <a href="#manim">Manim</a> ist die Python-Bibliothek, die er selbst geschaffen hat, um seine Animationen zu generieren.<br />
 Hier ist mein <em>Hallo Welt!</em>: <code>manim -pqh hello_manim.py AnimatedSquareToCircle</code></p>
-<p><span class="sidenote-wrapper"><label for="sn-7" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-7" class="margin-toggle"/><span class="marginnote"><video nocontrols autoplay loop muted style="max-width: 100%; height: auto;"> <source src="../../files/w02/manim/media/videos/hello_manim/1080p60/AnimatedSquareToCircle.mp4" type="video/mp4"> Ihr Browser unterstützt das Video-Element nicht. </video><br />
+<p><span class="sidenote-wrapper"><label for="sn-9" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-9" class="margin-toggle"/><span class="marginnote"><video nocontrols autoplay loop muted style="max-width: 100%; height: auto;"> <source src="../../files/w02/manim/media/videos/hello_manim/1080p60/AnimatedSquareToCircle.mp4" type="video/mp4"> Ihr Browser unterstützt das Video-Element nicht. </video><br />
 <a href="../../files/w02/manim/hello_manim.py">→ <em>Quellcode</em></a><br />
 <br />
 </span></span></p>
@@ -242,7 +256,7 @@ Hier ist mein <em>Hallo Welt!</em>: <code>manim -pqh hello_manim.py AnimatedSqua
 <h2 id="sonic-pi">Sonic Pi</h2>
 <p>Ich erstelle eine Session mit einigen Audioproben von Fab Academy.<br />
 Mehr kann ich nicht verraten.</p>
-<p><span class="sidenote-wrapper"><label for="sn-8" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-8" class="margin-toggle"/><span class="marginnote"><audio controls> <source src="../../files/w02/sonicpi/neil_rave.m4a" type="audio/mp4"> Ihr Browser unterstützt das Audio-Element nicht. </audio><br />
+<p><span class="sidenote-wrapper"><label for="sn-10" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-10" class="margin-toggle"/><span class="marginnote"><audio controls> <source src="../../files/w02/sonicpi/neil_rave.m4a" type="audio/mp4"> Ihr Browser unterstützt das Audio-Element nicht. </audio><br />
 <a href="../../files/w02/sonicpi/neil_rave.rb">→ <em>Quellcode</em></a><br />
 <br />
 </span></span></p>
@@ -274,13 +288,14 @@ Mehr kann ich nicht verraten.</p>
 <span id="cb5-26"><a href="#cb5-26"></a><span class="cf">end</span></span></code></pre></div>
 <h1 id="schlussfolgerungen">Schlussfolgerungen</h1>
 <p><mark class="yellow"><em>in Entwicklung</em></mark></p>
-<p><span class="smallcaps">Die Teilnehmer des Fab Academy sind Helden</span><span class="sidenote-wrapper"><label for="sn-9" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-9" class="margin-toggle"/><span class="sidenote">Die Lehrer sind auch Helden. Vor allem die aus <a href="https://fabacademy.org/2024/labs/puebla/">Puebla</a>.<br />
+<p><span class="smallcaps">Die Teilnehmer des Fab Academy sind Helden</span><span class="sidenote-wrapper"><label for="sn-11" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-11" class="margin-toggle"/><span class="sidenote">Die Instruktoren sind auch Helden. Vor allem die aus <a href="https://fabacademy.org/2024/labs/puebla/">Puebla</a>.<br />
 <br />
-</span></span>. Ich hatte total vergessen, wie hart der Kurs ist. Ich muss zugeben, dass es mir schwerfällt. Heute ist Sonntag und ich habe nicht einmal 5% von dem erreicht, was ich geplant hatte. Außerdem mache ich immer noch Änderungen an der Vorlage und wenn ich eine Sache repariere, zerstöre ich eine andere.</p>
-<p>Ich freue mich, wieder als Student teilzunehmen. Ich lächle immer noch von der letzten Reihe aus, wenn ihr an die Tafel geholt werdet, aber nicht so sehr. Ich bin menschlicher. Diese Erfahrung wird meine sozialen Fähigkeiten als Lehrer verbessern<span class="sidenote-wrapper"><label for="sn-10" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-10" class="margin-toggle"/><span class="sidenote">Ich habe einen etwas ungewöhnlichen erzieherischen Stil. Man könnte sagen, dass ich mehr <a href="https://en.wikipedia.org/wiki/Homelander">Homelander</a> als Superman ähnele.<br />
+</span></span>. Ich hatte völlig vergessen, wie hart der Kurs ist. Ich gestehe, es fällt mir schwer. Heute ist Sonntag, und ich habe nicht einmal 5% von dem erledigt, was ich vorhatte. Außerdem mache ich weiterhin Änderungen an der Vorlage und wenn ich eine Sache repariere, zerstöre ich eine andere.</p>
+<p>Ich bin froh, wieder als Schüler teilzunehmen. Ich lächle immer noch von der letzten Reihe aus, wenn ihr an die Tafel geholt werdet, aber nicht so sehr. Ich bin menschlicher. Diese Erfahrung wird meine sozialen Fähigkeiten als Lehrer verbessern<span class="sidenote-wrapper"><label for="sn-12" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-12" class="margin-toggle"/><span class="sidenote">Ich habe einen etwas eigenartigen Bildungsstil. Man könnte sagen, ich ähnele eher <a href="https://en.wikipedia.org/wiki/Homelander">Homelander</a> als Superman.<br />
 <br />
 </span></span>.</p>
-<p>Ich bin besonders stolz darauf, dass ich Ingenieurkompetenzen, von denen ich dachte, dass ich sie vergessen hätte, wieder in die Praxis umsetzen kann. Fab Academy ist die Motivation, die ich brauchte. Ich glaube, dass durch die Kombination dieser Kompetenzen mit der Kraft der KI erstaunliche Ergebnisse erzielt werden können.</p>
+<p>Ich bin besonders stolz darauf, Ingenieurkompetenzen, von denen ich geglaubt hatte, sie vergessen zu haben, in die Praxis umzusetzen. Fab Academy war die Motivation, die ich brauchte. Ich glaube, dass durch die Kombination dieser Fähigkeiten mit der Macht der KI erstaunliche Ergebnisse erzielt werden können.</p>
+<p><em>Lösung zur Frage aus dem Abschnitt über künstliche Intelligenz: Von links nach rechts: GPT3.5, GPT4, Bing und Bard. Hast du’s erraten?</em></p>
 </main>
 
 <footer>

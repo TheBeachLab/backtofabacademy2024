@@ -9,23 +9,24 @@ lang: es-ES
 
 # Las tres ideas
 
+<figure>
+|                                 | LifePod | Scylla | Mirai |
+| ------------------------------- | ------- | ------ | ----- |
+| Corazon                         |         |        |       |
+| Cabeza                          |         |        |       |
+| Semanas$^\dagger$ |         |        |       |
+|                                 |         |        |       |
+|                                 |         |        |       |
+|                                 |         |        |       |
+<figcaption>
+$^\dagger$ Tal como se muestra en el calendario
+</figcaption>
+</figure>
 
+# Ikigai 生き甲斐
 
-| LifePod   |      Aquatic device      |  OpenLaptop |
-|----------|:-------------:|------:|
-| col 1 is |  left-aligned | $1600 |
-| col 2 is |    centered   |   $12 |
-| col 3 is | right-aligned |    $1 |
-
-# Boceto y explicación
+# Boceto 
 
 # Planificación
 
 # Presupuesto
-
-No hay mucho que ver por aquí...
-
-```{.tight-code}
-¯\_( ͡❛ ͜ʖ ͡❛)_/¯ 
-```
-

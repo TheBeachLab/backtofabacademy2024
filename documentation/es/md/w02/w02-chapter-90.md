@@ -10,3 +10,5 @@ Me alegro de estar participando de nuevo como un estudiante. Sigo sonriendo desd
 Estoy particularmente orgulloso de estar poniendo en práctica habilidades de ingeniería que creía olvidadas. Fab Academy ha sido la motivación que necesitaba. Creo que combinando estas competencias con el poder de la IA, se pueden lograr resultados asombrosos.
 
 [^902]: Tengo un estilo educativo algo peculiar. Podrías decir que me parezco más a [Homelander](https://en.wikipedia.org/wiki/Homelander) que a Superman.
+
+*Solución a la pregunta de la sección de inteligencia artificial: De izquierda a derecha: GPT3.5, GPT4, Bing y Bard. ¿Acertaste?*
