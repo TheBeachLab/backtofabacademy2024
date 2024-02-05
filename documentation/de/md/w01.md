@@ -3,8 +3,8 @@ title: "Woche 1. Prinzipien und Praktiken, Projektmanagement"
 subtitle: "Zurück zur Fab Academy 2024. Fran Sanchez"
 toc-title: "Inhaltsverzeichnis"
 return-url: "../html/"
-return-text: '← Zurück'
-lang: de-DE
+return-text: "← Zurück"
+lang: "de-DE"
 ---
 :::{.note .yellow}
 |     |

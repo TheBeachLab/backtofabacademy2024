@@ -6,9 +6,9 @@ A ver como explico ésto... Mejor lo explico en un video[^101].
 [^101]: Próximamente en [Youtube](https://www.youtube.com/playlist?list=PLKDpiLmgp6Evt30dhHgRlcB80OhMfcs2W) o [Instagram](https://www.instagram.com/thebeachlab).
 
 ## Mi teclado es raro
-[Mientras trabajaba en la organización de Fab15 en Egipto]{.smallcaps}, me fijé en que Sherry Lassiter puede escribir a toda velocidad sin mirar el teclado. En aquel momento, yo tecleaba con 2 dedos y siempre mirando el teclado. Así que me decidí a aprender. Hay una ventaja cuando aprendes a hacer algo desde cero, y es que no tienes ningún vicio. Así que yo no aprendí el sistema QWERTY, que estaba originalmente diseñada para que las antiguas máquinas de escribir no se atascaran. Yo aprendí con el sistema [Colemak](https://colemak.com)[^102]. Tengo un [teclado orto-lineal](https://drop.com/buy/preonic-mechanical-keyboard) acon disposición Colemak, y practico unos cinco minutos al día.
+[Mientras trabajaba en la organización de Fab15 en Egipto]{.smallcaps}, me fijé en que Sherry Lassiter puede escribir a toda velocidad sin mirar el teclado. En aquel momento, yo tecleaba con 2 dedos y siempre mirando el teclado. Así que me decidí a aprender. Hay una ventaja cuando aprendes a hacer algo desde cero, y es que no tienes ningún vicio. Así que yo no aprendí el sistema QWERTY, que estaba originalmente diseñada para que las antiguas máquinas de escribir no se atascaran. Yo aprendí con el sistema [Colemak](https://colemak.com)[^102]. Tengo un [teclado orto-lineal](https://drop.com/buy/preonic-mechanical-keyboard) con disposición Colemak, y practico unos cinco minutos al día.
 
-[^102]: Colemak está diseñado para que las letras de mayor uso en idioma ingles esten en la fila central. 
+[^102]: Colemak está diseñado para que las letras de mayor uso en idioma ingles estén en la fila central. 
 
 <figure>
 ^[{-} Lo que más me gusta de la distribución Colemak es que la tecla de borrar está al lado izquierdo de la tecla `A`]
@@ -27,7 +27,7 @@ También tengo un [software en macOS](https://karabiner-elements.pqrs.org) que c
 - [→ NERDTree](https://github.com/preservim/nerdtree) para tener una barra lateral con el listado de ficheros, y así poder navegar rápidamente entre archivos.
 - [→ vim-devicons](https://github.com/ryanoasis/vim-devicons) para visualizar con un pequeño icono gráfico los archivos y las carpetas. 
 
- Otros enlaces utiles:
+ Otros enlaces útiles:
 
 - [→ VimAwesome](https://vimawesome.com) es una página con cientos de plugins de vim
 - [→ Fran's My Computing repo](https://github.com/TheBeachLab/myComputing) con algunos trucos, por si te gusta usar[^105] la línea de comandos.

@@ -3,8 +3,8 @@ title: "Semana 2. Diseño Asistido por Ordenador"
 subtitle: "Regreso a Fab Academy 2024. Fran Sanchez"
 toc-title: "Índice"
 return-url: "../html/"
-return-text: '← Volver atrás'
-lang: es-ES
+return-text: "← Volver atrás"
+lang: "es-ES"
 ---
 :::{.note .yellow}
 |     |
