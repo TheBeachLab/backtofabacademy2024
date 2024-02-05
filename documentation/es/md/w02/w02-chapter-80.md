@@ -7,7 +7,7 @@ Muy útil para infinidad de operaciones. Antes era difícil aprenderse los coman
 
 ## yt-dlp
 
-Uso esta utilidad de terminal para bajarme los videos de Fab Academy alojados en [Youtube]() o [Vimeo](https://vimeo.com/academany/videos). Por ejemplo:
+Uso esta utilidad de terminal para bajarme los videos de Fab Academy alojados en [Youtube](https://www.youtube.com/@FabAcademyGlobal/playlists) o [Vimeo](https://vimeo.com/academany/videos). Por ejemplo:
 
 ```{.bash .numberLines .tight-code}
 yt-dlp --write-sub --all-subs [Video URL]
