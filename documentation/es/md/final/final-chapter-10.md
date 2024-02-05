@@ -1,6 +1,8 @@
-# La idea
+# Las tres ideas
 
-| Tables   |      Are      |  Cool |
+
+
+| LifePod   |      Aquatic device      |  OpenLaptop |
 |----------|:-------------:|------:|
 | col 1 is |  left-aligned | $1600 |
 | col 2 is |    centered   |   $12 |
