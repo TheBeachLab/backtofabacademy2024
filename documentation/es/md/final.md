@@ -17,7 +17,7 @@ lang: "es-ES"
 
 <figure>
 |                   | [base]{.underline} | Mirai | Scylla |
-| ----------------- | ------------------ | ----- | ------ |
+| ----------------- | :------------------:| :-----: | :------: |
 | Semanas$^\dagger$ |      16              |  4     |   8     |
 | Dificultad        |        $\square$            |       |        |
 | Coste             |                    |       |        |
