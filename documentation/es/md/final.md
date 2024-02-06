@@ -9,14 +9,14 @@ lang: "es-ES"
 
 # Las tres ideas
 
-## [base]{.underline}
-
 ## Mirai 未来
+
+## Project Nest
 
 ## Scylla Σκύλλα
 
 <figure>
-|                   | [base]{.underline} | Mirai | Scylla |
+|                   | Nest | Mirai | Scylla |
 | ----------------- | :------------------:| :-----: | :------: |
 | Semanas$^\dagger$ |      16              |  4     |   8     |
 | Dificultad        |        $\square$            |       |        |
@@ -28,6 +28,11 @@ $^\dagger$ Tal como se muestra en el calendario
 </figure>
 
 # Ikigai
+
+<figure>
+^[{-} Parece que tenemos un seleccionado.]
+![](../../img/final/ikigai/ikigai2.svg)
+</figure>
 
 # Boceto
 
