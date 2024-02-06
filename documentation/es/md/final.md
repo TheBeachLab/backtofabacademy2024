@@ -22,7 +22,7 @@ Alphabets es una pantalla mecánica modular para mostrar mensajes interactivos. 
 [^101]: ¿Por qué dos? Otra de tantas promesas incumplidas que hago.
 
 ## *Solo*
-*Solo* es el nombre de un accesorio para cámaras SLR que facilita la grabación personal al automatizar el enfoque y algunos movimientos de cámara.
+*Solo* es el nombre de un accesorio para cámaras SLR que facilita la grabación de video personal al automatizar el enfoque y algunos movimientos de cámara.
 
 ![](../../img/final/solo.webp)
 
@@ -56,14 +56,14 @@ Mirai es un microordenador portátil de estética *retro cyberdeck* que incorpor
 | Coste             |            1k           |  0.5k |   1k   |    0.1k   |  0.1k  |      0.5k     |
 | Portabilidad      |           Baja          |  Alta |  Media |    Alta   |  Alta  |     Media     |<figcaption>
 $^\dagger$ Semanas de trabajo estimadas para completarlo\
-$^\dagger$$^\dagger$ Podría llegar a 5/5 por las instalaciones
+$^\dagger$$^\dagger$ Podría llegar a 5/5 por las instalaciones sanitarias
 </figcaption>
 </figure>
 
 ## Ikigai
 
 <figure>
-^[{-} Ikigai.]
+^[{-} Diagrama de los 6 proyectos dibujados sobre mi Ikigai. Tengo la sensación de que a Ikigai le faltan combinaciones. Mirai es demasiado personal, no creo que tenga salida en el mercado. Solo Nest es un proyecto que ofrece un beneficio claro a la sociedad.]
 ![](../../img/final/ikigai/ikigai2.svg)
 </figure>
 

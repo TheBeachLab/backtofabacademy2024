@@ -13,7 +13,7 @@ Alphabets es una pantalla mecánica modular para mostrar mensajes interactivos. 
 [^101]: ¿Por qué dos? Otra de tantas promesas incumplidas que hago.
 
 ## *Solo*
-*Solo* es el nombre de un accesorio para cámaras SLR que facilita la grabación personal al automatizar el enfoque y algunos movimientos de cámara.
+*Solo* es el nombre de un accesorio para cámaras SLR que facilita la grabación de video personal al automatizar el enfoque y algunos movimientos de cámara.
 
 ![](../../img/final/solo.webp)
 
