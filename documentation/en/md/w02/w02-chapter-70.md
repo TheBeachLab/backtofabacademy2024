@@ -1,10 +1,10 @@
 # Images
-[*in development*]{.mark .yellow}
+[*under development*]{.mark .yellow}
 
 
 ## Imagemagick
 
-It's good for a ton of stuff. You can add a watermark to an image.\
+It's good for a bazillion things. You can slap a watermark on an image.\
 Or combine two or more images horizontally so that:\
 a) They have the same height\
 b) The images are separated by a transparent space
@@ -15,34 +15,42 @@ montage savannah.jpg naca65018.png -geometry +5+0 -tile 2x1\
   -resize x800 -background none -gravity West -extent x800 airplane.webp
 ```
 
-[^761]: {-} The composite photograph of the airplane and the airfoil profile was made like this.
+[^761]: {-} The composite photograph of the airplane and the airfoil profile was done this way.
 
 ## PGF/TikZ
-I used to use [TikZ](https://tikz.dev) in college to make graphics.\
-As you can see, I’m using anything that generates through code.
+[TikZ](https://tikz.dev) is a package for $\LaTeX$ that allows creating figures and graphics. I used to use it in college. I've created the Ikigai figure I'll be using on the final project page.\
+As you see, I'm using anything that uses code to be generated.
 
 [^760]
 ```{.tex .numberLines .tight-code}
-% Filename: tikz01.tex
-% Usage: latex tikz01.tex --> tikz01.dvi
-%        dvisvgm --font-format=woff tikz01.dvi --> tikz01.svg
 \documentclass[tikz]{standalone}
 \begin{document}
-\begin{tikzpicture}[domain=0:4]
-  \draw[very thin,color=gray] (-0.1,-1.1) grid (3.9,3.9);
-  \draw[->] (-0.2,0) -- (4.2,0) node[right] {$x$};
-  \draw[->] (0,-1.2) -- (0,4.2) node[above] {$f(x)$};
-  \draw[color=red]    plot (\x,\x)             node[right] {$f(x) =x$};
-  % \x r means to convert '\x' from degrees to _r_adians:
-  \draw[color=blue]   plot (\x,{sin(\x r)})    node[right] {$f(x) = \sin x$};
-  \draw[color=orange] plot (\x,{0.05*exp(\x)}) node[right] {$f(x) = \frac{1}{20} \mathrm e^x$};
+\begin{tikzpicture}
+% Circles
+\fill[cyan!45, opacity=0.5, draw=cyan] (0,1) circle (2cm);
+\fill[magenta!45, opacity=0.5, draw=magenta] (0,-1) circle (2cm);
+\fill[yellow!45, opacity=0.5, draw=orange] (1,0) circle (2cm);
+\fill[black!15, opacity=0.4, draw=gray] (-1,0) circle (2cm);
+% Labels
+\node[font=\small, align=center] at (-2.8,0) {What the\\ World needs};
+\node[font=\small, align=center] at (2.8,0) {What you\\ are good at};
+\node[font=\small, align=center] at (0,-2.4) {What you\\ can be paid for};
+\node[font=\small] at (0,2.4) {What you love};
+% Small Labels
+\node[font=\tiny] at (1.35,-1.2) {Profession};
+\node[font=\tiny] at (1.35,1.2) {Passion};
+\node[font=\tiny] at (-1.35,-1.2) {Vocation};
+\node[font=\tiny] at (-1.35,1.2) {Mission};
+% Title
+\node[font=\large] at (0,0) {Ikigai};
 \end{tikzpicture}
 \end{document}
 ```
 
 [^760]:
-  {-} ![](../../files/w02/tikz/tikz01.svg)
-  [→ *Source code*](../../files/w02/tikz/tikz01.tex)
+  {-} ![](../../img/final/ikigai/ikigai.svg)
+  [→ *Source code*](../../img/final/ikigai/ikigai.tex)
 
-
+To generate the `svg` figure you have to execute the command:\
+`pdflatex ikigai.tex && pdf2svg ikigai.pdf ikigai.svg`
 

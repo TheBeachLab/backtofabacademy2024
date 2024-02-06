@@ -191,38 +191,47 @@
 </figure>
 <p>Interestingly, Bard (Gemini Pro model) couldn’t even generate correct code. I had to pass Bard’s code to Bing to have it corrected. Supposedly Bing is ChatGPT4, but I think that copy came out blurry. These models need a large amount of training data to recognize patterns; they do not reason in the human sense. I could have spent the entire afternoon trying to get the models to move the circles to their correct positions. There are people who do that, but I find it absurd. There’s a huge effort to achieve General AI capable of reasoning like a human. However, for now, we’ll have to continue training the models in the areas we want. That’s one of my goals at Fab Academy.</p>
 <h1 id="images">Images</h1>
-<p><mark class="yellow"><em>in development</em></mark></p>
+<p><mark class="yellow"><em>under development</em></mark></p>
 <h2 id="imagemagick">Imagemagick</h2>
-<p>It’s good for a ton of stuff. You can add a watermark to an image.<br />
+<p>It’s good for a bazillion things. You can slap a watermark on an image.<br />
 Or combine two or more images horizontally so that:<br />
 a) They have the same height<br />
 b) The images are separated by a transparent space</p>
-<p><span class="sidenote-wrapper"><label for="sn-7" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-7" class="margin-toggle"/><span class="marginnote">The composite photograph of the airplane and the airfoil profile was made like this.<br />
+<p><span class="sidenote-wrapper"><label for="sn-7" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-7" class="margin-toggle"/><span class="marginnote">The composite photograph of the airplane and the airfoil profile was done this way.<br />
 <br />
 </span></span></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource sh numberLines tight-code"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="ex">montage</span> savannah.jpg naca65018.png <span class="at">-geometry</span> +5+0 <span class="at">-tile</span> 2x1<span class="dt">\ </span></span>
 <span id="cb1-2"><a href="#cb1-2"></a>  <span class="ex">-resize</span> x800 <span class="at">-background</span> none <span class="at">-gravity</span> West <span class="at">-extent</span> x800 airplane.webp</span></code></pre></div>
 <h2 id="pgftikz">PGF/TikZ</h2>
-<p>I used to use <a href="https://tikz.dev">TikZ</a> in college to make graphics.<br />
-As you can see, I’m using anything that generates through code.</p>
-<p><span class="sidenote-wrapper"><label for="sn-8" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-8" class="margin-toggle"/><span class="marginnote"><img src="../../files/w02/tikz/tikz01.svg" /> <a href="../../files/w02/tikz/tikz01.tex">→ <em>Source code</em></a><br />
+<p><a href="https://tikz.dev">TikZ</a> is a package for <span class="math inline">\LaTeX</span> that allows creating figures and graphics. I used to use it in college. I’ve created the Ikigai figure I’ll be using on the final project page.<br />
+As you see, I’m using anything that uses code to be generated.</p>
+<p><span class="sidenote-wrapper"><label for="sn-8" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-8" class="margin-toggle"/><span class="marginnote"><img src="../../img/final/ikigai/ikigai.svg" /> <a href="../../img/final/ikigai/ikigai.tex">→ <em>Source code</em></a><br />
 <br />
 </span></span></p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource tex numberLines tight-code"><code class="sourceCode latex"><span id="cb2-1"><a href="#cb2-1"></a><span class="co">% Filename: tikz01.tex</span></span>
-<span id="cb2-2"><a href="#cb2-2"></a><span class="co">% Usage: latex tikz01.tex --&gt; tikz01.dvi</span></span>
-<span id="cb2-3"><a href="#cb2-3"></a><span class="co">%        dvisvgm --font-format=woff tikz01.dvi --&gt; tikz01.svg</span></span>
-<span id="cb2-4"><a href="#cb2-4"></a><span class="bu">\documentclass</span>[tikz]{<span class="ex">standalone</span>}</span>
-<span id="cb2-5"><a href="#cb2-5"></a><span class="kw">\begin</span>{<span class="ex">document</span>}</span>
-<span id="cb2-6"><a href="#cb2-6"></a><span class="kw">\begin</span>{<span class="ex">tikzpicture</span>}[domain=0:4]</span>
-<span id="cb2-7"><a href="#cb2-7"></a>  <span class="fu">\draw</span>[very thin,color=gray] (-0.1,-1.1) grid (3.9,3.9);</span>
-<span id="cb2-8"><a href="#cb2-8"></a>  <span class="fu">\draw</span>[-&gt;] (-0.2,0) -- (4.2,0) node[right] {<span class="ss">$x$</span>};</span>
-<span id="cb2-9"><a href="#cb2-9"></a>  <span class="fu">\draw</span>[-&gt;] (0,-1.2) -- (0,4.2) node[above] {<span class="ss">$f(x)$</span>};</span>
-<span id="cb2-10"><a href="#cb2-10"></a>  <span class="fu">\draw</span>[color=red]    plot (<span class="fu">\x</span>,<span class="fu">\x</span>)             node[right] {<span class="ss">$f(x) =x$</span>};</span>
-<span id="cb2-11"><a href="#cb2-11"></a>  <span class="co">% \x r means to convert &#39;\x&#39; from degrees to _r_adians:</span></span>
-<span id="cb2-12"><a href="#cb2-12"></a>  <span class="fu">\draw</span>[color=blue]   plot (<span class="fu">\x</span>,{sin(<span class="fu">\x</span> r)})    node[right] {<span class="ss">$f(x) = </span><span class="sc">\sin</span><span class="ss"> x$</span>};</span>
-<span id="cb2-13"><a href="#cb2-13"></a>  <span class="fu">\draw</span>[color=orange] plot (<span class="fu">\x</span>,{0.05*exp(<span class="fu">\x</span>)}) node[right] {<span class="ss">$f(x) = </span><span class="sc">\frac</span><span class="ss">{1}{20} </span><span class="sc">\mathrm</span><span class="ss"> e^x$</span>};</span>
-<span id="cb2-14"><a href="#cb2-14"></a><span class="kw">\end</span>{<span class="ex">tikzpicture</span>}</span>
-<span id="cb2-15"><a href="#cb2-15"></a><span class="kw">\end</span>{<span class="ex">document</span>}</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource tex numberLines tight-code"><code class="sourceCode latex"><span id="cb2-1"><a href="#cb2-1"></a><span class="bu">\documentclass</span>[tikz]{<span class="ex">standalone</span>}</span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="kw">\begin</span>{<span class="ex">document</span>}</span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="kw">\begin</span>{<span class="ex">tikzpicture</span>}</span>
+<span id="cb2-4"><a href="#cb2-4"></a><span class="co">% Circles</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a><span class="fu">\fill</span>[cyan!45, opacity=0.5, draw=cyan] (0,1) circle (2cm);</span>
+<span id="cb2-6"><a href="#cb2-6"></a><span class="fu">\fill</span>[magenta!45, opacity=0.5, draw=magenta] (0,-1) circle (2cm);</span>
+<span id="cb2-7"><a href="#cb2-7"></a><span class="fu">\fill</span>[yellow!45, opacity=0.5, draw=orange] (1,0) circle (2cm);</span>
+<span id="cb2-8"><a href="#cb2-8"></a><span class="fu">\fill</span>[black!15, opacity=0.4, draw=gray] (-1,0) circle (2cm);</span>
+<span id="cb2-9"><a href="#cb2-9"></a><span class="co">% Labels</span></span>
+<span id="cb2-10"><a href="#cb2-10"></a><span class="fu">\node</span>[font=<span class="fu">\small</span>, align=center] at (-2.8,0) {What the<span class="fu">\\</span> World needs};</span>
+<span id="cb2-11"><a href="#cb2-11"></a><span class="fu">\node</span>[font=<span class="fu">\small</span>, align=center] at (2.8,0) {What you<span class="fu">\\</span> are good at};</span>
+<span id="cb2-12"><a href="#cb2-12"></a><span class="fu">\node</span>[font=<span class="fu">\small</span>, align=center] at (0,-2.4) {What you<span class="fu">\\</span> can be paid for};</span>
+<span id="cb2-13"><a href="#cb2-13"></a><span class="fu">\node</span>[font=<span class="fu">\small</span>] at (0,2.4) {What you love};</span>
+<span id="cb2-14"><a href="#cb2-14"></a><span class="co">% Small Labels</span></span>
+<span id="cb2-15"><a href="#cb2-15"></a><span class="fu">\node</span>[font=<span class="fu">\tiny</span>] at (1.35,-1.2) {Profession};</span>
+<span id="cb2-16"><a href="#cb2-16"></a><span class="fu">\node</span>[font=<span class="fu">\tiny</span>] at (1.35,1.2) {Passion};</span>
+<span id="cb2-17"><a href="#cb2-17"></a><span class="fu">\node</span>[font=<span class="fu">\tiny</span>] at (-1.35,-1.2) {Vocation};</span>
+<span id="cb2-18"><a href="#cb2-18"></a><span class="fu">\node</span>[font=<span class="fu">\tiny</span>] at (-1.35,1.2) {Mission};</span>
+<span id="cb2-19"><a href="#cb2-19"></a><span class="co">% Title</span></span>
+<span id="cb2-20"><a href="#cb2-20"></a><span class="fu">\node</span>[font=<span class="fu">\large</span>] at (0,0) {Ikigai};</span>
+<span id="cb2-21"><a href="#cb2-21"></a><span class="kw">\end</span>{<span class="ex">tikzpicture</span>}</span>
+<span id="cb2-22"><a href="#cb2-22"></a><span class="kw">\end</span>{<span class="ex">document</span>}</span></code></pre></div>
+<p>To generate the <code>svg</code> figure you have to execute the command:<br />
+<code>pdflatex ikigai.tex &amp;&amp; pdf2svg ikigai.pdf ikigai.svg</code></p>
 <h1 id="audio-and-video">Audio and video</h1>
 <p><mark class="yellow"><em>under development</em></mark></p>
 <h2 id="ffmpeg">ffmpeg</h2>

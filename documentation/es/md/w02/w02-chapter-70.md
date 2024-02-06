@@ -18,7 +18,7 @@ montage savannah.jpg naca65018.png -geometry +5+0 -tile 2x1\
 [^761]: {-} La fotografía compuesta del avión y el perfil alar se han hecho así.
 
 ## PGF/TikZ
-[TikZ](https://tikz.dev) es un paquete para $\LaTeX$ que permite crear figuras y gráficos. Solía usarlo en la universidad. He creado la figura de Ikigai que usaré para decidir que proyecto final hacer.\
+[TikZ](https://tikz.dev) es un paquete para $\LaTeX$ que permite crear figuras y gráficos. Solía usarlo en la universidad. He creado la figura de Ikigai que usaré en la página del proyecto final.\
 Como veis, estoy usando cualquier cosa que use código para generarse.
 
 [^760]
