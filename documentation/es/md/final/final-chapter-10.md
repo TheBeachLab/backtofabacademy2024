@@ -1,43 +1,37 @@
-# Las tres ideas
+# Las ideas
+
+## Alphabets
+Alphabets es una pantalla mecánica modular para mostrar mensajes interactivos. Es un proyecto que empecé en 2014 y he abandonado y retomado en múltiples ocasiones.
+
+![](../../img/final/alphabets.webp)
+
+## Day & Night
+Day & Night son dos[^101] telescopios reflectores Dobson Newtonianos automatizados para seguir cuerpos celestes, capturar y apilar imágenes. Son idénticos, excepto que uno es blanco y el otro negro. Luz y oscuridad, día y noche.
+
+![](../../img/final/daynight.webp)
+
+[^101]: ¿Por qué dos? Otra de tantas promesas incumplidas que hago.
+
+## Slider
+Slide
+
+![](../../img/final/slider.webp)
+
 
 ## Mirai 未来
-Mirai es un ordenador portátil *cyberdeck* que quiero construir. Me gustaría tener un portátil con teclado mecánico. Odio los teclados de los ordenadores portátiles y además para la mayoría de mis aplicaciones no necesito trackpad ni ratón.
+Mirai es un microordenador portátil de estética *retro cyberdeck* que incorpora un teclado mecánico. Aspira a revivir la nostalgia de los dispositivos analógicos y el diseño de los años 80 mediante la fabricación digital.
+
+![](../../img/final/mirai.webp)
 
 ## Scylla Σκύλλα
-Scylla era una criatura de la mitología griega que atormentaba a los buques en el estrecho de Messina. Es una combinación de hidroala con una turbina para actividades recreativas en el mar o lagos.
+ Scylla *es*[^102] una hidroala con turbina diseñada para actividades recreativas en mares o lagos.
 
-## Project Nest
-[En la rueda del hamster]{.smallcaps}. Las ciudades son, en cierto sentido, agujeros negros. Tienden a acumular la mayoría de los recursos, generando una desigualdad en la distribución de servicios y oportunidades en el territorio. Eso genera flujos migratorios que despueblan las zonas rurales. Por otro lado las ciudades limitan parámetros urbanísticos que impiden construir el número de viviendas necesario para la demanda creciente. Eso genera tensión en el mercado y hace la vivienda inaccesible para un creciente conjunto de la población. La ciudad impide a sus habitantes acceder a los recursos naturales que el planeta ofrece, desde agua, alimentos, energía, etc. En la ciudad no se puede tomar nada, todo debe comprarse. Bienvenido a la rueda del hamster, donde ya no puedes parar. Porque si la rueda se detiene, lo pierdes todo.
+ ![](../../img/final/scylla.webp)
 
-Según la Declaración Universal de Derechos Humanos de las Naciones Unidas, todas las personas tienen derecho a un nivel de vida adecuado para la salud y bienestar propio y de su familia, **incluida la vivienda**.
+[^102]: Scylla *era* una criatura de la mitología griega que atormentaba a los buques en el estrecho de Messina.
 
-El Proyecto Nest no es una vivienda, pero se puede vivir en ella. Es un módulo de soporte vital para uso temporal, portable y dirigido al mercado de una sola persona. Ocasionalmente dos ;-) 
+## N.E.S.T.
+ N.E.S.T. no es una vivienda, pero se puede vivir en ella. Es un módulo de soporte vital para uso temporal, portable y dirigido al mercado de una sola persona. Ocasionalmente dos ;-) 
 
-## Cuadro comparativo
-<figure>
-|                   | Nest  | Mirai | Scylla |
-| ----------------- | :---: | :---: | :----: |
-| Semanas$^\dagger$ |  16   |   4   |   8    |
-| Dificultad        |  4/5$^\dagger$$^\dagger$  |  2/5  |  4/5   |
-| Versatilidad      | 5/5   | 1/5  | 1/5  |
-| Coste             |  1k-10k  |  0.5k  |  2k-4k   |
-| Portabilidad      | Baja  | Alta  | Media  |
-<figcaption>
-$^\dagger$ Semanas de trabajo estimadas para completarlo\
-$^\dagger$$^\dagger$ Podría llegar a 5/5 por las instalaciones
-</figcaption>
-</figure>
+![](../../img/final/nest.webp)
 
-## Ikigai
-
-<figure>
-^[{-} Ikigai.]
-![](../../img/final/ikigai/ikigai2.svg)
-</figure>
-
-# Boceto
-
-# Planificación
-Lo que más me gusta de esta idea es su versatilidad. Este proyecto se puede completar por espirales y en cada espiral, el resultado es un producto terminado con un mercado distinto. 
-
-# Presupuesto
