@@ -5,17 +5,17 @@ Alphabets es una pantalla mecánica modular para mostrar mensajes interactivos. 
 
 ![](../../img/final/alphabets.webp)
 
-## Day & Night
-Day & Night son dos[^101] telescopios reflectores Dobson Newtonianos automatizados para seguir cuerpos celestes, capturar y apilar imágenes. Son idénticos, excepto que uno es blanco y el otro negro. Luz y oscuridad, día y noche.
+## *Night*
+*Day & Night* son los nombres de dos[^101] telescopios reflectores Dobson Newtonianos automatizados para seguir cuerpos celestes, capturar y apilar imágenes. Son idénticos, excepto que uno es blanco y el otro negro. Luz y oscuridad, día y noche.
 
 ![](../../img/final/daynight.webp)
 
 [^101]: ¿Por qué dos? Otra de tantas promesas incumplidas que hago.
 
-## Slider
-Slide
+## *Solo*
+*Solo* es el nombre de un accesorio para cámaras SLR que facilita la grabación personal al automatizar el enfoque algunos movimientos de cámara.
 
-![](../../img/final/slider.webp)
+![](../../img/final/solo.webp)
 
 
 ## Mirai 未来
