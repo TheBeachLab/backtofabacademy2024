@@ -17,7 +17,7 @@ $^\dagger$$^\dagger$ Podría llegar a 5/5 por las instalaciones sanitarias
 ## Ikigai
 
 <figure>
-^[{-} Diagrama de los 6 proyectos dibujados sobre mi Ikigai. Tengo la sensación de que a Ikigai le faltan combinaciones. Mirai es demasiado personal, no creo que tenga salida en el mercado. Solo Nest es un proyecto que ofrece un beneficio claro a la sociedad.]
+^[{-} Diagrama de los 6 proyectos dibujados sobre mi Ikigai. Tengo la sensación de que a Ikigai le faltan combinaciones. Mirai es demasiado personal, no creo que tenga salida en el mercado. Solo Nest es un proyecto que aporta un beneficio claro a la sociedad.]
 ![](../../img/final/ikigai/ikigai2.svg)
 </figure>
 

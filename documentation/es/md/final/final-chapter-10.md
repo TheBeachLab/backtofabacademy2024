@@ -6,7 +6,7 @@ Alphabets es una pantalla mecánica modular para mostrar mensajes interactivos. 
 ![](../../img/final/alphabets.webp)
 
 ## *Night*
-*Day & Night* son los nombres de dos[^101] telescopios reflectores Dobson Newtonianos automatizados para seguir cuerpos celestes, capturar y apilar imágenes. Son idénticos, excepto que uno es blanco y el otro negro. Luz y oscuridad, día y noche.
+*Day & Night* son los nombres de dos[^101] telescopios reflectores Dobson Newtonianos automatizados para seguir cuerpos celestes, capturar y apilar imágenes. Son idénticos, excepto que uno es blanco y el otro negro. Luz y oscuridad, día y noche. 
 
 ![](../../img/final/daynight.webp)
 
