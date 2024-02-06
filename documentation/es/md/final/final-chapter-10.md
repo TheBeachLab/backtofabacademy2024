@@ -13,7 +13,7 @@ Alphabets es una pantalla mecánica modular para mostrar mensajes interactivos. 
 [^101]: ¿Por qué dos? Otra de tantas promesas incumplidas que hago.
 
 ## *Solo*
-*Solo* es el nombre de un accesorio para cámaras SLR que facilita la grabación personal al automatizar el enfoque algunos movimientos de cámara.
+*Solo* es el nombre de un accesorio para cámaras SLR que facilita la grabación personal al automatizar el enfoque y algunos movimientos de cámara.
 
 ![](../../img/final/solo.webp)
 
@@ -30,8 +30,8 @@ Mirai es un microordenador portátil de estética *retro cyberdeck* que incorpor
 
 [^102]: Scylla *era* una criatura de la mitología griega que atormentaba a los buques en el estrecho de Messina.
 
-## N.E.S.T.
- N.E.S.T. no es una vivienda, pero se puede vivir en ella. Es un módulo de soporte vital para uso temporal, portable y dirigido al mercado de una sola persona. Ocasionalmente dos ;-) 
+## Nest
+ Nest no es una vivienda, pero se puede vivir en ella. Es un módulo de soporte vital para uso temporal, portable y dirigido al mercado de una sola persona. Ocasionalmente dos ;-) 
 
 ![](../../img/final/nest.webp)
 
