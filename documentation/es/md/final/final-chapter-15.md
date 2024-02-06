@@ -2,7 +2,7 @@
 
 ## Cuadro comparativo
 <figure>
-|                   |         N.E.S.T.        | Mirai | Scylla | Alphabets | Solo   | Day and Night |
+|                   |         N.E.S.T.        | Mirai | Scylla | Alphabets | Solo   |         Night |
 |-------------------|:-----------------------:|:-----:|:------:|:---------:|:------:|:-------------:|
 | Semanas$^\dagger$ |            16           |   4   |    8   |     4     |    2   |       6       |
 | Dificultad        | 4/5$^\dagger$$^\dagger$ |  2/5  |   4/5  |    2/5    |   2/5  |      3/5      |
