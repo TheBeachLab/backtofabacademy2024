@@ -12,7 +12,7 @@ No dudes en contactar conmigo en [LinkedIn](https://www.linkedin.com/in/fsanchez
 # Semana a semana
 [Semana 1: Principios y Prácticas, Gestión de Proyectos - 24 de enero](w01.md)  
 [Semana 2: Diseño Asistido por Ordenador - 31 de enero](w02.md)   
-Semana 3: Corte Controlado por Ordenador - 07 de febrero    
+[Semana 3: Corte Controlado por Ordenador - 07 de febrero](w03.md)    
 Semana 4: Producción Electrónica - 14 de febrero    
 Semana 5: Escaneo e Impresión 3D - 21 de febrero    
 Semana 6: Programación Integrada - 28 de febrero    

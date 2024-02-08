@@ -13,7 +13,7 @@ Zögere nicht, mich auf [LinkedIn](https://www.linkedin.com/in/fsancheza/) zu ko
 # Woche für Woche
 [Woche 1: Grundlagen und Praktiken, Projektmanagement - 24. Januar](w01.md)  
 [Woche 2: Computerunterstütztes Design - 31. Januar](w02.md)   
-Woche 3: Computerkontrolliertes Schneiden - 07. Februar    
+[Woche 3: Computerkontrolliertes Schneiden - 07. Februar](w03.md)    
 Woche 4: Elektronische Produktion - 14. Februar    
 Woche 5: Scannen und 3D-Druck - 21. Februar    
 Woche 6: Integrierte Programmierung - 28. Februar    

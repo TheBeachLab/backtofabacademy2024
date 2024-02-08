@@ -1,7 +1,7 @@
 # Week by Week
 [Week 1: Principles and Practices, Project Management - January 24](w01.md)  
 [Week 2: Computer-Aided Design - January 31](w02.md)   
-Week 3: Computer-Controlled Cutting - February 7    
+[Week 3: Computer-Controlled Cutting - February 7](w03.md)    
 Week 4: Electronic Production - February 14    
 Week 5: 3D Scanning and Printing - February 21    
 Week 6: Embedded Programming - February 28    
