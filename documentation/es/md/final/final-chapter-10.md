@@ -24,7 +24,7 @@
 [^102]:
   {-} [→ *Repositorio*](https://github.com/TheBeachLab/day-and-night)
 [^103]: 
-    ¿Por qué dos? Otra de tantas promesas incumplidas que hago.
+    ¿Por qué dos? Otra de tantas promesas incumplidas que hice.
 
 ## Solo
 [comment2]: <> (Nota para el traductor: 'Solo' es un nombre propio, no debe traducirse)

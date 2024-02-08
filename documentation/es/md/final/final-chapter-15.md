@@ -8,7 +8,8 @@
 | Dificultad        | 4/5$^\dagger$$^\dagger$ |  2/5  |   4/5  |    2/5    |   2/5  |      3/5      |
 | Versatilidad      |           5/5           |  1/5  |   1/5  |    4/5    |   2/5  |      2/5      |
 | Coste             |            1k           |  0.5k |   1k   |    0.1k   |  0.1k  |      0.5k     |
-| Portabilidad      |           Baja          |  Alta |  Media |    Alta   |  Alta  |     Media     |<figcaption>
+| Portabilidad      |           Baja          |  Alta |  Media |    Alta   |  Alta  |     Media     |
+<figcaption>
 $^\dagger$ Semanas de trabajo estimadas para completarlo\
 $^\dagger$$^\dagger$ Podría llegar a 5/5 por las instalaciones sanitarias
 </figcaption>
