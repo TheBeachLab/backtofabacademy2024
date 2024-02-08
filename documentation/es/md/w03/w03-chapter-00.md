@@ -14,5 +14,5 @@ lang: "es-ES"
 | 3) Diseña, corta con láser y documenta un kit de construcción paramétrico,\
 - teniendo en cuenta el *kerf* de la cortadora láser,\
 - que pueda ensamblarse de varias maneras,\
-- y, para crédito adicional, incluir elementos que no sean planos.|
+- y, para crédito adicional, incluye elementos que no sean planos.|
 :::
