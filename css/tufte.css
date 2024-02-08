@@ -183,3 +183,16 @@ table td {
 table td, table th {
   min-width: 120px;
 }
+
+/* Allow tables to be full width by FRAN
+ * if they're wrapped in a figure.fullwidth
+ * (Easier to insert from Pandoc than manually adding table) */
+ figure.full-width table {
+  width: 90%;
+}
+
+@media (max-width: 760px) {
+  figure.full-width table {
+    width: 100%;
+  }
+}

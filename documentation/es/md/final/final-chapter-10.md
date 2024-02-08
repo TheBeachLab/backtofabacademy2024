@@ -1,37 +1,66 @@
 # Las ideas
+¿Para qué andar pensando en un nuevo proyecto si ya tengo varios a medio hacer? Os presento a los aspirantes... (mejora si lo leéis con música épica de fondo →)[^100]
 
-## Alphabets
-Alphabets es una pantalla mecánica modular para mostrar mensajes interactivos. Es un proyecto que empecé en 2014 y he abandonado y retomado en múltiples ocasiones.
+[^100]:
+    {-} <audio controls>
+    <source src="../../files/final/defend.m4a" type="audio/mp4">
+    Your browser does not support the audio element.
+    </audio>\
+
+## Alphabets 
+[^101] Alphabets es una pantalla mecánica modular para mostrar mensajes interactivos. Es un proyecto que empecé en 2014 y he abandonado y retomado en múltiples ocasiones. Comercialmente es un buen producto. Tuvo tanto éxito que algunas personas me llegaron a pedir que les mandara entre 800 y 1000 unidades.
+
+[^101]:
+  {-} [→ *Repositorio*](https://github.com/TheBeachLab/alphabets)
 
 ![](../../img/final/alphabets.webp)
 
-## *Night*
-*Day & Night* son los nombres de dos[^101] telescopios reflectores Dobson Newtonianos automatizados para seguir cuerpos celestes, capturar y apilar imágenes. Son idénticos, excepto que uno es blanco y el otro negro. Luz y oscuridad, día y noche. 
+## Night
+[comment1]: <> (Nota para el traductor: 'Night' es un nombre propio, no debe traducirse)
+[^102]  *Day & Night* son los nombres de dos[^103] telescopios reflectores Dobson Newtonianos automatizados para seguir cuerpos celestes, capturar y apilar imágenes. Son idénticos, excepto que uno es blanco y el otro negro. Luz y oscuridad, día y noche. 
 
 ![](../../img/final/daynight.webp)
 
-[^101]: ¿Por qué dos? Otra de tantas promesas incumplidas que hago.
+[^102]:
+  {-} [→ *Repositorio*](https://github.com/TheBeachLab/day-and-night)
+[^103]: 
+    ¿Por qué dos? Otra de tantas promesas incumplidas que hago.
 
-## *Solo*
-*Solo* es el nombre de un accesorio para cámaras SLR que facilita la grabación de video personal al automatizar el enfoque y algunos movimientos de cámara.
+## Solo
+[comment2]: <> (Nota para el traductor: 'Solo' es un nombre propio, no debe traducirse)
+[^104] *Solo* es el nombre de un accesorio para cámaras SLR que facilita la grabación de video personal al automatizar el enfoque y algunos movimientos de cámara. Lo único que se interpone entre el éxito y yo es mi pereza.
+
+[^104]:
+  {-} [→ *Repositorio*](https://github.com/TheBeachLab/solo)
 
 ![](../../img/final/solo.webp)
 
 
 ## Mirai 未来
-Mirai es un microordenador portátil de estética *retro cyberdeck* que incorpora un teclado mecánico. Aspira a revivir la nostalgia de los dispositivos analógicos y el diseño de los años 80 mediante la fabricación digital.
+[^105] Mirai es un microordenador portátil de estética *retro cyberdeck* que incorpora un teclado mecánico. Aspira a revivir la nostalgia de los dispositivos analógicos y el diseño de los años 80 mediante la fabricación digital. La idea de un ordenador modular siempre me ha resultado atractiva. ¿Por qué tenemos que reemplazar todo el ordenador cuando solo queremos un procesador nuevo o más memoria?
+
+[^105]:
+  {-} [→ *Repositorio*](https://github.com/TheBeachLab/mirai)
 
 ![](../../img/final/mirai.webp)
 
 ## Scylla Σκύλλα
- Scylla *es*[^102] una hidroala con turbina diseñada para actividades recreativas en mares o lagos.
+ [^106] Scylla *es*[^107] una hidroala con turbina diseñada para actividades recreativas en mares o lagos. Después de la desastrosa semana 2, este proyecto tiene pronóstico grave con perspectiva negativa.
 
  ![](../../img/final/scylla.webp)
 
-[^102]: Scylla *era* una criatura de la mitología griega que atormentaba a los buques en el estrecho de Messina.
+[^106]:
+  {-} [→ *Repositorio*](https://github.com/TheBeachLab/scylla)
+[^107]: Scylla *era* una criatura de la mitología griega que atormentaba a los buques en el estrecho de Messina.
 
-## Nest
- Nest no es una vivienda, pero se puede vivir en ella. Es un módulo de soporte vital para uso temporal, portable y dirigido al mercado de una sola persona. Ocasionalmente dos ;-) 
+## Nest 
+ [^108] Nest no es una vivienda, pero se puede vivir en ella. Es un módulo de soporte vital para uso temporal, portable y dirigido al mercado de una sola persona[^109]. Estuve trabajando este proyecto de forma teórica durante mi paso por el MIT Entrepreneurship Bootcamp y obtuvo una respuesta muy positiva. Me gustaría recuperarlo y hacer un prototipo, aunque no sea del todo funcional (creo que es un proyecto para abordarlo en grupo).
+
+[^108]:
+  {-} [→ *Repositorio*](https://github.com/TheBeachLab/nest)
+
+[^109]:
+    Ocasionalmente dos `;-)`
 
 ![](../../img/final/nest.webp)
 

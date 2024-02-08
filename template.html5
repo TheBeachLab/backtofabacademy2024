@@ -31,7 +31,7 @@ $endfor$
 $for(include-before)$
 $include-before$
 $endfor$
-
+<article>
 <header>
 <h1 class="title">$title$</h1>
 <blockquote class="metadata">
@@ -71,7 +71,7 @@ $endif$
 <main>
 $body$
 </main>
-
+</article>
 $if(return-url)$
 <footer>
 <p class="signoff">
