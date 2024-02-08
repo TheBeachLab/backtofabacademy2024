@@ -4,7 +4,7 @@ subtitle: "Zurück in der Fab Academy 2024. Fran Sanchez"
 toc-title: "Inhaltsverzeichnis"
 return-url: "../html/"
 return-text: "← Zurück gehen"
-lang: "es-ES"
+lang: "de-DE"
 ---
 :::{.note .yellow}
 |     |
