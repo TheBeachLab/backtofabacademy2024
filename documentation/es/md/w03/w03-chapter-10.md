@@ -1,22 +1,3 @@
----
-title: "Semana 3. Corte Controlado por Ordenador"
-subtitle: "Regreso a Fab Academy 2024. Fran Sanchez"
-toc-title: "Índice"
-return-url: "../html/"
-return-text: "← Volver atrás"
-lang: "es-ES"
----
-:::{.note .yellow}
-|     |
-| --- |
-| 1) Caracteriza tu cortadora láser (enfoque, potencia, velocidad, etc.) |
-| 2) Corta algo en la cortadora de vinilo. |
-| 3) Diseña, corta con láser y documenta un kit de construcción paramétrico,\
-- teniendo en cuenta el *kerf* de la cortadora láser,\
-- que pueda ensamblarse de varias maneras,\
-- y, para crédito adicional, incluye elementos que no sean planos.|
-:::
-
 # Caracterizar... ¿la cortadora laser?
 [Me gustaría tener la cortadora laser de Neil]{.smallcaps}. **Mi cortadora laser no tiene un kerf fijo**. La *potencia* y la *velocidad* de corte influyen en el kerf, el *material* influye en el kerf, el *espesor* del material influye en el kerf, incluso el *color*[^101] del material influye en kerf. Yo tengo que seguir un proceso para caracterizar cada material con la laser. Aunque no lo suelo mostrar en la documentación, yo repito este proceso para cada vez que cambio cualquier parámetro del material. Da una pereza impresionante, lo sé. Pero ahorrarse estos minutos, os puede suponer horas de retrasos y frustración mas tarde o incluso arruinar todo el trabajo. Mi consejo gratis de la semana: 
 
@@ -34,26 +15,4 @@ Lo primero que hago es buscar los parámetros óptimos de corte o marcado. Tomo 
     Es una combinación de potencia, velocidad, número de pasadas y frecuencia, si es que tiene. Mi laser (Full Spectrum 5th gen) no tiene control de frecuencia. Siempre que es posible procuro que la velocidad sea máxima. Si es un material sensible al calor (como el polipropileno alveolar) hago más de una pasada a baja potencia.
 
 Solo entonces procedo a medir el kerf. Pero recuerda, si cambias cualquier parámetro, ese kerf ya no es válido. 
-
-# Cortar "algo" en la cortadora de vinilo
-[La cortadora de vinilo es mi máquina preferida]{.smallcaps}. Es versátil, es rápida, es limpia, no emite humos ni vapores, y no necesita productos químicos.
-
-<figure>
-^[{-} Algunas pegatinas que he cortado con la cortadora de vinilo. De izquierda a derecha, Snow Lion (8 capas), The Empty Man (5 capas), Beach Lab (2 capas) y Kali (5 capas)]
-![](../../img/w03/stickers.webp)
-</figure>
-
-En el último review, Neil dijo que quería ver diseños *del proyecto final*.\
-→ no de lo que te apetezca\
-→ no de algo aleatorio\
-→ del proyecto final
-
-Siguiendo esa filosofía voy a cortar los logotipos de mis proyectos. Hay dos razones por la que todos mis proyectos tienen nombre/marca.
-
-1. La primera razón es que tengo intención de comercializarlos. En unas semanas hay una clase que se llama *Invención, Propiedad Intelectual e Ingresos*. A lo largo de muchos años siguiendo Fab Academy escucho personas que ignoran totalmente esa semana diciendo que "no tienen ningún interés comercial", que lo hacen "por amor al arte", "por el bien de la humanidad". Que bonito. Estimados amigos: Hasta donde yo sé, no puedes canjear impuestos por tu proyecto final, ni por cursos a tu comunidad, ni por lechugas de aquaponics. Solo aceptan dinero.
-2. La segunda razón por la que pongo un nombre corto es porque cortar es fácil, lo hace la máquina. Pero separar la figura del fondo con las pinzas es una tortura, sobretodo si la pegatina es ésta:
-
-<center>*pantalla mecánica modular mono-dígito de solapa partida y de código abierto*</center>
-
-*continuará...*
 

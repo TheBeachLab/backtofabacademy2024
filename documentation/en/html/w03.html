@@ -18,6 +18,16 @@
 </blockquote>
 </header>
 
+<nav id="TOC" role="doc-toc">
+    <a href="../html/">← Go back</a><br>
+    <strong>  Index
+  </strong><label for="contents">⊕</label>
+  <input type="checkbox" id="contents">
+  <ul>
+  <li><a href="#characterizing-the-laser-cutter" id="toc-characterizing-the-laser-cutter">Characterizing… the laser cutter?</a></li>
+  <li><a href="#cutting-something-on-the-vinyl-cutter" id="toc-cutting-something-on-the-vinyl-cutter">Cutting “something” on the vinyl cutter</a></li>
+  </ul>
+</nav>
 
 <main>
 <div class="note yellow">
@@ -41,6 +51,43 @@
 </tbody>
 </table>
 </div>
+<h1 id="characterizing-the-laser-cutter">Characterizing… the laser cutter?</h1>
+<p><span class="smallcaps">I would like to have Neil’s laser cutter</span>. <strong>My laser cutter doesn’t have a fixed kerf</strong>. The <em>power</em> and the <em>cutting speed</em> affect the kerf, the <em>material</em> affects the kerf, the <em>thickness</em> of the material affects the kerf, even the <em>color</em><span class="sidenote-wrapper"><label for="sn-0" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-0" class="margin-toggle"/><span class="sidenote">Dark colors absorb more radiation and are easier to cut<br />
+<br />
+</span></span> of the material affects the kerf. I have to follow a process to characterize each material with the laser. Although I don’t usually show it in the documentation, I repeat this process every time I change any parameter of the material. It’s a real drag, I know. But skipping these minutes can lead to hours of delays and frustration later on, or even ruin all the work. My free advice of the week:</p>
+<center>
+<em>spend those minutes</em>
+</center>
+<p>The first thing I do is search for the optimal cutting or marking parameters. I take a sample<span class="sidenote-wrapper"><label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle"/><span class="sidenote">5x5 cm is enough<br />
+<br />
+</span></span> of the material I want to characterize. I place it on the platform and make sure the focus is correct. The idea is to find <em>the lowest possible energy</em><span class="sidenote-wrapper"><label for="sn-2" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-2" class="margin-toggle"/><span class="sidenote">It’s a combination of power, speed, number of passes, and frequency, if available. My laser (Full Spectrum 5th gen) doesn’t have frequency control. Whenever possible, I try to keep the speed at maximum. If it’s a material sensitive to heat (like cellular polypropylene) I do more than one pass at low power.<br />
+<br />
+</span></span> that cuts the material, without deforming or burning it. I make a pattern in Inkscape with copies in different colors and assign a setting to each line. As a starting point, you can use settings from a material and a machine similar to yours. Some machines include a library of materials with predefined cutting settings. I normally start at +5% of the known setting and go down by 5% on each line. The important thing is to note those settings on the same material and save them for future reference. These settings then serve me whenever I want to cut or mark the material.</p>
+<figure>
+<img src="../../img/w03/character.webp" alt="Characterization example for engraving an aluminum plate" />
+<figcaption aria-hidden="true">Characterization example for engraving an aluminum plate</figcaption>
+</figure>
+<p>Only then do I proceed to measure the kerf. But remember, if you change any parameter, that kerf is no longer valid.</p>
+<h1 id="cutting-something-on-the-vinyl-cutter">Cutting “something” on the vinyl cutter</h1>
+<p><span class="smallcaps">The vinyl cutter is my favorite machine</span>. It’s versatile, fast, clean, doesn’t emit fumes or vapors, and doesn’t require chemicals.</p>
+<figure>
+<span class="sidenote-wrapper"><label for="sn-3" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-3" class="margin-toggle"/><span class="marginnote">Some stickers I’ve cut with the vinyl cutter. From left to right, Snow Lion (8 layers), The Empty Man (5 layers), Beach Lab (2 layers), and Kali (5 layers)<br />
+<br />
+</span></span> <img src="../../img/w03/stickers.webp" />
+</figure>
+<p>In the last review, Neil said he wanted to see designs <em>from the final project</em>.<br />
+→ not what you feel like<br />
+→ not something random<br />
+→ from the final project</p>
+<p>Following that philosophy, I’m going to cut the logos of my projects. There are two reasons why all my projects have a name/brand.</p>
+<ol type="1">
+<li>The first reason is that I intend to commercialize them. In a few weeks, there’s a class called <em>Invention, Intellectual Property, and Income</em>. Over many years following the Fab Academy, I hear people who completely ignore that week saying they “have no commercial interest”, they do it “for the love of art”, “for the good of humanity”. How nice. Dear friends: As far as I’m aware, you can’t pay your taxes with your final project, nor with courses to your community, nor with aquaponics lettuces. They only accept money.</li>
+<li>The second reason why I put a short name is because cutting is easy, the machine does it. But weeding the figure from the background with tweezers is torture, especially if the sticker is this:</li>
+</ol>
+<center>
+<em>modular mono-digit split-flap open-source mechanical panel</em>
+</center>
+<p><em>to be continued…</em></p>
 </main>
 </article>
 <footer>

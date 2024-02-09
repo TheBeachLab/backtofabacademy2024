@@ -1,22 +1,3 @@
----
-title: "Week 3. Computer-Controlled Cutting"
-subtitle: "Back to Fab Academy 2024. Fran Sanchez"
-toc-title: "Index"
-return-url: "../html/"
-return-text: "← Go back"
-lang: "en-US"
----
-:::{.note .yellow}
-|     |
-| --- |
-| 1) Characterize your laser cutter (focus, power, speed, etc.) |
-| 2) Cut something on the vinyl cutter. |
-| 3) Design, laser cut, and document a parametric construction kit,\
-- considering the *kerf* of the laser cutter,\
-- that can be assembled in various ways,\
-- and, for extra credit, include non-flat elements.|
-:::
-
 # Characterizing... the laser cutter?
 [I would like to have Neil's laser cutter]{.smallcaps}. **My laser cutter doesn't have a fixed kerf**. The *power* and the *cutting speed* affect the kerf, the *material* affects the kerf, the *thickness* of the material affects the kerf, even the *color*[^101] of the material affects the kerf. I have to follow a process to characterize each material with the laser. Although I don't usually show it in the documentation, I repeat this process every time I change any parameter of the material. It's a real drag, I know. But skipping these minutes can lead to hours of delays and frustration later on, or even ruin all the work. My free advice of the week: 
 
@@ -34,26 +15,4 @@ The first thing I do is search for the optimal cutting or marking parameters. I 
     It's a combination of power, speed, number of passes, and frequency, if available. My laser (Full Spectrum 5th gen) doesn't have frequency control. Whenever possible, I try to keep the speed at maximum. If it's a material sensitive to heat (like cellular polypropylene) I do more than one pass at low power.
 
 Only then do I proceed to measure the kerf. But remember, if you change any parameter, that kerf is no longer valid.
-
-# Cutting "something" on the vinyl cutter
-[The vinyl cutter is my favorite machine]{.smallcaps}. It's versatile, fast, clean, doesn't emit fumes or vapors, and doesn't require chemicals.
-
-<figure>
-^[{-} Some stickers I've cut with the vinyl cutter. From left to right, Snow Lion (8 layers), The Empty Man (5 layers), Beach Lab (2 layers), and Kali (5 layers)]
-![](../../img/w03/stickers.webp)
-</figure>
-
-In the last review, Neil said he wanted to see designs *from the final project*.\
-→ not what you feel like\
-→ not something random\
-→ from the final project
-
-Following that philosophy, I'm going to cut the logos of my projects. There are two reasons why all my projects have a name/brand.
-
-1. The first reason is that I intend to commercialize them. In a few weeks, there's a class called *Invention, Intellectual Property, and Income*. Over many years following the Fab Academy, I hear people who completely ignore that week saying they "have no commercial interest", they do it "for the love of art", "for the good of humanity". How nice. Dear friends: As far as I'm aware, you can't pay your taxes with your final project, nor with courses to your community, nor with aquaponics lettuces. They only accept money.
-2. The second reason why I put a short name is because cutting is easy, the machine does it. But weeding the figure from the background with tweezers is torture, especially if the sticker is this:
-
-<center>*modular mono-digit split-flap open-source mechanical panel*</center>
-
-*to be continued...*
 

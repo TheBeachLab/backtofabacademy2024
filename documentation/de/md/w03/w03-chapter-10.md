@@ -1,22 +1,3 @@
----
-title: "Woche 3. Computergesteuerter Schnitt"
-subtitle: "Zurück in der Fab Academy 2024. Fran Sanchez"
-toc-title: "Inhaltsverzeichnis"
-return-url: "../html/"
-return-text: "← Zurück gehen"
-lang: "de-DE"
----
-:::{.note .yellow}
-|     |
-| --- |
-| 1) Charakterisiere deinen Laserschneider (Fokus, Leistung, Geschwindigkeit usw.) |
-| 2) Schneide etwas mit dem Vinylschneider. |
-| 3) Entwirf, schneide mit dem Laser und dokumentiere ein parametrisches Baukastensystem,\
-- unter Berücksichtigung des *Kerf* des Laserschneiders,\
-- das auf verschiedene Arten zusammengesetzt werden kann,\
-- und, für Bonuspunkte, beinhalte Elemente, die nicht flach sind.|
-:::
-
 # Charakterisieren… den Laserschneider?
 [Ich hätte gerne Neil's Laserschneider]{.smallcaps}. **Mein Laserschneider hat kein festes Kerf**. Die *Leistung* und die *Schnittgeschwindigkeit* beeinflussen das Kerf, das *Material* beeinflusst das Kerf, die *Materialdicke* beeinflusst das Kerf, sogar die *Farbe*[^101] des Materials beeinflusst das Kerf. Ich muss für jedes Material mit dem Laser einen Charakterisierungsprozess durchführen. Obwohl ich es normalerweise nicht in der Dokumentation zeige, wiederhole ich diesen Prozess jedes Mal, wenn ich irgendeinen Materialparameter ändere. Es ist unfassbar lästig, ich weiß. Aber diese Minuten zu sparen, kann euch später Stunden an Verzögerungen und Frustration ersparen oder sogar die ganze Arbeit ruinieren. Mein kostenloser Ratschlag der Woche:
 
@@ -34,26 +15,4 @@ Das Erste, was ich mache, ist, die optimalen Schnitt- oder Markierparameters zu 
     Es ist eine Kombination aus Leistung, Geschwindigkeit, Anzahl der Durchläufe und Frequenz, sofern vorhanden. Mein Laser (Full Spectrum 5th gen) hat keine Frequenzkontrolle. Wenn immer möglich, versuche ich, die Geschwindigkeit zu maximieren. Wenn es ein wärmeempfindliches Material ist (wie welliges Polypropylen), mache ich mehrere Durchläufe mit geringer Leistung.
 
 Erst dann gehe ich dazu über, das Kerf zu messen. Aber denkt daran, wenn ihr irgendeinen Parameter ändert, ist dieses Kerf nicht mehr gültig.
-
-# Vinylschneider benutzen
-[Der Vinylschneider ist meine Lieblingsmaschine]{.smallcaps}. Er ist vielseitig, schnell, sauber, erzeugt keine Dämpfe oder Gerüche und benötigt keine Chemikalien.
-
-<figure>
-^[{-} Einige Aufkleber, die ich mit dem Vinylschneider geschnitten habe. Von links nach rechts, Snow Lion (8 Schichten), The Empty Man (5 Schichten), Beach Lab (2 Schichten) und Kali (5 Schichten)]
-![](../../img/w03/stickers.webp)
-</figure>
-
-Beim letzten Review sagte Neil, er wolle Entwürfe *des Abschlussprojekts* sehen.\
-→ nicht, was du gerade willst\
-→ nicht irgendwas Zufälliges\
-→ vom Abschlussprojekt
-
-Dieser Philosophie folgend, werde ich die Logos meiner Projekte schneiden. Es gibt zwei Gründe, warum alle meine Projekte einen Namen/eine Marke haben.
-
-1. Der erste Grund ist, dass ich vorhabe, sie zu vermarkten. In ein paar Wochen gibt es einen Kurs, der *Erfindung, geistiges Eigentum und Einkommen* heißt. Durch viele Jahre, in denen ich Fab Academy-Teilnehmer folge, höre ich Leute, die diese Woche völlig ignorieren und sagen, sie "hätten kein kommerzielles Interesse", sie täten es "aus Liebe zur Kunst", "zum Wohle der Menschheit". Wie schön. Meine lieben Freunde: Soweit ich weiß, kann man Steuern nicht mit eurem Abschlussprojekt begleichen, auch nicht mit Kursen für eure Gemeinschaft oder mit Aquaponik-Salat. Akzeptiert wird nur Geld.
-2. Der zweite Grund, warum ich einen kurzen Namen wähle, ist, weil Schneiden einfach ist, das macht die Maschine. Aber die Figur mit einer Pinzette vom Hintergrund zu lösen, ist eine Tortur, vor allem, wenn der Aufkleber dieser ist:
-
-<center>*modulare mechanische Mono-Ziffer-Splittflap-Anzeige im Open-Source-Design*</center>
-
-*wird fortgesetzt...*
 
