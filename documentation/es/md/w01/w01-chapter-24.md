@@ -20,7 +20,7 @@ Además de estas instrucciones generales, a veces tengo que comunicarle algo al 
 [^243]:
     Tengo otro modelo en alemán con instrucciones similares. Voy cambiando las instrucciones de vez en cuando para intentar mejorar la traducción. 
 
-Después de dos semanas de uso puedo decir que las traducciones inglesas son muy buenas. Mucho mejor que lo que yo haría. Pedí a [Sophia Döring](https://fabacademy.org/2024/labs/kamplintfort/students/sophia-doring/) que revisara también la traducción en alemán. Me ha dicho que, en general, también está bastante bien, aunque a veces usa palabras en alemán de uso poco frecuente[^242], sobretodo para referirse a términos técnicos. 
+Después de dos semanas de uso puedo decir que las traducciones inglesas son muy buenas. Mucho mejor que lo que yo haría, con una apreciación: Parece ser que en ocasiones el sistema se vuelve menos inteligente. He leído otros usuarios quejándose de lo mismo. Es como si desde OpenAI tuviesen capacidad para graduar o limitar los recursos asignados al modelo. Pedí a [Sophia Döring](https://fabacademy.org/2024/labs/kamplintfort/students/sophia-doring/) que revisara también la traducción en alemán. Me ha dicho que, en general, también está bastante bien, aunque a veces usa palabras en alemán de uso poco frecuente[^242], sobretodo para referirse a términos técnicos. 
 
 [^242]: Puede que eso esté provocado por como escribo el texto original. Estoy usando los equivalentes en español de términos técnicos que, en el día a día, realmente digo en inglés.
 
