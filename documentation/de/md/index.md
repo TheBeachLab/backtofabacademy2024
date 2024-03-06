@@ -14,10 +14,10 @@ Zögere nicht, mich auf [LinkedIn](https://www.linkedin.com/in/fsancheza/) zu ko
 [Woche 1: Grundlagen und Praktiken, Projektmanagement - 24. Januar](w01.md)  
 [Woche 2: Computerunterstütztes Design - 31. Januar](w02.md)   
 [Woche 3: Computerkontrolliertes Schneiden - 07. Februar](w03.md)    
-Woche 4: Elektronische Produktion - 14. Februar    
-Woche 5: Scannen und 3D-Druck - 21. Februar    
-Woche 6: Integrierte Programmierung - 28. Februar    
-Woche 7: Computerunterstütztes Fräsen - 06. März    
+[Woche 4: Elektronische Produktion - 14. Februar](w04.md)    
+[Woche 5: Scannen und 3D-Druck - 21. Februar](w05.md)    
+[Woche 6: Integrierte Programmierung - 28. Februar](w06.md)    
+[Woche 7: Computerunterstütztes Fräsen - 06. März](w07.md)    
 Woche 8: Elektronikdesign - 13. März    
 Woche 9: Ausgabegeräte - 20. März    
 Woche 10: Mechanisches Design, Maschinenbau - 27. März    

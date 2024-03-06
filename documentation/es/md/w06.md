@@ -9,8 +9,10 @@ lang: "es-ES"
 :::{.note .yellow}
 |     |
 | --- |
-| 1) Caracteriza las reglas de diseño de tus impresoras 3D. |
-| 2) Diseña e imprime un objeto que no se pueda fabricar de forma sustractiva. |
-| 3) Escanea un objeto (y opcionalmente imprimelo). |
+|Escribe un programa para la placa de desarrollo que hiciste, que interactúe con los dispositivos de entrada y salida, y se comunique con otros dispositivos remotos (con o sin cable).\
+- (extra): Usa diferentes lenguajes o entornos de desarrollo.\
+- (extra): Conecta componentes externos a tu placa.|
+| Explora la hoja de datos técnicos de tu microcontrolador.|
+| Compara el rendimiento y flujos de desarrollo para otras arquitecturas. |
 :::
 

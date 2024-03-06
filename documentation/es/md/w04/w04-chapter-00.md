@@ -12,7 +12,7 @@ lang: "es-ES"
 | 1) Caracteriza las reglas de diseño para tu proceso de producción de circuitos electrónicos. |
 | 2) Produce y prueba una placa de desarrollo.\
   - (extra): Personaliza la placa.\
-  - (extra): Fabrícala mediante otro proceso.\
-  - (extra): Envíala a producir a un servicio externo.|
+  - (extra): Fabrica el circuito mediante otro proceso.\
+  - (extra): Envíalo a producir a un servicio externo.|
 :::
 
