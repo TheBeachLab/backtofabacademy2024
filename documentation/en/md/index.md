@@ -16,10 +16,10 @@ Feel free to contact me on [LinkedIn](https://www.linkedin.com/in/fsancheza/).
 [Week 1: Principles and Practices, Project Management - January 24](w01.md)  
 [Week 2: Computer-Aided Design - January 31](w02.md)   
 [Week 3: Computer-Controlled Cutting - February 7](w03.md)    
-Week 4: Electronic Production - February 14    
-Week 5: 3D Scanning and Printing - February 21    
-Week 6: Embedded Programming - February 28    
-Week 7: Computer-Controlled Machining - March 6    
+[Week 4: Electronic Production - February 14](w04.md)    
+[Week 5: 3D Scanning and Printing - February 21](w05.md)    
+[Week 6: Embedded Programming - February 28](w06.md)    
+[Week 7: Computer-Controlled Machining - March 6](w07.md)    
 Week 8: Electronic Design - March 13    
 Week 9: Output Devices - March 20    
 Week 10: Mechanical Design, Machine Design - March 27    
